@@ -1,15 +1,19 @@
 {
-  "name": "qwik-pure-template",
-  "packageManager": "yarn@3.3.0",
-  "scripts": {
-    "build": "qwik build",
-    "build.client": "vite build",
-    "dev": "vite --mode ssr"
-  },
-  "devDependencies": {
-    "@builder.io/qwik": "^0.16.1",
-    "@builder.io/qwik-city": "^0.0.128",
-    "typescript": "^4.9.4",
-    "vite": "^4.0.2"
-  }
+    "name": "qwik-pure-template",
+    "packageManager": "yarn@3.3.1",
+    "scripts": {
+        "build": "qwik build",
+        "build.client": "vite build",
+        "dev": "vite --mode ssr"
+    },
+    "dependencies": {
+        "@builder.io/qwik": "^0.16.1",
+        "@builder.io/qwik-city": "^0.0.128"
+    },
+    "devDependencies": {
+        "@yarnpkg/pnpify": "^4.0.0-rc.34",
+        "@yarnpkg/sdks": "^3.0.0-rc.34",
+        "typescript": "^4.9.4",
+        "vite": "^4.0.2"
+    }
 }
