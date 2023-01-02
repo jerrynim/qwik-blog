@@ -27,6 +27,9 @@
     "paths": {
       "~/*": [
         "./src/*"
+      ],
+      "@post": [
+        "./src/components/post"
       ]
     },
     "baseUrl": "."

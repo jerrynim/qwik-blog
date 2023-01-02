@@ -25,19 +25,11 @@ export default component$(
             .replaceAll("&backtick;", "`")
             .replaceAll("&dollar;", "$");
 
-        const _handleMouseEnter = () => {
-            buttonRef.value?.style.display = "block";
-        };
-        const _handleMouseLeave = () => {
-            buttonRef.value?.style.display = "none";
-        };
-        useClientEffect$(() => {
-            ref.value?.addEventListener("mouseenter", _handleMouseEnter);
-            ref.value?.addEventListener("mouseleave", _handleMouseLeave);
-            return () => {
-                ref.value?.removeEventListener("mouseenter", _handleMouseEnter);
-                ref.value?.removeEventListener("mouseenter", _handleMouseLeave);
-            };
+        const _handleMouseEnter = $(() => {
+            buttonRef.value!.style.display = "block";
+        });
+        const _handleMouseLeave = $(() => {
+            buttonRef.value!.style.display = "none";
         });
 
         const _copyCode = $(() => {
@@ -63,6 +55,9 @@ export default component$(
                     id="copy-button"
                     style={`top: ${filename ? "46px" : "16px"};`}
                     onClick$={_copyCode}
+                    ref={buttonRef}
+                    onMouseEnter$={_handleMouseEnter}
+                    onMouseLeave$={_handleMouseLeave}
                 >
                     copy
                 </button>

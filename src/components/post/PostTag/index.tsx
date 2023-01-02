@@ -1,14 +1,14 @@
 import { component$ } from "@builder.io/qwik";
 
 interface PostTagProps {
-    text: string;
+    tags: string;
 }
 
-export default component$(({ text }: PostTagProps) => {
-    const tags = text?.split(" ");
+export default component$(({ tags }: PostTagProps) => {
+    const _tags = tags?.split(" ");
     return (
         <ul>
-            {tags?.map((tag) => (
+            {_tags?.map((tag) => (
                 <li>#${tag}</li>
             ))}
         </ul>

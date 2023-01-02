@@ -59,7 +59,7 @@ const images = [
     "https://res.cloudinary.com/dij9kacx9/image/upload/v1646623159/lit-blog/unsplash_OBmBHmrc3pw_zm6v0l.jpg",
 ];
 
-const getRandomHeadImage = () => {
+export const getRandomHeadImage = () => {
     return images[Math.round(Math.random() * images.length)].replace(
         "/upload/",
         "/upload/f_auto,q_auto/",
