@@ -1,0 +1,19 @@
+.post-buy-me-coffee {
+    display: block;
+    margin-top: 20px;
+}
+
+.buy-me-a-coffee {
+    display: flex;
+}
+
+a {
+    display: block;
+    width: 150px;
+    font-size: 0;
+}
+
+img {
+    display: inline-block;
+    width: 150px;
+}

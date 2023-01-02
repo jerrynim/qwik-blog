@@ -1,0 +1,17 @@
+.post-link {
+    display: inline-block;
+    color: var(--go);
+}
+.hidden-text {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    font-size: 0;
+}
+
+slot {
+    color: var(--go) !important;
+}
+a:hover {
+    color: var(--go);
+}

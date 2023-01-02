@@ -1,0 +1,40 @@
+.post-title {
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+}
+
+:host(:hover) svg {
+    visibility: visible;
+    opacity: 1;
+}
+
+h2 {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--black);
+    transition: var(--transition);
+    word-break: break-all;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--black);
+    transition: var(--transition);
+    word-break: break-all;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+svg {
+    margin-left: 6px;
+    vertical-align: middle;
+    transition: var(--transition);
+    opacity: 0;
+    visibility: hidden;
+}

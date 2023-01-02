@@ -1,0 +1,17 @@
+.post-image {
+    display: block;
+    margin: 20px 0;
+}
+
+span {
+    color: var(--grey);
+}
+a {
+    cursor: zoom-in;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+img {
+    width: 100%;
+}
