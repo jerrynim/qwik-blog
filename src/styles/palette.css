@@ -1,9 +1,10 @@
 * {
-  --black: #0b1a1e;
-  --grey: #6e7374;
-  --lightgrey: #f3f3f3;
-  --silver: #ccc;
-  --transition: 0.2s ease-in-out;
-  --go: #88cbdb;
-  --typescript: #4074ba;
+    --black: #0b1a1e;
+    --grey: #6e7374;
+    --lightgrey: #f3f3f3;
+    --silver: #ccc;
+    --transition: 0.2s ease-in-out;
+    --typescript: #4074ba;
+    --qwik: #006ce9;
+    --orange: #d9730d;
 }

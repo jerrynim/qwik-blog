@@ -20,7 +20,7 @@ export default component$(() => {
                 <PostDate>2021-10-23</PostDate>
             </PostHead>
             <PostBody>
-                A-Frame은 <code>${"<a-entity>"}</code> 엘리먼트를 통해 엔티티를
+                A-Frame은 <code>{"<a-entity>"}</code> 엘리먼트를 통해 엔티티를
                 표현한다.
                 <PostLink href="https://aframe.io/docs/1.2.0/introduction/entity-component-system.html">
                     entity-component-system pattern

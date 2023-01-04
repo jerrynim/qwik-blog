@@ -30,6 +30,9 @@
       ],
       "@post": [
         "./src/components/post"
+      ],
+      "@components/*": [
+        "./src/components/*"
       ]
     },
     "baseUrl": "."

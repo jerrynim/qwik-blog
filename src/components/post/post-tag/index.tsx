@@ -1,10 +1,12 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useStylesScoped$ } from "@builder.io/qwik";
+import styles from "./index.css?inline";
 
 interface PostTagProps {
     tags: string;
 }
 
-export default component$(({ tags }: PostTagProps) => {
+const PostTag = component$(({ tags }: PostTagProps) => {
+    useStylesScoped$(styles);
     const _tags = tags?.split(" ");
     return (
         <ul>
@@ -14,3 +16,4 @@ export default component$(({ tags }: PostTagProps) => {
         </ul>
     );
 });
+export default PostTag;

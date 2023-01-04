@@ -1,7 +1,7 @@
 import { component$, Slot, useStylesScoped$ } from "@builder.io/qwik";
 import styles from "./index.css?inline";
 
-export default component$(() => {
+const PostBlockquote = component$(() => {
     useStylesScoped$(styles);
 
     return (
@@ -10,3 +10,4 @@ export default component$(() => {
         </blockquote>
     );
 });
+export default PostBlockquote;

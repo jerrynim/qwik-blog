@@ -1,6 +1,6 @@
-import { component$, useStylesScoped$ } from "@builder.io/qwik";
+import { component$, useStylesScoped$, $ } from "@builder.io/qwik";
+import { CopyIcon } from "../../svgs/copy-icon";
 import styles from "./index.css?inline";
-import CopyIcon from "/static/copy.svg?raw";
 
 interface PostTitleProps {
     title?: string;
@@ -10,7 +10,7 @@ interface PostTitleProps {
 export default component$(({ title, subtitle }: PostTitleProps) => {
     useStylesScoped$(styles);
 
-    const _handleClick = () => {
+    const _handleClick = $(() => {
         const textarea = document.createElement("textarea");
         document.body.appendChild(textarea);
         textarea.value = `${window.location.href}#${encodeURI(
@@ -25,12 +25,12 @@ export default component$(({ title, subtitle }: PostTitleProps) => {
             detail: { text: "클립보드에 복사되었습니다." },
         });
         window.dispatchEvent(toastUpEvent);
-    };
+    });
 
     return (
-        <h2 class="subtitle" id={title}>
+        <h2 class="subtitle" id={title} onClick$={_handleClick}>
             {subtitle || title}
-            {CopyIcon}
+            <CopyIcon />
         </h2>
     );
 });

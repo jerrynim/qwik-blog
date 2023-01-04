@@ -6,8 +6,8 @@ li {
     margin-right: 6px;
     margin-bottom: 8px;
     padding: 6px 12px;
-    border: 1px solid var(--go);
+    border: 1px solid var(--qwik);
     border-radius: 8px;
-    color: var(--go);
+    color: var(--qwik);
     font-size: 14px;
 }

@@ -1,16 +1,16 @@
-import PostBody from "./PostBody";
+import PostBody from "./post-body";
 import PostCode from "./PostCode";
-import PostDate from "./PostDate";
+import PostDate from "./post-date";
 import PostDivider from "./PostDivider";
-import PostHead from "./PostHead";
+import PostHead from "./post-head";
 import PostHeadImage from "./PostHeadImage";
 import PostImage from "./PostImage";
-import PostLink from "./PostLink";
+import PostLink from "./post-link";
 import PostList from "./PostList";
-import PostTag from "./PostTag";
+import PostTag from "./post-tag";
 import PostTitle from "./PostTitle";
-import PostBlockquote from "./PostBlockquote";
-import PostBuyMeCoffee from "./PostBuyMeCoffee";
+import PostBlockquote from "./post-blockquote";
+import PostBuyMeCoffee from "./post-buy-me-coffee";
 
 export {
     PostBody,

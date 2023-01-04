@@ -23,7 +23,7 @@ button {
     right: 16px;
     background-color: transparent;
     cursor: pointer;
-    color: var(--go);
+    color: var(--qwik);
     border: 1px solid;
     padding: 3px 8px;
     font-size: 13px;
