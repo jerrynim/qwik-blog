@@ -7,7 +7,7 @@ interface PostTitleProps {
     subtitle?: string;
 }
 
-export default component$(({ title, subtitle }: PostTitleProps) => {
+const PostTitle = component$(({ title, subtitle }: PostTitleProps) => {
     useStylesScoped$(styles);
 
     const _handleClick = $(() => {
@@ -34,3 +34,5 @@ export default component$(({ title, subtitle }: PostTitleProps) => {
         </h2>
     );
 });
+
+export default PostTitle;
