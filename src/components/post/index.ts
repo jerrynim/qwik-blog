@@ -8,7 +8,7 @@ import PostImage from "./PostImage";
 import PostLink from "./post-link";
 import PostList from "./PostList";
 import PostTag from "./post-tag";
-import PostTitle from "./PostTitle";
+import PostTitle from "./post-title";
 import PostBlockquote from "./post-blockquote";
 import PostBuyMeCoffee from "./post-buy-me-coffee";
 
