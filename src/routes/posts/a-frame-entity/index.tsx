@@ -203,15 +203,15 @@ export default component$(() => {
                 <PostCode code={code16} language="typescript"></PostCode>
                 배열 프로퍼티 타입들은 특별하게 작동합니다:
                 <ul>
-                    <post-list>
+                    <li>
                         배열은 변경 가능합니다. 배열에 대한 변경 사항이
                         컴포넌트에서 볼 수 있도록 참조로 할당됩니다.
-                    </post-list>
-                    <post-list>
+                    </li>
+                    <li>
                         배열 유형 속성에 대한 업데이트는 컴포넌트의
                         update메서드를 트리거 하거나 이벤트를 내 보내지 않습니다
                         .
-                    </post-list>
+                    </li>
                 </ul>
                 <PostTitle subtitle="Putting Multi-Property Component Data"></PostTitle>
                 만약 .setAttribute의 세번째 인자로 true값을 주게되면, 지정되지

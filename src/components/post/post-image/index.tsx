@@ -1,31 +1,20 @@
-import { component$ } from "@builder.io/qwik";
-
+import { component$, useStylesScoped$ } from "@builder.io/qwik";
+import styles from "./index.css?inline";
 interface PostImageProps {
-    width?: number;
+    width?: string;
     src: string;
     alt?: string;
     path?: string;
 }
 const PostImage = component$(({ width, src, alt, path }: PostImageProps) => {
-    const _width =
-        width || window.innerWidth < 720 ? window.innerWidth - 40 : 680;
-
-    const cloudinarySrc = src.replace(
-        "/upload/",
-        `/upload/f_auto,w_${_width}/`,
-    );
+    useStylesScoped$(styles);
     return (
-        <>
-            <a
-                href={src}
-                target="_blank"
-                rel="noreferrer"
-                style={`max-width:${width}px`}
-            >
-                <img src={cloudinarySrc} alt={alt} />
+        <div class="post-image">
+            <a href={src} target="_blank" rel="noreferrer">
+                <img src={src} alt={alt} />
             </a>
             <span>{alt}</span>
-        </>
+        </div>
     );
 });
 

@@ -10,7 +10,7 @@
     color: var(--grey);
 }
 @media (max-width: 700px) {
-    :host {
+    .post-body {
         width: auto;
         padding: 0 20px;
         font-size: 16px;
@@ -31,4 +31,19 @@ code {
     padding: 3px 4px;
     background-color: var(--lightgrey);
     color: var(--main);
+}
+.li {
+    display: block;
+    margin-bottom: 12px;
+}
+
+li::before {
+    content: "";
+    height: 8px;
+    margin: 9px 0 0;
+    width: 8px;
+    background: var(--grey);
+    border-radius: 50%;
+    left: 0;
+    position: absolute;
 }

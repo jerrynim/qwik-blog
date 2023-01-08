@@ -7,9 +7,9 @@ import "@components/post";
 @withPost
 export class LitTutorial4 extends LitElement {
     protected render() {
-        return html`<post-head-image
+        return html`<PostHeadImage
                 src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628066597/lit-blog/lit-post-head_tjswjn.jpg"
-            ></post-head-image>
+            ></PostHeadImage>
             <PostHead>
                 <h1>Lit 튜토리얼 (4/6)</h1>
                 <PostTag>lit lit-html lit-elemnt tutorial lifecycle</PostTag>
@@ -45,11 +45,11 @@ export class LitTutorial4 extends LitElement {
                 <PostCode code="{code2}" language="typescript"></PostCode>
                 속성에 ' . '을 제거하였을때 어떤 차이가 있는지 개발자도구의
                 'Element'탭을 보면 직접적으로 볼 수 있습니다.
-                <post-image
+                <PostImage
                     src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628509604/lit-blog/attribute_oflsk8.png"
                     alt="lit-element attribute 차이"
                     width=${200}
-                ></post-image>
+                ></PostImage>
                 'value=' 와 같이 속성이름 앞에 기호가 없다면 attribute로 바인딩
                 되게 됩니다.<br />
                 attribute를 전달해 주면 그림과 같이 html 속성으로 추가되는걸 볼
@@ -61,10 +61,10 @@ export class LitTutorial4 extends LitElement {
                 보도록 하겠습니다.
                 <PostCode code="{code4}" language="typescript"></PostCode>
                 'disabled'를 추가하려하니 다음과 같은 경고가 나오게 됩니다.
-                <post-image
+                <PostImage
                     src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628512409/lit-blog/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2021-08-09_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_9.33.09_qpb13r.png"
                     alt="disabled 사용시 경고"
-                ></post-image>
+                ></PostImage>
                 해당 attribute는 boolean 타입이므로 boolean 바인딩을 사용하라는
                 경고 입니다. boolean 바인딩을 사용하기 위해서는 속성앞에 '?' 를
                 추가해 주어야 합니다.
@@ -110,11 +110,11 @@ export class LitTutorial4 extends LitElement {
                     language="typescript"
                     filename="components/child-tomato.ts"
                 ></PostCode>
-                <post-image
+                <PostImage
                     src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628513748/lit-blog/result_mjkgyq.png"
                     alt="자식이 받은 값"
                     width=${300}
-                ></post-image>
+                ></PostImage>
                 attribute 인 'id'와, property인 '.value'값이 출력 된 것을 확인
                 할 수 있었습니다. 이벤트 헨들러와 disabled 값은 어떻게 받아와야
                 할까요?
@@ -152,20 +152,20 @@ export class LitTutorial4 extends LitElement {
                     language="typescript"
                     filename="components/child-tomao.ts"
                 ></PostCode>
-                <post-image
+                <PostImage
                     src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628596277/lit-blog/onchange_wryjcb.png"
                     width=${300}
                     alt="자식이 받은 onchange이벤트"
-                ></post-image>
+                ></PostImage>
                 이벤트 헨들러를 property로 전달해주었습니다. 전달받은 이벤트
                 헨들러를 ${"<input>"}태그의 @keyup 속성에 넣어주도록 하겠습니다.
                 그리고 전달받은 value를 띄우도록 하겠습니다.
                 <PostCode code="{code16}" language="typescript"></PostCode>
-                <post-image
+                <PostImage
                     src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628596419/lit-blog/keyup_iurtwj.png"
                     width=${300}
                     alt="keyup으로 인풋값 변경하기"
-                ></post-image>
+                ></PostImage>
                 인풋안에 값을 입력하면 콘솔에 입력값이 출력 되는 걸 확인 할 수
                 있습니다.하지만 'input value is tomaoto'는 변경되지 않는 걸로
                 보아 <code>${"<lit-tomato>"}</code>의 value가
@@ -179,11 +179,11 @@ export class LitTutorial4 extends LitElement {
                 ></PostCode>
                 이제 인풋에 값을 입력하면 ${""}태그안의 this.value 값도 변경되
                 는것을 확인 할 수 있습니다.
-                <post-image
+                <PostImage
                     src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628596576/lit-blog/%E1%84%8C%E1%85%A1%E1%84%89%E1%85%B5%E1%86%A8value_hy7yku.png"
                     width=${300}
                     alt="자식의 property"
-                ></post-image>
+                ></PostImage>
                 이처럼 커스텀 엘리먼트에 property를 바인딩 하기 위해선 커스텀
                 엘리먼트에서 property를 선언해 주어야 합니다.
                 <br /><br />
@@ -194,11 +194,11 @@ export class LitTutorial4 extends LitElement {
                 <code>>${"<child-tomato>"}</code>에 'disabled'라는 attribute를
                 가진 property를 만들어 보도록 하겠습니다.
                 <PostCode code="{code18}" language="typescript"></PostCode>
-                <post-image
+                <PostImage
                     src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628597209/lit-blog/disabled-input_cnnbfz.png"
                     width=${100}
                     alt="disabled-input"
-                ></post-image>
+                ></PostImage>
                 <code>${"<lit-tomato>"}</code>의 disabled 값은 'true'로 disabled
                 값이 잘 적용 된 것을 확인할 수 있습니다.
                 <PostTitle subtitle>children </PostTitle>
@@ -214,11 +214,11 @@ export class LitTutorial4 extends LitElement {
                     language="typescript"
                     filename="components/child-tomato.ts"
                 ></PostCode>
-                <post-image
+                <PostImage
                     src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628597444/lit-blog/%E1%84%8C%E1%85%A1%E1%84%89%E1%85%B5%E1%86%A8_fjdwka.png"
                     width=${100}
                     alt="전달할 자식: 텍스트"
-                ></post-image>
+                ></PostImage>
                 자식을 나타내려면 어떻게 해야할까요?<br />
                 첫번째 방법은 간단하게 this.children을 사용하면 됩니다.
                 <PostCode code="{code21}" language="typescript"></PostCode>
@@ -238,7 +238,7 @@ export class LitTutorial4 extends LitElement {
     }
 }
 
-const code1 = `@customElement("lit-tomato")
+export const code1 = `@customElement("lit-tomato")
 class Tomato extends LitElement {
   @property() value = "";
 
@@ -252,10 +252,10 @@ class Tomato extends LitElement {
   }
 }`;
 
-const code2 = `return html&backtick; <input value="&dollar;{this.value}" @keyup="&dollar;{this.onChange}" /> &backtick;;
+export const code2 = `return html&backtick; <input value="&dollar;{this.value}" @keyup="&dollar;{this.onChange}" /> &backtick;;
 `;
 
-const code3 = `render() {
+export const code3 = `render() {
   return html&backtick;
     <input
       id="my-input"
@@ -268,13 +268,13 @@ const code3 = `render() {
     &backtick;
 }`;
 
-const code4 = `<input
+export const code4 = `<input
 .value="&dollar;{this.value}"
 @keyup="&dollar;{this.onChange}"
 disabled="${false}"
 />`;
 
-const code5 = `@property() value = "4";
+export const code5 = `@property() value = "4";
 @property({ type: Boolean }) disabled = false;
 
 onChange(e) {
@@ -292,7 +292,7 @@ render() {
     &backtick;;
 }`;
 
-const code6 = `import { LitElement, html, customElement, property } from "lit-element";
+export const code6 = `import { LitElement, html, customElement, property } from "lit-element";
 import "../components/child-tomato";
 
 @customElement("lit-tomato")
@@ -308,7 +308,7 @@ declare global {
   }
 }`;
 
-const code7 = `import { LitElement, html, customElement, property } from "lit-element";
+export const code7 = `import { LitElement, html, customElement, property } from "lit-element";
 
 @customElement("child-tomato")
 class ChildTomato extends LitElement {
@@ -327,7 +327,7 @@ declare global {
   }
 }`;
 
-const code8 = `@property({ type: String }) value = "toamto";
+export const code8 = `@property({ type: String }) value = "toamto";
 @property({ type: Boolean }) disabled = true;
 
 onChange(e) {
@@ -335,14 +335,14 @@ onChange(e) {
   console.log(e.target.value);
 }`;
 
-const code9 = `<child-tomato
+export const code9 = `<child-tomato
 id="my-input"
 .value="&dollar;{this.value}"
 @change="&dollar;{this.onChange}"
 ?disabled="&dollar;{this.disabled}"
 ></child-tomato>`;
 
-const code10 = `class ChildTomato extends LitElement {
+export const code10 = `class ChildTomato extends LitElement {
   //*connectedCallback은 커스텀 엘리먼트가 문서의 DOM에 처음 연결될 때 호출됩니다.
   connectedCallback() {
     super.connectedCallback();
@@ -352,7 +352,7 @@ const code10 = `class ChildTomato extends LitElement {
     console.log(this.disabled);
   }`;
 
-const code11 = `connectedCallback() {
+export const code11 = `connectedCallback() {
     super.connectedCallback();
 
     this.dispatchEvent(new Event("change"));
@@ -363,25 +363,25 @@ const code11 = `connectedCallback() {
     // console.log(this.disabled);
   }`;
 
-const code12 = `<child-tomato
+export const code12 = `<child-tomato
   @jerrynim-custom-event="&dollar;{this.onChange}"
 ></child-tomato>`;
-const code13 = `class ChildTomato extends LitElement {
+export const code13 = `class ChildTomato extends LitElement {
   connectedCallback() {
     super.connectedCallback();
 
     this.dispatchEvent(new Event("jerrynim-custom-event"));`;
 
-const code14 = `<child-tomato
+export const code14 = `<child-tomato
 .onchange="&dollar;{this.onChange}"
 ></child-tomato>`;
 
-const code15 = `connectedCallback() {
+export const code15 = `connectedCallback() {
   super.connectedCallback();
   console.log(this.onchange);
 }`;
 
-const code16 = `class ChildTomato extends LitElement {
+export const code16 = `class ChildTomato extends LitElement {
   customFunction: any;
 
   render() {
@@ -394,10 +394,10 @@ const code16 = `class ChildTomato extends LitElement {
   }
 }`;
 
-const code17 = `class ChildTomato extends LitElement {
+export const code17 = `class ChildTomato extends LitElement {
   @property({ type: String }) value = "";`;
 
-const code18 = `@property({ type: Boolean, attribute: "disabled" }) disabledValue = false;
+export const code18 = `@property({ type: Boolean, attribute: "disabled" }) disabledValue = false;
 
 <input
    .value="&dollar;{this.value}"
@@ -405,7 +405,7 @@ const code18 = `@property({ type: Boolean, attribute: "disabled" }) disabledValu
    ?disabled="&dollar;{this.disabledValue}"
  />`;
 
-const code19 = `import { LitElement, html, customElement, property } from "lit-element";
+export const code19 = `import { LitElement, html, customElement, property } from "lit-element";
 import "../components/child-tomato";
 
 @customElement("lit-tomato")
@@ -421,7 +421,7 @@ declare global {
   }
 }`;
 
-const code20 = `import { LitElement, html, customElement, property } from "lit-element";
+export const code20 = `import { LitElement, html, customElement, property } from "lit-element";
 
 @customElement("child-tomato")
 class ChildTomato extends LitElement {
@@ -440,7 +440,7 @@ declare global {
 }
 `;
 
-const code21 = `class TomatoChild extends LitElement {
+export const code21 = `class TomatoChild extends LitElement {
   render() {
     return html&backtick;
       <style></style>

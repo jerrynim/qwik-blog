@@ -7,7 +7,7 @@ import "@components/post";
 @withPost
 export class WhatIsCjsEsm extends LitElement {
     protected render() {
-        return html`<post-head-image src=""></post-head-image>
+        return html`<PostHeadImage src=""></PostHeadImage>
             <PostHead>
                 <h1>자바스크립트에서 CJS,ESM 은 대체 뭘까?</h1>
                 <PostTag>cjs esm javascript</PostTag>
@@ -28,14 +28,13 @@ export class WhatIsCjsEsm extends LitElement {
                 <PostTitle subtitle>CJS</PostTitle>
                 CJS는 Common JS의 줄임말입니다.
                 <ul>
-                    <post-list
-                        >여러분 중 일부는 노드에서 CJS 구문을 즉시 인식할 수
-                        있다. 노드가 CJS 모듈 포맷을 사용하기
-                        때문이다.</post-list
-                    >
-                    <post-list>동기적으로 모듈을 import 한다.</post-list>
-                    <post-list
-                        >node_modules 또는 로컬 디렉토리에서 라이브러리를 import
+                    <li>
+                        여러분 중 일부는 노드에서 CJS 구문을 즉시 인식할 수
+                        있다. 노드가 CJS 모듈 포맷을 사용하기 때문이다.
+                    </li>
+                    <li>동기적으로 모듈을 import 한다.</li>
+                    <li>
+                        node_modules 또는 로컬 디렉토리에서 라이브러리를 import
                         할 수 있다. 어느 쪽이든
                         <PostCode
                             language="typescript"
@@ -46,41 +45,37 @@ export class WhatIsCjsEsm extends LitElement {
                             code="var React = require('react');"
                         ></PostCode>
                         처럼 작동한다.
-                    </post-list>
-                    <post-list
-                        >import 할 때, import 한 객체의 복제를 줍니다.
-                    </post-list>
-                    <post-list
-                        >브라우저에서 작동하지 않을 것이다. 트랜스 파일 되어야
+                    </li>
+                    <li>import 할 때, import 한 객체의 복제를 줍니다.</li>
+                    <li>
+                        브라우저에서 작동하지 않을 것이다. 트랜스 파일 되어야
                         하고 번들 되어야 한다.
-                    </post-list>
+                    </li>
                 </ul>
                 <PostTitle subtitle>ESM</PostTitle>
                 ESM은 ES Modules를 의미한다. 표준 모듈 시스템을 구현하자는 것이
                 자바스크립트의 제안이다. 나는 여러분 중 많은 사람들이 이것을
                 봤을 것이라고 확신한다.
                 <ul>
-                    <post-list>많은 최신 브라우저에서 사용 가능</post-list>
-                    <post-list
-                        >CJS와 같은 단순한 구문과 AMD의 비동기식 구문 두 가지
-                        장점을 모두 갖췄다.</post-list
-                    >
-                    <post-list
-                        >ES6의 정적 모듈 구조로 인해 트리 쉐이킹 가능</post-list
-                    >
-                    <post-list
-                        >E롤업과 같은 번들러가 불필요한 코드를 제거할 수 있도록
+                    <li>많은 최신 브라우저에서 사용 가능</li>
+                    <li>
+                        CJS와 같은 단순한 구문과 AMD의 비동기식 구문 두 가지
+                        장점을 모두 갖췄다.
+                    </li>
+                    <li>ES6의 정적 모듈 구조로 인해 트리 쉐이킹 가능</li>
+                    <li>
+                        E롤업과 같은 번들러가 불필요한 코드를 제거할 수 있도록
                         허용하고, 사이트는 더 빠른 로드를 얻기 위해 더 적은
-                        코드를 발송할 수 있다.</post-list
-                    >
-                    <post-list
-                        >HTML로 호출할 수 있는 작업:
+                        코드를 발송할 수 있다.
+                    </li>
+                    <li>
+                        HTML로 호출할 수 있는 작업:
 
                         <PostCode
                             code="{code1}"
                             language="typescript"
                         ></PostCode>
-                    </post-list>
+                    </li>
                 </ul>
 
                 좀 더 자세한 내용은 다음글을 읽으시는 것을 추천드립니다.
@@ -98,7 +93,7 @@ declare global {
     }
 }
 
-const code1 = `<script type="module">
+export const code1 = `<script type="module">
 import {func1} from 'my-lib';
 
 func1();

@@ -7,9 +7,9 @@ import "@components/post";
 @withPost
 export class PromiseSynchronize extends LitElement {
     protected render() {
-        return html`<post-head-image
+        return html`<PostHeadImage
                 src="https://res.cloudinary.com/dij9kacx9/image/upload/v1649685641/lit-blog/inarow_ycwyg4.jpg"
-            ></post-head-image>
+            ></PostHeadImage>
             <PostHead>
                 <h1>Promise 순차실행하기</h1>
                 <PostTag>javascript promise synchronize 순차실행</PostTag>
@@ -62,14 +62,14 @@ declare global {
     }
 }
 
-const code1 = `const wait = (time) =>
+export const code1 = `const wait = (time) =>
 new Promise((resolve) => {
     setTimeout(() => {
         resolve();
     }, time);
 });`;
 
-const code2 = `const func1 = async () => {
+export const code2 = `const func1 = async () => {
     await wait(1000);
     console.log("1 done");
 };
@@ -81,26 +81,26 @@ const func2 = async () => {
 
 func1().then(func2)`;
 
-const code3 = `1 done
+export const code3 = `1 done
 2 done`;
 
-const code4 = `[func1, func2].reduce((p, f) => p.then(f), Promise.resolve());
+export const code4 = `[func1, func2].reduce((p, f) => p.then(f), Promise.resolve());
 `;
 
-const code5 = `const run = async () => {
+export const code5 = `const run = async () => {
     await func1();
     await func2();
 };
 run();`;
 
-const code6 = `const run = async () => {
+export const code6 = `const run = async () => {
     for (const func of promises) {
         await func();
     }
 };
 run();`;
 
-const code7 = `promises.reduce(async (prev, current) => {
+export const code7 = `promises.reduce(async (prev, current) => {
     await prev;
     return current();
 }, Promise.resolve());`;

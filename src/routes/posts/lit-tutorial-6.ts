@@ -7,9 +7,9 @@ import "@components/post";
 @withPost
 export class LitTutorial6 extends LitElement {
     protected render() {
-        return html`<post-head-image
+        return html`<PostHeadImage
                 src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628066597/lit-blog/lit-post-head_tjswjn.jpg"
-            ></post-head-image>
+            ></PostHeadImage>
             <PostHead>
                 <h1>Lit 튜토리얼 (6/6)</h1>
                 <PostTag>lit lit-html lit-elemnt tutorial route</PostTag>
@@ -24,7 +24,7 @@ export class LitTutorial6 extends LitElement {
                 <PostLink href="https://vaadin.com/router"
                     >'@vaadin/router'</PostLink
                 >라는 라이브러리를 설치하도록 하겠습니다.
-                <post-blockquote>yarn add @vaadin/router </post-blockquote>
+                <postBlockquote>yarn add @vaadin/router </post-blockquote>
                 '@vaadin/router'는 A CLIENT-SIDE ROUTER FOR WEB COMPONENTS, 웹
                 컴포넌트를 위한 클라이언트 사이드 라우터 입니다. 이전에는
                 'index.html'안에 웹 컴포넌트를 직접 불러와 사용하였지만
@@ -52,10 +52,10 @@ export class LitTutorial6 extends LitElement {
                 '/lit-potato'경로를 주소창에 입력해 본다면
                 'lit-potato'컴포넌트가 <code>${"<main>"}</code>태그 안에 렌더링
                 된 것을 확인 할수 있었습니다.
-                <post-image
+                <PostImage
                     src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628986122/lit-blog/vaading-route_yntkky.png"
                     alt="라우트 렌더링 확인"
-                ></post-image>
+                ></PostImage>
                 이번에는 depth가 있는 경로를 가진 컴포넌트를 다뤄보겠습니다.
                 경로가 '/vegetable/lit-tomato'라면 어떻게 만들어야 할까요?<br />
                 간단하게 path를 경로와 맞게 설정해주면 됩니다.
@@ -81,12 +81,12 @@ export class LitTutorial6 extends LitElement {
     }
 }
 
-const code1 = `<body>
+export const code1 = `<body>
 <main></main>
   <script src="/vendor/webcomponents-loader.js"></script>
 </body>`;
 
-const code2 = `import "./styles/styles.css";
+export const code2 = `import "./styles/styles.css";
 import "./pages/lit-tomato";
 import { Router } from "@vaadin/router";
 
@@ -104,7 +104,7 @@ function initRouter() {
   ]);
 }`;
 
-const code3 = `function initRouter() {
+export const code3 = `function initRouter() {
   const router = new Router(document.querySelector("main"));
   router.setRoutes([
     {
@@ -121,18 +121,18 @@ const code3 = `function initRouter() {
   ]);
 }`;
 
-const code4 = `{
+export const code4 = `{
   path: "/vegetable/lit-tomato",
   component: "lit-tomato",
 },`;
 
-const code5 = `{
+export const code5 = `{
   path: "/vegetable",
   component: "lit-tomato",
   children: [{ path: "/lit-tomato", component: "lit-tomato" }],
 },`;
 
-const code6 = `{
+export const code6 = `{
   path: "/vegetable/:name",
   component: "lit-tomato",
 },`;

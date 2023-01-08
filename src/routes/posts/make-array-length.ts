@@ -7,7 +7,7 @@ import "@components/post";
 @withPost
 export class MakeArrayLength extends LitElement {
     protected render() {
-        return html`<post-head-image src=""></post-head-image>
+        return html`<PostHeadImage src=""></PostHeadImage>
             <PostHead>
                 <h1>간단한 원하는 길이의 배열 만들기</h1>
                 <PostTag>simple make array length array from</PostTag>
@@ -35,9 +35,10 @@ declare global {
     }
 }
 
-const code1 = "const array = Array.from({ length: 20 }, (_, index) => index);";
+export const code1 =
+    "const array = Array.from({ length: 20 }, (_, index) => index);";
 
-const code2 = `[
+export const code2 = `[
   0,  1,  2,  3,  4,  5,  6,
   7,  8,  9, 10, 11, 12, 13,
  14, 15, 16, 17, 18, 19

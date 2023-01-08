@@ -7,9 +7,9 @@ import "@components/post";
 @withPost
 export class VanillaRoute extends LitElement {
     protected render() {
-        return html`<post-head-image
+        return html`<PostHeadImage
                 src="https://res.cloudinary.com/dij9kacx9/image/upload/v1635330118/lit-blog/route_fjzln0.jpg"
-            ></post-head-image>
+            ></PostHeadImage>
             <PostHead>
                 <h1>Vanilla Javascript SPA만들기</h1>
                 <PostTag>Vanilla Javascript SPA 라우팅</PostTag>
@@ -91,7 +91,7 @@ export class VanillaRoute extends LitElement {
                 <code>locationchange</code> 이벤트가 항상 같은 주소로 이동하는
                 것은 아니기에 변경할 주소를 인자로 받을 수 있도록 하도록
                 하겠습니다.
-                <post-blockquote>
+                <postBlockquote>
                     커스텀 이벤트를 생성할 때에 detail에 값을 주어 원하는 변수를
                     전달할 수 있습니다.
                 </post-blockquote>
@@ -164,20 +164,20 @@ export class VanillaRoute extends LitElement {
     }
 }
 
-const code1 = `<!DOCTYPE html>
+export const code1 = `<!DOCTYPE html>
 <html>
     <body>
         <main></main>
     </body>
 </html>`;
 
-const code2 = `window.onload = () => {
+export const code2 = `window.onload = () => {
     const main = document.querySelector("main");
     main.innerHTML = "<div>js loaded</div>";
 };
 `;
 
-const code3 = `<!DOCTYPE html>
+export const code3 = `<!DOCTYPE html>
 <html>
     <body>
         <script src="./index.js"></a>
@@ -185,7 +185,7 @@ const code3 = `<!DOCTYPE html>
     </body>
 </html>`;
 
-const code5 = `window.onload = () => {
+export const code5 = `window.onload = () => {
     const main = document.querySelector("main");
 
     const handleLocationChange = (e) => {
@@ -199,9 +199,9 @@ const code5 = `window.onload = () => {
 `;
 
 //prettier-ignore
-const code6 = "window.history.pushState(undefined,\"타이틀\",\"/some\")";
+export const code6 = "window.history.pushState(undefined,\"타이틀\",\"/some\")";
 
-const code7 = `window.onload = () => {
+export const code7 = `window.onload = () => {
     const main = document.querySelector("main");
 
     const handleLocationChange = (e) => {
@@ -227,7 +227,7 @@ const code7 = `window.onload = () => {
 };
 `;
 
-const code8 = `window.onload = () => {
+export const code8 = `window.onload = () => {
     const main = document.querySelector("main");
 
     const handleLocationChange = (e) => {
@@ -256,7 +256,7 @@ const code8 = `window.onload = () => {
 };
 `;
 
-const code9 = `   //* 경로에 맞는 콘텐츠 렌더
+export const code9 = `   //* 경로에 맞는 콘텐츠 렌더
 const renderContents = () => {
     const { pathname } = window.location;
     switch (pathname) {
@@ -277,11 +277,11 @@ const handleLocationChange = (e) => {
     renderContents();
 };`;
 
-const code10 = `window.addEventListener("popstate", () => {
+export const code10 = `window.addEventListener("popstate", () => {
     renderContents();
 });`;
 
-const code11 = `button.addEventListener("click", () => {
+export const code11 = `button.addEventListener("click", () => {
     const targetUrl = "some?foo=bar";
     const { pathname } = window.location;
 

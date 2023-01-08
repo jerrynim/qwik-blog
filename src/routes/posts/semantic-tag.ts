@@ -7,9 +7,9 @@ import "@components/post";
 @withPost
 export class Semantictag extends LitElement {
     protected render() {
-        return html`<post-head-image
+        return html`<PostHeadImage
                 src="https://res.cloudinary.com/dij9kacx9/image/upload/v1633620056/lit-blog/semantic_wlbgsb.jpg"
-            ></post-head-image>
+            ></PostHeadImage>
             <PostHead>
                 <h1>시맨틱 태그</h1>
                 <PostTag>시맨틱 태그 semantic tag no only use div</PostTag>
@@ -29,7 +29,7 @@ export class Semantictag extends LitElement {
                     >시맨틱 태그(Semantic Tag)</PostLink
                 >와 관련이 깊습니다.
                 <br />
-                <post-blockquote>
+                <postBlockquote>
                     시맨틱 태그(Semantic Tag)는 의미있는 태그라는 뜻으로,
                     콘텐츠의 내용을 유추 할 수 있도록 이름 지어진 태그를
                     말합니다.
@@ -38,24 +38,23 @@ export class Semantictag extends LitElement {
                 사용하면 다음과 같은 이점을 얻을 수 있습니다.
                 <PostTitle subtitle>시맨틱 태그의 특징</PostTitle>
                 <ul>
-                    <post-list
-                        >개발자와 브라우저에 태그의 의미를 알려줄 수 있다. 이는
+                    <li>
+                        개발자와 브라우저에 태그의 의미를 알려줄 수 있다. 이는
                         html 구문을 분리하는데 유용하며, 가독성 또한 좋아진다.
                         또한 태그가 가진 기본 기능이나 스타일이 개발을 편리하게
-                        해준다.</post-list
-                    >
-                    <post-list
-                        >SEO에 유리하다.<br />
+                        해준다.
+                    </li>
+                    <li>
+                        SEO에 유리하다.<br />
                         사람은 페이지를 보고 무엇이 제목이고 콘텐츠인지 구분이
                         가능하지만, 로봇은 구분 할 수 없습니다. 시맨틱 태그를
-                        통해 로봇에게 유의미한 콘텐츠를 제공할 수
-                        있습니다.</post-list
-                    >
-                    <post-list
-                        >웹 접근성에 좋지 않다.<br />
+                        통해 로봇에게 유의미한 콘텐츠를 제공할 수 있습니다.
+                    </li>
+                    <li>
+                        웹 접근성에 좋지 않다.<br />
                         스크린 리더기는 태그를 통해 콘텐츠를 분류하고
                         읽어줍니다.
-                    </post-list>
+                    </li>
                 </ul>
 
                 또한 <code>${"<div>"}</code> 태그는
@@ -64,28 +63,28 @@ export class Semantictag extends LitElement {
                 이는 디버깅시 불편하게 만듭니다.
                 <PostTitle subtitle>시맨틱 태그의 종류</PostTitle>
                 <ul>
-                    <post-list> ${"<article>"}</post-list>
-                    <post-list> ${"<aside>"}</post-list>
-                    <post-list> ${"<figcaption>"}</post-list>
-                    <post-list> ${"<figure>"}</post-list>
-                    <post-list> ${"<footer>"}</post-list>
-                    <post-list> ${"<header>"}</post-list>
-                    <post-list> ${"<main>"}</post-list>
-                    <post-list> ${"<mark>"}</post-list>
-                    <post-list> ${"<nav>"}</post-list>
-                    <post-list> ${"<section>"}</post-list>
-                    <post-list> ${"<summary>"}</post-list>
-                    <post-list> ${"<time>"}</post-list>
+                    <li>${"<article>"}</li>
+                    <li>${"<aside>"}</li>
+                    <li>${"<figcaption>"}</li>
+                    <li>${"<figure>"}</li>
+                    <li>${"<footer>"}</li>
+                    <li>${"<header>"}</li>
+                    <li>${"<main>"}</li>
+                    <li>${"<mark>"}</li>
+                    <li>${"<nav>"}</li>
+                    <li>${"<section>"}</li>
+                    <li>${"<summary>"}</li>
+                    <li>${"<time>"}</li>
                 </ul>
-                <post-image
+                <PostImage
                     src="https://res.cloudinary.com/dij9kacx9/image/upload/v1633766070/lit-blog/img_sem_elements_j2mghy.gif"
                     alt="시맨틱 태그 이미지"
                     width="300"
-                ></post-image>
+                ></PostImage>
                 <PostTitle subtitle>넌 시맨틱 태그의 종류</PostTitle>
                 <ul>
-                    <post-list> ${"<div>"}</post-list>
-                    <post-list> ${"<span>"}</post-list>
+                    <li>${"<div>"}</li>
+                    <li>${"<span>"}</li>
                 </ul>
 
                 참고 :

@@ -7,7 +7,7 @@ import "@components/post";
 @withPost
 export class ReactNativeScrollViewInPan extends LitElement {
     protected render() {
-        return html`<post-head-image src=""></post-head-image>
+        return html`<PostHeadImage src=""></PostHeadImage>
             <PostHead>
                 <h1>react-native ScrollView in pan responder</h1>
                 <PostTag>react-native ScrollView in pan panresponder</PostTag>
@@ -32,7 +32,7 @@ export class ReactNativeScrollViewInPan extends LitElement {
                 <br />
                 I found solution for this,
                 <ul>
-                    <post-list>
+                    <li>
                         <PostTitle subtitle
                             >use react-native-gesture-handler</PostTitle
                         >
@@ -41,16 +41,16 @@ export class ReactNativeScrollViewInPan extends LitElement {
                         but i need to run it with 'react-native-web', WebView<br />
                         'react-native-gesture-handler' does not support this.
                         <br />I need to find way to support web
-                    </post-list>
-                    <post-list>
+                    </li>
+                    <li>
                         <PostTitle>stopPropagation in ScrollView</PostTitle>
                         'stop event propagation' works!
                         <PostCode
                             code="{code2}"
                             language="typescript"
                         ></PostCode>
-                    </post-list>
-                    <post-list>
+                    </li>
+                    <li>
                         <PostTitle>use inner View in ScrollView</PostTitle>
                         View which has property
                         'onResponderTerminationRequest={() => false}
@@ -60,13 +60,13 @@ export class ReactNativeScrollViewInPan extends LitElement {
                             code="{code3}"
                             language="typescript"
                         ></PostCode>
-                    </post-list>
+                    </li>
                 </ul>
             </PostBody>`;
     }
 }
 
-const code1 = `PanResponder.create({
+export const code1 = `PanResponder.create({
   onStartShouldSetPanResponder: () => true,
   onMoveShouldSetPanResponder: () => true,
   onPanResponderMove: (event, gestureState) => {}
@@ -80,12 +80,12 @@ const code1 = `PanResponder.create({
   </View>)
 `;
 
-const code2 = `<ScrollView onTouchMove={(e)=>{
+export const code2 = `<ScrollView onTouchMove={(e)=>{
   e.stopPropagation()
   ...
 }}>`;
 
-const code3 = `<ScrollView>
+export const code3 = `<ScrollView>
   <View
     onResponderTerminationRequest={() => false}
     onStartShouldSetResponder={() => true}

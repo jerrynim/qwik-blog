@@ -7,9 +7,9 @@ import "@components/post";
 @withPost
 export class LitTutorial3 extends LitElement {
     protected render() {
-        return html`<post-head-image
+        return html`<PostHeadImage
                 src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628066597/lit-blog/lit-post-head_tjswjn.jpg"
-            ></post-head-image>
+            ></PostHeadImage>
             <PostHead>
                 <h1>Lit 튜토리얼 (3/6)</h1>
                 <PostTag>lit lit-html lit-elemnt tutorial lifecycle</PostTag>
@@ -28,7 +28,7 @@ export class LitTutorial3 extends LitElement {
                 >
                 <PostTitle subtitle>웹 컴포넌트 라이프 사이클</PostTitle>
                 웹 컴포넌트의 기본 라이프사이클은 다음과 같습니다.
-                <post-blockquote>
+                <postBlockquote>
                     connectedCallback: 커스텀 엘리먼트가 문서의 DOM에 처음
                     연결될 때 호출됩니다. disconnectedCallback: 커스텀
                     엘리먼트가 문서의 DOM에서 연결 해제 될 때 호출됩니다.
@@ -36,11 +36,11 @@ export class LitTutorial3 extends LitElement {
                 conntectedCallback을 사용하여 리액트에서 componentDidMount처럼
                 이벤트를 추가하거나 데이터를 불러올 수 있습니다.
                 <PostCode code="{code1}" language="typescript"></PostCode>
-                <post-blockquote
+                <postBlockquote
                     >adoptedCallback: 커스텀 엘리먼트가 새 문서로 이동 될 때
                     호출됩니다.
                 </post-blockquote>
-                <post-blockquote
+                <postBlockquote
                     >attributeChangedCallback: 커스텀 엘리먼트의 속성 중 하나가
                     추가, 제거 또는 변경 될 때 호출됩니다.</post-blockquote
                 >
@@ -50,15 +50,15 @@ export class LitTutorial3 extends LitElement {
                 <PostTitle subtitle>property 변경 라이프사이클 </PostTitle>
                 엘리먼트의 property를 변경하게 될때의 라이프 사이클 순서입니다.
                 <ol>
-                    <post-list>someProperty.hasChanged </post-list>
-                    <post-list>requestUpdate</post-list>
-                    <post-list>performUpdate</post-list>
-                    <post-list>shouldUpdate</post-list>
-                    <post-list>update</post-list>
-                    <post-list>render</post-list>
-                    <post-list>firstUpdated</post-list>
-                    <post-list>updated</post-list>
-                    <post-list>updateComplete</post-list>
+                    <li>someProperty.hasChanged</li>
+                    <li>requestUpdate</li>
+                    <li>performUpdate</li>
+                    <li>shouldUpdate</li>
+                    <li>update</li>
+                    <li>render</li>
+                    <li>firstUpdated</li>
+                    <li>updated</li>
+                    <li>updateComplete</li>
                 </ol>
                 하나씩 살펴보도록 하겠습니다.
                 <PostTitle subtitle>1. someProperty.hasChanged</PostTitle>
@@ -81,10 +81,10 @@ export class LitTutorial3 extends LitElement {
                 true를 반환합니다.
                 <PostCode code="{code6}" language="typescript"></PostCode>
                 그림과 같이 콘솔에 변경된 값들의 이전 값이 출력 됩니다.
-                <post-image
+                <PostImage
                     src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628415451/lit-blog/shouldupdate_jkrccv.png"
                     alt="shouldUpdate lifecycle"
-                ></post-image>
+                ></PostImage>
                 <PostTitle subtitle>5. update</PostTitle>
                 reflects property values to attributes(property값들을
                 attributes에 반영합니다. lit-html의 render를 호출 합니다.
@@ -103,20 +103,20 @@ export class LitTutorial3 extends LitElement {
                 <PostTitle subtitle>한번에 보기 </PostTitle>
                 <PostCode code="{code10}" language="typescript"></PostCode>
                 실행한 후 처음 페이지에 접속하여 커스텀 엘리먼트를 불러왔을 때
-                <post-image
+                <PostImage
                     src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628415734/lit-blog/lifecycle-first_aclapt.png"
                     alt="lit-element render lifecycle"
-                ></post-image>
+                ></PostImage>
                 버튼을 클릭하였을 때
-                <post-image
+                <PostImage
                     src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628415781/lit-blog/update-lifecycle_xl4zlc.png"
                     alt="lit-element update lifecycle"
-                ></post-image>
+                ></PostImage>
             </PostBody>`;
     }
 }
 
-const code1 = `
+export const code1 = `
 connectedCallback() {
     super.connectedCallback();
     window.addEventListener('resize', this._handleResize);
@@ -126,12 +126,12 @@ connectedCallback() {
     super.disconnectedCallback();
   }`;
 
-const code2 = `attributeChangedCallback(name, oldValue, newValue) {
+export const code2 = `attributeChangedCallback(name, oldValue, newValue) {
     super.attributeChangedCallback(name, oldValue, newValue);
     console.log(name, oldValue, newValue);
   }
 }`;
-const code3 = `@property({
+export const code3 = `@property({
     hasChanged: (newVal, oldVal) => {
       console.log("has changed", oldVal, " to ", newVal);
       return true;
@@ -139,7 +139,7 @@ const code3 = `@property({
   })
   name = "original-name";`;
 
-const code4 = `@customElement("lit-tomato")
+export const code4 = `@customElement("lit-tomato")
 class Tomato extends LitElement {
   private _name: string = "original-name";
 
@@ -170,35 +170,35 @@ class Tomato extends LitElement {
   }
 }`;
 
-const code5 = `async performUpdate() {
+export const code5 = `async performUpdate() {
     console.log("performUpdate");
     await new Promise((resolve) => requestAnimationFrame(() => resolve()));
     super.performUpdate();
   }`;
 
-const code6 = `shouldUpdate(changeProperties) {
+export const code6 = `shouldUpdate(changeProperties) {
     console.log("shouldUpdate?", changeProperties);
     super.shouldUpdate(changeProperties);
     return true;
   }`;
 
-const code7 = `firstUpdated(changedProperties) {
+export const code7 = `firstUpdated(changedProperties) {
     console.log("first updated!");
     super.firstUpdated(changedProperties);
   }`;
 
-const code8 = `updated(changedProperties) {
+export const code8 = `updated(changedProperties) {
     console.log("updated", changedProperties);
     super.updated(changedProperties);
   }`;
 
-const code9 = `async changeProperties() {
+export const code9 = `async changeProperties() {
     this.name = "changed-name";
     await this.updateComplete;
     console.log("update completed!");
   }`;
 
-const code10 = `@customElement("lit-tomato")
+export const code10 = `@customElement("lit-tomato")
   class Tomato extends LitElement {
     @property({
       hasChanged: (newVal, oldVal) => {

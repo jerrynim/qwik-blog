@@ -73,7 +73,7 @@ interface PostHeadImageProps {
 const PostHeadImage = component$(({ src }: PostHeadImageProps) => {
     useStylesScoped$(styles);
     return (
-        <div class="post-head-image-wrapper">
+        <div class="PostHeadImage-wrapper">
             <div
                 style={`background-image: url(${src || getRandomHeadImage()});`}
             ></div>

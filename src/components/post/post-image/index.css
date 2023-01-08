@@ -11,6 +11,8 @@ a {
     display: block;
     text-align: center;
     margin: auto;
+    width: 100%;
+    max-width: 680px;
 }
 img {
     width: 100%;

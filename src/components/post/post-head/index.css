@@ -13,7 +13,7 @@ h1 {
     font-weight: bold;
 }
 @media (max-width: 700px) {
-    :host {
+    .post-head {
         width: auto;
         padding: 0 20px;
         margin-bottom: 20px;

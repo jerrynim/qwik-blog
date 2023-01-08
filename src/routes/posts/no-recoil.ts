@@ -7,9 +7,9 @@ import "@components/post";
 @withPost
 export class NoRecoil extends LitElement {
     protected render() {
-        return html`<post-head-image
+        return html`<PostHeadImage
                 src="https://res.cloudinary.com/dij9kacx9/image/upload/v1640095781/lit-blog/nono_knwr4l.jpg"
-            ></post-head-image>
+            ></PostHeadImage>
             <PostHead>
                 <h1>리코일을 안쓰기로한다</h1>
                 <PostTag>no recoil i like redux</PostTag>
@@ -53,7 +53,7 @@ export class NoRecoil extends LitElement {
     }
 }
 
-const code1 = `class Component extends React.Component {
+export const code1 = `class Component extends React.Component {
     ws = null;
 
     static send() {
@@ -65,14 +65,14 @@ const code1 = `class Component extends React.Component {
     }
 }`;
 
-const code2 = `let ws = null
+export const code2 = `let ws = null
 
 const connect = () =>{
     ws = new WebSocket("htttps://")
 }
 `;
 
-const code3 = `class WebSocket {
+export const code3 = `class WebSocket {
 	webSocket: WebSocket | null = null
 
 	connectWebSocket() {
@@ -82,7 +82,7 @@ const code3 = `class WebSocket {
 const ws = new WebSocket()    
 `;
 
-const code4 = `
+export const code4 = `
 const onMessage = (message: any) => {
     setRecoilValue(message.data);
 }

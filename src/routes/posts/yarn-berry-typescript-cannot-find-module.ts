@@ -7,7 +7,7 @@ import "@components/post";
 @withPost
 export class YarnBerryTypescriptCannotFindModule extends LitElement {
     protected render() {
-        return html`<post-head-image src=""></post-head-image>
+        return html`<PostHeadImage src=""></PostHeadImage>
             <PostHead>
                 <h1>yarn berry cannot find module 해결</h1>
                 <PostTag>yarn berry cannot find module vscode</PostTag>
@@ -39,6 +39,6 @@ declare global {
     }
 }
 
-const code1 = `yarn add @yarnpkg/sdks -D
+export const code1 = `yarn add @yarnpkg/sdks -D
 yarn dlx @yarnpkg/sdks vscode
 `;

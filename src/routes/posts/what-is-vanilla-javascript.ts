@@ -7,9 +7,9 @@ import { withPost } from "@lib/decorators";
 @withPost
 export class WhatIsVanillaJavascript extends LitElement {
     protected render() {
-        return html`<post-head-image
+        return html`<PostHeadImage
                 src="https://res.cloudinary.com/dij9kacx9/image/upload/v1633615729/lit-blog/vanila_azzeyy.jpg"
-            ></post-head-image>
+            ></PostHeadImage>
             <PostHead>
                 <h1>vanilla Javascript 란?</h1>
                 <PostTag>vanilla javascript 바닐라 자바스크립트</PostTag>
@@ -40,10 +40,10 @@ export class WhatIsVanillaJavascript extends LitElement {
                     href="https://snipcart.com/blog/learn-vanilla-javascript-before-using-js-frameworks"
                     >learn-vanilla-javascript-before-using-js-frameworks</PostLink
                 >
-                <post-image
+                <PostImage
                     src="https://res.cloudinary.com/dij9kacx9/image/upload/v1633618588/lit-blog/vanilla_b5tzys.png"
                     alt="vanilla-js logo"
-                ></post-image>
+                ></PostImage>
             </PostBody>`;
     }
 }

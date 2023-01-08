@@ -8,9 +8,9 @@ import "@components/post";
 export class WritingBook1 extends LitElement {
     protected render() {
         return html`
-            <post-head-image
+            <PostHeadImage
                 src="https://res.cloudinary.com/dij9kacx9/image/upload/v1627115456/lit-blog/Desktop_-_3_yx69ez.jpg"
-            ></post-head-image>
+            ></PostHeadImage>
             <post-head id="책">
                 <h1>책을 쓰게 된 이야기 - 1부</h1>
                 <PostTag>개발 책 집필 Next.js</PostTag>

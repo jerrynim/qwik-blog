@@ -7,9 +7,9 @@ import "@components/post";
 @withPost
 export class LitTutorial5 extends LitElement {
     protected render() {
-        return html`<post-head-image
+        return html`<PostHeadImage
                 src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628066597/lit-blog/lit-post-head_tjswjn.jpg"
-            ></post-head-image>
+            ></PostHeadImage>
             <PostHead>
                 <h1>Lit 튜토리얼 (5/6)</h1>
                 <PostTag>lit lit-html lit-elemnt tutorial redux</PostTag>
@@ -21,7 +21,7 @@ export class LitTutorial5 extends LitElement {
 
                 리덕스를 사용하는데 필요한 라이브러리들을 설치해 주도록
                 하겠습니다.
-                <post-blockquote
+                <postBlockquote
                     >yarn add redux @reduxjs/toolkit pwa-helpers
                 </post-blockquote>
                 리덕스 툴킷을 이용하여 간단하게 스토어와 간단한 모듈을 만들도록
@@ -54,25 +54,25 @@ export class LitTutorial5 extends LitElement {
                 <PostCode code="{code5}" language="typescript"></PostCode>
                 앞의 코드의 실행 결과 리덕스 값인 'redux-tomato'를 불러 올 수
                 있게 되었습니다.
-                <post-image
+                <PostImage
                     src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628775156/lit-blog/redux-tomato_vvu3hw.png"
                     width=${200}
                     alt="lit-element redux 사용하기"
-                ></post-image>
+                ></PostImage>
                 <PostTitle subtitle>스토어 업데이트하기 </PostTitle>디스패치를
                 하여 리덕스의 name값을 변경해보도록 하겠습니다.
                 <PostCode code="{code6}" language="typescript"></PostCode>
                 버튼을 클릭하면 액션을 디스패치하여 값이 변경되고, 바인딩된
                 name도 변경되는 것을 확인 할 수 있었습니다.
-                <post-image
+                <PostImage
                     src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628775273/lit-blog/redux-update_wcms8x.png"
                     alt="lit-elemnt redux update"
-                ></post-image>
+                ></PostImage>
             </PostBody>`;
     }
 }
 
-const code1 = `import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+export const code1 = `import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface VegetableState {
   name: string;
@@ -96,7 +96,7 @@ export const vegetableActions = { ...vegetable.actions };
 
 export default vegetable;`;
 
-const code2 = `import { combineReducers, configureStore } from "@reduxjs/toolkit";
+export const code2 = `import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import vegetable from "./vegetable";
 
 const rootReducer = combineReducers({
@@ -111,7 +111,7 @@ export const store = configureStore({
 });
 `;
 
-const code3 = `import {
+export const code3 = `import {
     combineReducers,
     configureStore,
     getDefaultMiddleware,
@@ -150,13 +150,13 @@ const code3 = `import {
   
   (store as SagaStore).sagaTask = sagaMiddleware.run(rootSaga);`;
 
-const code4 = `import { connect } from "pwa-helpers";
+export const code4 = `import { connect } from "pwa-helpers";
 import { store } from "../store";
 
 class Tomato extends connect(store)(LitElement) {
 `;
 
-const code5 = `import { LitElement, html, customElement, property } from "lit-element";
+export const code5 = `import { LitElement, html, customElement, property } from "lit-element";
 import "../components/child-tomato";
 import { connect } from "pwa-helpers";
 import { RootState, store } from "../store";
@@ -184,7 +184,7 @@ declare global {
   }
 }`;
 
-const code6 = `class Tomato extends connect(store)(LitElement) {
+export const code6 = `class Tomato extends connect(store)(LitElement) {
     //? state 정의 부분
     @property() name = store.getState().vegetable.name;
   

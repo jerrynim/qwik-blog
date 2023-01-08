@@ -7,7 +7,7 @@ import "@components/post";
 @withPost
 export class TheNavigationApi extends LitElement {
     protected render() {
-        return html`<post-head-image src=""></post-head-image>
+        return html`<PostHeadImage src=""></PostHeadImage>
             <PostHead>
                 <h1>(번역)Modern client-side routing: the Navigation API</h1>
                 <post-tag
@@ -22,7 +22,7 @@ export class TheNavigationApi extends LitElement {
                     >https://developer.chrome.com/docs/web-platform/navigation-api/</PostLink
                 >
                 <br />
-                <post-blockquote
+                <postBlockquote
                     >이 API는 개발 중에는 "앱 기록 API"로 알려졌지만 이후
                     "내비게이션 API"로 이름이 변경되었습니다.
                 </post-blockquote>
@@ -56,14 +56,14 @@ export class TheNavigationApi extends LitElement {
                 다음 두 가지 방법 중 하나로 탐색을 가로챌 수 있습니다.
 
                 <ul>
-                    <post-list
-                        >탐색을 처리하기 위해 호출
+                    <li>
+                        탐색을 처리하기 위해 호출
                         <code>transitionWhile()</code>(위에서 설명한 대로).
-                    </post-list>
-                    <post-list
-                        >를 호출 preventDefault()하면 탐색이 완전히 취소될 수
+                    </li>
+                    <li>
+                        를 호출 preventDefault()하면 탐색이 완전히 취소될 수
                         있습니다.
-                    </post-list>
+                    </li>
                 </ul>
                 이 예제는 <code>transitionWhile()</code>비동기 함수에서 생성된
                 약속으로 이벤트를 호출합니다. 이 메서드를 호출하면 브라우저는
@@ -142,14 +142,14 @@ export class TheNavigationApi extends LitElement {
                 <code>transitionWhile()</code>에 약속을 전달하면 다음 두 가지 중
                 하나가 발생 합니다.
                 <ul>
-                    <post-list>
+                    <li>
                         이것이 Promise충족되면(또는 호출하지 않은
                         transitionWhile()경우) Navigation API는
                         "navigatesuccess"를 Event.
-                    </post-list>
-                    <post-list>
+                    </li>
+                    <li>
                         거부 하면 PromiseAPI는 "navigateerror"를 ErrorEvent.
-                    </post-list>
+                    </li>
                 </ul>
                 이러한 이벤트를 통해 코드는 중앙 집중식으로 성공 또는 실패를
                 처리할 수 있습니다. 예를 들어 다음과 같이 이전에 표시된 진행률
@@ -204,7 +204,7 @@ export class TheNavigationApi extends LitElement {
     }
 }
 
-const code1 = `navigation.addEventListener('navigate', navigateEvent => {
+export const code1 = `navigation.addEventListener('navigate', navigateEvent => {
   switch (navigateEvent.destination.url) {
     case 'https://example.com/':
       navigateEvent.transitionWhile(loadIndexPage());
@@ -215,7 +215,7 @@ const code1 = `navigation.addEventListener('navigate', navigateEvent => {
   }
 });`;
 
-const code2 = `function updatePage(event) {
+export const code2 = `function updatePage(event) {
     event.preventDefault(); // we're handling this link
     window.history.pushState(null, '', event.target.href);
     // TODO: set up page based on new URL
@@ -223,23 +223,23 @@ const code2 = `function updatePage(event) {
   const links = [...document.querySelectorAll('a[href]')];
   links.forEach(link => link.addEventListener('click', updatePage));`;
 
-const code3 = `주의
+export const code3 = `주의
 즉 navigation.currentEntry, location.href, 등이 즉시 업데이트됩니다. 이는 새 데이터를 가져오거나 새 하위 리소스를 로드할 때 상대 URL 확인과 같은 것에 영향을 줍니다.
 
 많은 웹 및 기본 응용 프로그램은 들어오는 콘텐츠에 대한 일종의 자리 표시자로 페이지를 즉시 업데이트합니다. 그러나 페이지의 콘텐츠도 즉시 업데이트하지 않으면 현재 항목 및 URL에 대한 애플리케이션의 프로그래밍 방식 보기와 동기화되지 않아 까다로울 수 있습니다.
 
 이러한 문제는 GitHub에서 논의되고 있습니다 .`;
 
-const code4 = `navigation.addEventListener('navigatesuccess', event => {
+export const code4 = `navigation.addEventListener('navigatesuccess', event => {
     loadingIndicator.hidden = true;
   });`;
 
-const code5 = `navigation.addEventListener('navigateerror', event => {
+export const code5 = `navigation.addEventListener('navigateerror', event => {
     loadingIndicator.hidden = true; // also hide indicator
     showMessage(&backtick;Failed to load page: &dollar;{event.message}&backtick;);
   });`;
 
-const code6 = `navigation.addEventListener('navigate', navigateEvent => {
+export const code6 = `navigation.addEventListener('navigate', navigateEvent => {
     if (isCatsUrl(navigateEvent.destination.url)) {
       const processNavigation = async () => {
         const request = await fetch('/cat-memes.json', {
@@ -254,7 +254,7 @@ const code6 = `navigation.addEventListener('navigate', navigateEvent => {
     }
   });`;
 
-const code7 = `Navigation API를 명시적으로 사용하지 않는 사이트에도 "현재 항목"이 있으며, History API history.pushState()및 에서 이전 방법을 사용하는 경우 항목이 업데이트되거나 대체됩니다 history.replaceState().`;
+export const code7 = `Navigation API를 명시적으로 사용하지 않는 사이트에도 "현재 항목"이 있으며, History API history.pushState()및 에서 이전 방법을 사용하는 경우 항목이 업데이트되거나 대체됩니다 history.replaceState().`;
 
 declare global {
     interface HTMLElementTagNameMap {

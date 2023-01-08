@@ -7,10 +7,10 @@ import "@components/post";
 @withPost
 export class MakeKeystore extends LitElement {
     protected render() {
-        return html`<post-head-image
+        return html`<PostHeadImage
                 src="https://res.cloudinary.com/dij9kacx9/image/upload/v1640702976/lit-blog/key_fzonmy.jpg"
             >
-            </post-head-image>
+            </PostHeadImage>
             <PostHead>
                 <h1>.keystore 생성하는 법 (Mac)</h1>
                 <PostTag>generate keystore android Mac</PostTag>
@@ -57,7 +57,7 @@ export class MakeKeystore extends LitElement {
     }
 }
 
-const code1 = `이름과 성을 입력하십시오.
+export const code1 = `이름과 성을 입력하십시오.
 [Unknown]:  jerrynim
 조직 단위 이름을 입력하십시오.
 [Unknown]:  personal
@@ -71,12 +71,12 @@ const code1 = `이름과 성을 입력하십시오.
 [Unknown]:  kr
 CN=jerrynim, OU=personal, O=personal, L=seoul, ST=seoul, C=kr이(가) 맞습니까?`;
 
-const code2 = `키 저장소 비밀번호 입력:  
+export const code2 = `키 저장소 비밀번호 입력:  
 새 비밀번호 다시 입력: 
 이름과 성을 입력하십시오.
   [Unknown]:  `;
 
-const code3 = ` 저장소 유형: jks
+export const code3 = ` 저장소 유형: jks
   키 저장소 제공자: SUN
   
   키 저장소에 1개의 항목이 포함되어 있습니다.
