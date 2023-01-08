@@ -28,7 +28,7 @@ const PostTitle = component$(({ title, subtitle }: PostTitleProps) => {
     });
 
     return (
-        <h2 class="subtitle" id={title} onClick$={_handleClick}>
+        <h2 class={subtitle && "subtitle"} id={title} onClick$={_handleClick}>
             {subtitle || title}
             <CopyIcon />
         </h2>

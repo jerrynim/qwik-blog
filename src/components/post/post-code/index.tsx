@@ -1,11 +1,13 @@
 import {
     component$,
     useSignal,
-    useClientEffect$,
     $,
+    useStyles$,
     useStylesScoped$,
 } from "@builder.io/qwik";
 import styles from "./index.css?inline";
+import prismSyles from "./prism.css?inline";
+import Prism from "./prism";
 
 interface PostCodeProps {
     code: string;
@@ -14,9 +16,15 @@ interface PostCodeProps {
     whiteSpace?: string;
 }
 
-export default component$(
-    ({ code, language, filename, whiteSpace }: PostCodeProps) => {
+const PostCode = component$(
+    ({
+        code,
+        language = "typescript",
+        filename,
+        whiteSpace,
+    }: PostCodeProps) => {
         useStylesScoped$(styles);
+        useStyles$(prismSyles);
         const ref = useSignal<Element>();
         const buttonRef = useSignal<HTMLButtonElement>();
         const buttonText = useSignal("copied!!");
@@ -61,8 +69,17 @@ export default component$(
                 >
                     copy
                 </button>
-                <code class="language-${this.language}">{_code}</code>
+                <code
+                    class="language-${this.language}"
+                    dangerouslySetInnerHTML={Prism.highlight(
+                        _code,
+                        Prism.languages[language] as any,
+                        language,
+                    )}
+                />
             </div>
         );
     },
 );
+
+export default PostCode;

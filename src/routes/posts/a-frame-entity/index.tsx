@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+import { DocumentHead } from "@builder.io/qwik-city";
 import {
     PostBody,
     PostCode,
@@ -10,6 +11,10 @@ import {
     PostTitle,
 } from "@post";
 
+export const head: DocumentHead = {
+    title: "A-Frame Entity 한글 번역22",
+    meta: [],
+};
 export default component$(() => {
     return (
         <>
@@ -50,7 +55,7 @@ export default component$(() => {
                 ></PostCode>
                 엔티티가 있으면, 우리는 아래의 상세 메서드나 프로퍼티에 접근 할
                 수 있습니다.
-                <PostTitle subtitle="Properties"></PostTitle>
+                <PostTitle title="Properties"></PostTitle>
                 <PostTitle subtitle="components"></PostTitle>
                 <code>${"<a-entity>.components"}</code> 는 엔티티에 접근 가능한
                 객체입니다. 이것은 각 컴포넌트의 data,state,함수들을 포함하여
@@ -166,10 +171,10 @@ export default component$(() => {
                     sound component
                 </PostLink>
                 는 사운드 재생을 시작합니다.
-                <PostTitle>
-                    setAttribute (componentName, value, [propertyValue |
-                    clobber])
-                </PostTitle>
+                <PostTitle
+                    subtitle="setAttribute (componentName, value, [propertyValue |
+                    clobber])"
+                ></PostTitle>
                 만약 componentName가 등록된 컴포넌트가 안거나 single-property
                 컴포넌트이라면 setAttribute 보통 다음처럼 작동합니다.
                 <PostCode
@@ -218,9 +223,7 @@ export default component$(() => {
                 자식으로 obj를 더합니다. 엔티티 는 setObject3D 가 호출 될 때
                 이벤트 세부 정보 object3dset와 함께 type이벤트를 실행합니다.
                 <PostCode code={code18} language="typescript"></PostCode>
-                <PostTitle>
-                    removeAttribute (componentName, propertyName)
-                </PostTitle>
+                <PostTitle subtitle="removeAttribute (componentName, propertyName)"></PostTitle>
                 componentName이 등록된 컴포넌트의 이름이고, DOM에서 속성을
                 제거하면서,removeAttribute 는 또한 엔티티로부터 컴포넌트를
                 분리하고, 컴포넌트의 remove 생명주기 메소드를 실행합니다.
@@ -241,9 +244,7 @@ export default component$(() => {
                 <PostTitle subtitle="Listening for Component Changes"></PostTitle>
                 componentchanged를 사용해 엔티티의 변화를 감지할 수 있습니다.
                 <PostCode code={code23} language="typescript"></PostCode>
-                <PostTitle>
-                    Listening for Child Elements Being Attached and Detached
-                </PostTitle>
+                <PostTitle subtitle="Listening for Child Elements Being Attached and Detached"></PostTitle>
                 child-attached 와 child-detached 이벤트를 이용해 엔티티에
                 scene이 연결되고 해지되는 것을 감지할 수 있습니다.
                 <PostCode code={code24} language="typescript"></PostCode>

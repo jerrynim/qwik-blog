@@ -6,7 +6,7 @@ interface PostImageProps {
     alt?: string;
     path?: string;
 }
-export default component$(({ width, src, alt, path }: PostImageProps) => {
+const PostImage = component$(({ width, src, alt, path }: PostImageProps) => {
     const _width =
         width || window.innerWidth < 720 ? window.innerWidth - 40 : 680;
 
@@ -28,3 +28,5 @@ export default component$(({ width, src, alt, path }: PostImageProps) => {
         </>
     );
 });
+
+export default PostImage;

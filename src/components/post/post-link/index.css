@@ -1,6 +1,6 @@
 .post-link {
     display: inline-block;
-    color: var(--qwik);
+    color: var(--main);
 }
 .hidden-text {
     width: 0;
@@ -10,8 +10,8 @@
 }
 
 p {
-    color: var(--qwik) !important;
+    color: var(--main) !important;
 }
 a:hover {
-    color: var(--qwik);
+    color: var(--main);
 }

@@ -1,7 +1,7 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import styles from "./index.css?inline";
 
-export default component$(() => {
+const PostList = component$(() => {
     useStylesScoped$(styles);
 
     // if (this.parentElement?.localName === "ol") {
@@ -16,3 +16,5 @@ export default component$(() => {
     // }
     return <slot></slot>;
 });
+
+export default PostList;

@@ -1,9 +1,13 @@
-import { component$, Slot, useStylesScoped$ } from "@builder.io/qwik";
+import { component$, Slot, useStyles$ } from "@builder.io/qwik";
 import styles from "./index.css?inline";
 
 const PostHead = component$(() => {
-    useStylesScoped$(styles);
+    useStyles$(styles);
 
-    return <Slot></Slot>;
+    return (
+        <div class="post-head">
+            <Slot></Slot>
+        </div>
+    );
 });
 export default PostHead;

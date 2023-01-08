@@ -70,7 +70,7 @@ interface PostHeadImageProps {
     src?: string;
 }
 
-export default component$(({ src }: PostHeadImageProps) => {
+const PostHeadImage = component$(({ src }: PostHeadImageProps) => {
     useStylesScoped$(styles);
     return (
         <div class="post-head-image-wrapper">
@@ -80,3 +80,5 @@ export default component$(({ src }: PostHeadImageProps) => {
         </div>
     );
 });
+
+export default PostHeadImage;

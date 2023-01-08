@@ -12,7 +12,7 @@
 code {
     display: block;
     overflow: scroll;
-    padding: 16px;
+    padding: 16px !important;
     background-color: var(--lightgrey) !important;
 }
 
@@ -23,7 +23,7 @@ button {
     right: 16px;
     background-color: transparent;
     cursor: pointer;
-    color: var(--qwik);
+    color: var(--main);
     border: 1px solid;
     padding: 3px 8px;
     font-size: 13px;
