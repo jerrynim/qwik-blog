@@ -1,19 +1,24 @@
-import { withPost } from "@lib/decorators";
-import { LitElement, html } from "lit";
-import { customElement } from "lit/decorators/custom-element.js";
-import "@components/post";
+import { component$ } from "@builder.io/qwik";
+import {
+    PostBlockquote,
+    PostBody,
+    PostCode,
+    PostDate,
+    PostHead,
+    PostHeadImage,
+    PostImage,
+    PostLink,
+    PostTag,
+    PostTitle,
+} from "@components/post";
 
-@customElement("writing-book-1")
-@withPost
-export class WritingBook1 extends LitElement {
-    protected render() {
-        return html`
-            <PostHeadImage
-                src="https://res.cloudinary.com/dij9kacx9/image/upload/v1627115456/lit-blog/Desktop_-_3_yx69ez.jpg"
-            ></PostHeadImage>
-            <post-head id="책">
+export default component$(() => {
+    return (
+        <>
+            <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1627115456/lit-blog/Desktop_-_3_yx69ez.jpg"></PostHeadImage>
+            <PostHead>
                 <h1>책을 쓰게 된 이야기 - 1부</h1>
-                <PostTag>개발 책 집필 Next.js</PostTag>
+                <PostTag tags="개발 책 집필 Next.js"></PostTag>
                 <PostDate>2021-07-18</PostDate>
             </PostHead>
             <PostBody>
@@ -21,9 +26,7 @@ export class WritingBook1 extends LitElement {
                 집필을 마무리하고 어느 정도의 시간이 지나 책을 집필하게 된
                 이야기를 풀어보고자 합니다. 이야기는 시간의 순서대로 써나가
                 보도록 하겠습니다.
-
-                <PostTitle ?subtitle=${true}>시작</PostTitle>
-
+                <PostTitle subtitle="시작"></PostTitle>
                 작년 초에 메일로 Next.js를 주제로 책을 써보지 않겠냐는 제안을
                 받았습니다. 보잘것없는 저의 깃허브를 보시고 집필 제안을
                 해주셨다고 합니다. 처음 제안을 받게 되었을 때 반은 기뻤지만 반은
@@ -31,9 +34,7 @@ export class WritingBook1 extends LitElement {
                 알고 있는 것들을 독자에게 잘 설명할 수 있는지 스스로 의심이
                 되었습니다. 하지만, 우선 흔히 오지 않는 기회를 놓치지 않기 위해
                 도전해보기로 하였습니다.
-
-                <PostTitle subtitle>아이템 선정</PostTitle>
-
+                <PostTitle subtitle="아이템 선정"></PostTitle>
                 먼저 하게 되는 것은 책의 내용 구상과 목차를 정하는 것입니다.
                 담당자님과 오프라인 미팅을 통해서 3~4개 정도의 예제와 함께
                 Next.js 개발과 배포를 함께 할 수 있는 책을 만들기로 했습니다.
@@ -60,9 +61,7 @@ export class WritingBook1 extends LitElement {
                 사용해본다면 좋을 것 같다고 생각하여, 두 번째 예제로 해당
                 기술들을 사용하여 제가 디자인한 '투두 리스트'를 만들기로 정하고,
                 '에어비앤비'를 세 번째 예제로 하기로 하였습니다.
-
-                <PostTitle subtitle>글쓰기 시작</PostTitle>
-
+                <PostTitle subtitle="글쓰기 시작"></PostTitle>
                 글을 쓰기 전에 애플리케이션들을 미리 만들어두어야 했습니다.
                 세게의 예제를 회사 시간 이외에 만드는데 두 달이 걸렸고,
                 'Ulyesses'프로그램을 사용하여 글을 쓰기 시작했습니다. 책의 처음
@@ -80,9 +79,7 @@ export class WritingBook1 extends LitElement {
                 사람도 쉽게 이해할 수 있도록 쓰기로 하였습니다. 그러자, 글을
                 쓰는 것이 조금은 더 쉽게 느껴졌고 내가 쓴 글이라는 느낌이 더
                 강해졌습니다.
-
-                <PostTitle subtitle>첫 번째 마감</PostTitle>
-
+                <PostTitle subtitle="첫 번째 마감"></PostTitle>
                 마감기한을 3개월, 2개월, 2개월로 1/3 분량씩 제출하기로
                 하였습니다. 담당자님이 보통 9개월 정도 걸린다고 하여 저는 파이팅
                 넘쳤기 때문에 8개월로 잡았습니다(만약, 집필을 생각하시는데 이
@@ -101,9 +98,7 @@ export class WritingBook1 extends LitElement {
                 나중에 찾아 고치는 것은 오탈자의 확률을 높이고
                 'Uylesses'프로그램이 제공하는 도구를 사용하더라도 추후에 찾기가
                 힘들었습니다.
-
-                <PostTitle subtitle>계속되는 수정</PostTitle>
-
+                <PostTitle subtitle="계속되는 수정"></PostTitle>
                 책을 쓰면서 시간은 계속 흐르고 저의 코딩 스타일도 계속해서
                 변하고 발전됐습니다. 그로 인하여 기존에 작성해 두었던 코드들을
                 수정하게 되었습니다. 하지만 책을 어느 정도 작성한 상태였기
@@ -118,12 +113,6 @@ export class WritingBook1 extends LitElement {
                 것입니다. 하지만 퀄리티를 위해 포기할 수 없는 부분이었습니다.
                 2부에서 계속...
             </PostBody>
-        `;
-    }
-}
-
-declare global {
-    interface HTMLElementTagNameMap {
-        "writing-book-1": WritingBook1;
-    }
-}
+        </>
+    );
+});

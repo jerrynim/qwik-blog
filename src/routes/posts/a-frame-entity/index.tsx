@@ -57,7 +57,7 @@ export default component$(() => {
                 수 있습니다.
                 <PostTitle title="Properties"></PostTitle>
                 <PostTitle subtitle="components"></PostTitle>
-                <code>${"<a-entity>.components"}</code> 는 엔티티에 접근 가능한
+                <code>{"<a-entity>.components"}</code> 는 엔티티에 접근 가능한
                 객체입니다. 이것은 각 컴포넌트의 data,state,함수들을 포함하여
                 엔티티의 컴포넌트에 접근하도록 해줍니다.
                 <br />
@@ -78,10 +78,10 @@ export default component$(() => {
                 엔터티가 활성 상태이고 재생 중인지 여부입니다. 엔티티를 일시
                 중지하면 isPlaying가 false 가 됩니다
                 <PostTitle subtitle="object3D">object3D</PostTitle>
-                <code>${"<a-entity>.object3D"}</code> 는 three.js Ojbect3D
-                표현에 대한 참조입니다. 더 구체적으로, object3D 는 cameras,
-                meshes, lights, sounds와 같은 THREE.Object3D의 다양한 타입들을
-                포함하는 THREE.Group객체가 됩니다.
+                <code>{"<a-entity>.object3D"}</code> 는 three.js Ojbect3D 표현에
+                대한 참조입니다. 더 구체적으로, object3D 는 cameras, meshes,
+                lights, sounds와 같은 THREE.Object3D의 다양한 타입들을 포함하는
+                THREE.Group객체가 됩니다.
                 <PostCode code={code4} language="typescript"></PostCode>
                 object3DMap을 이용해 Object3D 의 다양한 타입에 접근할 수
                 있습니다.

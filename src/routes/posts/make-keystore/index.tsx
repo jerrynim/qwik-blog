@@ -1,19 +1,20 @@
-import { LitElement, html } from "lit";
-import { customElement } from "lit/decorators/custom-element.js";
-import { withPost } from "@lib/decorators";
-import "@components/post";
+import { component$ } from "@builder.io/qwik";
+import {
+    PostBody,
+    PostCode,
+    PostDate,
+    PostHead,
+    PostHeadImage,
+    PostTag,
+} from "@components/post";
 
-@customElement("make-keystore")
-@withPost
-export class MakeKeystore extends LitElement {
-    protected render() {
-        return html`<PostHeadImage
-                src="https://res.cloudinary.com/dij9kacx9/image/upload/v1640702976/lit-blog/key_fzonmy.jpg"
-            >
-            </PostHeadImage>
+export default component$(() => {
+    return (
+        <>
+            <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1640702976/lit-blog/key_fzonmy.jpg"></PostHeadImage>
             <PostHead>
                 <h1>.keystore 생성하는 법 (Mac)</h1>
-                <PostTag>generate keystore android Mac</PostTag>
+                <PostTag tags="generate keystore android Mac"></PostTag>
                 <PostDate></PostDate>
             </PostHead>
             <PostBody>
@@ -25,37 +26,36 @@ export class MakeKeystore extends LitElement {
                 And then, you need to enter First and LastName, Organizational
                 Unit, Orgaization, City or Locality, State or Province, Country
                 Code (XX) like this
-                <PostCode code="{code1}"></PostCode>
-                At last, enter 'Y' and you can get keystore file<br />
+                <PostCode code={code1}></PostCode>
+                At last, enter 'Y' and you can get keystore file
+                <br />
                 <br />
                 Because it is debug key, you don't have to enter password for
                 it.
                 <br />
                 <br />
                 If you want to generate keystore for release, just remove
-                <code>${" -storepass android"}</code>
-                <PostCode
-                    code="keytool -genkey -v -keystore <KEY_STORE_NAME> -alias <YOUR_ALIAS> -keyalg RSA -keysize 2048 -validity 10000"
-                ></PostCode>
+                <code>{" -storepass android"}</code>
+                <PostCode code="keytool -genkey -v -keystore <KEY_STORE_NAME> -alias <YOUR_ALIAS> -keyalg RSA -keysize 2048 -validity 10000"></PostCode>
                 Enter and it will look like this:
                 <PostCode code="키 저장소 비밀번호 입력:"></PostCode>
                 After enter your PWD and confirm PWD, put the answer as you did
                 above
-                <PostCode code="{code2}"></PostCode>
+                <PostCode code={code2}></PostCode>
                 That's all, you will get your keystore for release
                 <br />
                 <br />
                 To check your keystore, run:
-                <PostCode
-                    code="keytool -list -v -keystore debug.keystore"
-                ></PostCode>
+                <PostCode code="keytool -list -v -keystore debug.keystore"></PostCode>
                 If you made key without password, password is 'android' <br />
-                or just press 'enter'<br />
+                or just press 'enter'
+                <br />
                 You can see keystore info like this.
-                <PostCode code="{code3}"></PostCode>
-            </PostBody>`;
-    }
-}
+                <PostCode code={code3}></PostCode>
+            </PostBody>
+        </>
+    );
+});
 
 export const code1 = `이름과 성을 입력하십시오.
 [Unknown]:  jerrynim
@@ -115,9 +115,3 @@ export const code3 = ` 저장소 유형: jks
   
   
   `;
-
-declare global {
-    interface HTMLElementTagNameMap {
-        "make-keystore": MakeKeystore;
-    }
-}

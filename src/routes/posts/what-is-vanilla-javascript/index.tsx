@@ -1,18 +1,24 @@
-import { LitElement, html } from "lit";
-import { customElement } from "lit/decorators/custom-element.js";
-import "@components/post";
-import { withPost } from "@lib/decorators";
+import { component$ } from "@builder.io/qwik";
+import {
+    PostBlockquote,
+    PostBody,
+    PostCode,
+    PostDate,
+    PostHead,
+    PostHeadImage,
+    PostImage,
+    PostLink,
+    PostTag,
+    PostTitle,
+} from "@components/post";
 
-@customElement("what-is-vanilla-javascript")
-@withPost
-export class WhatIsVanillaJavascript extends LitElement {
-    protected render() {
-        return html`<PostHeadImage
-                src="https://res.cloudinary.com/dij9kacx9/image/upload/v1633615729/lit-blog/vanila_azzeyy.jpg"
-            ></PostHeadImage>
+export default component$(() => {
+    return (
+        <>
+            <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1633615729/lit-blog/vanila_azzeyy.jpg"></PostHeadImage>
             <PostHead>
                 <h1>vanilla Javascript 란?</h1>
-                <PostTag>vanilla javascript 바닐라 자바스크립트</PostTag>
+                <PostTag tags="vanilla javascript 바닐라 자바스크립트"></PostTag>
                 <PostDate>2021-10-07</PostDate>
             </PostHead>
             <PostBody>
@@ -21,7 +27,8 @@ export class WhatIsVanillaJavascript extends LitElement {
                 바닐라 자바스크립트라고 불리는건 하나의 개그 요소로,
                 자바스크립트 프레임워크를 사용하는 것에만 빠져있고 순수한
                 자바스크립트를 모르는 사람들을 위한
-                <code>개그</code>입니다.<br />
+                <code>개그</code>입니다.
+                <br />
                 이러한 개그는 개발자들이 프레임워크 이전에 순수한 자바스크립트에
                 대해 알아햐 함을 자각시켜줍니다.
                 <br />
@@ -31,25 +38,19 @@ export class WhatIsVanillaJavascript extends LitElement {
                 <br />
                 <br />
                 참고1:
-                <PostLink
-                    href="https://stackoverflow.com/questions/20435653/what-is-vanillajs"
-                    >what-is-vanillajs-stackoverflow</PostLink
-                ><br />
-
-                참고2:<PostLink
-                    href="https://snipcart.com/blog/learn-vanilla-javascript-before-using-js-frameworks"
-                    >learn-vanilla-javascript-before-using-js-frameworks</PostLink
-                >
+                <PostLink href="https://stackoverflow.com/questions/20435653/what-is-vanillajs">
+                    what-is-vanillajs-stackoverflow
+                </PostLink>
+                <br />
+                참고2:
+                <PostLink href="https://snipcart.com/blog/learn-vanilla-javascript-before-using-js-frameworks">
+                    learn-vanilla-javascript-before-using-js-frameworks
+                </PostLink>
                 <PostImage
                     src="https://res.cloudinary.com/dij9kacx9/image/upload/v1633618588/lit-blog/vanilla_b5tzys.png"
                     alt="vanilla-js logo"
                 ></PostImage>
-            </PostBody>`;
-    }
-}
-
-declare global {
-    interface HTMLElementTagNameMap {
-        "what-is-vanilla-javascript": WhatIsVanillaJavascript;
-    }
-}
+            </PostBody>
+        </>
+    );
+});

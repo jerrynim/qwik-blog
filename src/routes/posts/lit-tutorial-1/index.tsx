@@ -96,17 +96,17 @@ export default component$(() => {
                 'Hello Tomato!'라는 메세지가 출력 되었습니다. 개발자도구의
                 Elements를 확인하여보면
                 <code class="code">${"<lit-tomato>"}</code>라는 생소한 태그가
-                보입니다. <code>${"<lit-tomato>"}</code>라는 태그를 찾아보도록
+                보입니다. <code>{"<lit-tomato>"}</code>라는 태그를 찾아보도록
                 하겠습니다. 해당 태그를 'index.html'에서 찾아 볼 수 있습니다.
                 <PostCode
                     code={indexhtml}
                     language="html"
                     filename="index.html"
                 ></PostCode>
-                <code>${"<lit-tomato>"}</code>를 찾아보니 해당 태그는 가지고
-                있는 값이 없습니다. 그렇다면 'Hello Tomato'는 어디로부터 출력
-                되는 걸까요?, 'Hello Tomato'를 찾아보니
-                'pages/lit-tomatoo.ts'에서 찾을수 있었습니다.
+                <code>{"<lit-tomato>"}</code>를 찾아보니 해당 태그는 가지고 있는
+                값이 없습니다. 그렇다면 'Hello Tomato'는 어디로부터 출력 되는
+                걸까요?, 'Hello Tomato'를 찾아보니 'pages/lit-tomatoo.ts'에서
+                찾을수 있었습니다.
                 <PostCode
                     code={litTomato1}
                     language="typescript"
@@ -212,7 +212,7 @@ export default component$(() => {
                     window.customElements MDN
                 </PostLink>
                 <br />
-                Tomato라는 LitElement 를 <code>${"<lit-tomato>"}</code>처럼
+                Tomato라는 LitElement 를 <code>{"<lit-tomato>"}</code>처럼
                 사용할 수 있도록 정의해주는 역활을 합니다. 이때 엘리먼트의
                 이름을 지정할때 '-'는 필수로 들어가야합니다. 이름에 '-' 가
                 없다면 다음 그림과 같은 빨간 줄을 보게 될 것입니다.
@@ -242,7 +242,7 @@ export default component$(() => {
                 파일에서 커스텀 웹 컴포넌트를 찾을 수 있게 되었습니다.
                 <PostCode code={globalDeclare} language="typescript"></PostCode>
                 'lit-potato'라는 이름만 다른 파일을 만들어 html안에서
-                <code>${"<lit-tomato>"}</code>를 사용해 보도록 하겠습니다.
+                <code>{"<lit-tomato>"}</code>를 사용해 보도록 하겠습니다.
                 <PostImage
                     src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628048374/lit-blog/lit-code_qs3moz.png"
                     alt="lit type 자동완성"
@@ -254,7 +254,7 @@ export default component$(() => {
                     language="typescript"
                 ></PostCode>
                 마찬가지로 index.html에서
-                <code>${"<lit-tomato>"}</code>를 사용 할 수 있도록 index.ts에서
+                <code>{"<lit-tomato>"}</code>를 사용 할 수 있도록 index.ts에서
                 import 해주어야 합니다.
                 <PostCode
                     code='import "./pages/lit-tomato";'
@@ -264,9 +264,9 @@ export default component$(() => {
                 여기까지 간단한 lit-element의 구성을 살펴 보았습니다. 다시
                 보자면 LitElement 를 확장한 클래스는 html 템플릿을 리턴하는 웹
                 컴포넌트를 리턴합니다. 이 클래스를
-                <code>${"<lit-tomato>"}</code>라는 커스텀 엘리먼트로 지정하였고
+                <code>{"<lit-tomato>"}</code>라는 커스텀 엘리먼트로 지정하였고
                 index.ts에서 lit-tomato를 import하여 index.html에서 사용한
-                <code>${"<lit-tomato>"}</code> 커스텀 엘리먼트를 사용할 수 있게
+                <code>{"<lit-tomato>"}</code> 커스텀 엘리먼트를 사용할 수 있게
                 되었습니다. 다음 포스팅에서는 본격적으로 property를 사용하여
                 변수 사용 및 뷰의 변화를 주는 것을 해보도록 하겠습니다.
             </PostBody>

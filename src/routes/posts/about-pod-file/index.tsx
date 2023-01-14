@@ -30,10 +30,10 @@ export default component$(() => {
                 하겠습니다. 기본적으로 PodFile의 언어는 ruby 입니다.
                 <br />
                 터미널에서
-                <code>${" pod init"}</code>을 실행하게되면 다음과 같은 PodFile이
+                <code>{" pod init"}</code>을 실행하게되면 다음과 같은 PodFile이
                 생성됩니다.
                 <PostCode
-                    code="{podfileCode}"
+                    code={podfileCode}
                     language="typescript"
                     filename="ios/PodFile"
                 ></PostCode>
@@ -85,7 +85,7 @@ export default component$(() => {
                 기본적인 PodFile의 구문들을 알아보았습니다. 이번에는 제가 실제로
                 사용하는 PodFile의 구문들을 분석해보도록 하겠습니다.
                 <PostCode
-                    code="{podfileCode2}"
+                    code={podfileCode2}
                     language="typescript"
                     filename="ios/PodFile"
                 ></PostCode>
@@ -113,7 +113,7 @@ export default component$(() => {
                         <PostLink href="https://guides.cocoapods.org/syntax/podfile.html#project">
                             project
                         </PostLink>
-                        <PostCode code="{projectCode}"></PostCode>
+                        <PostCode code={projectCode}></PostCode>
                         Pods 라이브러리가 연결되어야 하는 'target'이 포함된
                         Xcode 프로젝트를 지정합니다.
                         <br />
@@ -251,9 +251,3 @@ const projectCode = `project 'example',
     'simulator' => :debug,
     'dev' => :release,
     'preview' => :release`;
-
-declare global {
-    interface HTMLElementTagNameMap {
-        "about-pod-file": AboutPodFile;
-    }
-}

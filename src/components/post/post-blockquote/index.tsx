@@ -5,7 +5,7 @@ const PostBlockquote = component$(() => {
     useStylesScoped$(styles);
 
     return (
-        <blockquote class="post-blockquote">
+        <blockquote class="PostBlockquote">
             <Slot />
         </blockquote>
     );

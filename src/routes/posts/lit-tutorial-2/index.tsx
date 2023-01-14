@@ -49,9 +49,9 @@ export default component$(() => {
                 해주었습니다. 'Hello tomato1'이 브라우저에 출력 되는 것을 확인
                 할 수 있습니닫. 하지만 vsCode에서는 타입에러가 있다는 에러가
                 발생합니다.
-                <post-blockquote>
+                <PostBlockquote>
                     Property 'name' does not exist on type 'Tomato'.ts(2339)
-                </post-blockquote>
+                </PostBlockquote>
                 <PostTitle subtitle="@property"></PostTitle>
                 타입스크립트를 사용한다면 @property 데코레이터를 사용하여
                 property 선언과 초기화를 할 수 있습니다.
@@ -77,7 +77,7 @@ export default component$(() => {
                 componentDidMount라고 생각하면 쉽게 다가올 것입니다. 모든
                 생명주기 메서드는 'super.connectedCallback()' 와 같이 super
                 메서드를 호출해야합니다.
-                <post-blockquote>this.name="tomato2";</post-blockquote>
+                <PostBlockquote>this.name="tomato2";</PostBlockquote>
                 앞의 코드처럼 property를 변경 할 수 있습니다. property 변경은
                 비동기 업데이트주기를 트리거하여 구성 요소가 템플릿을 다시
                 렌더링하도록 할 수 있습니다. lit-element의 생명주기는 다음
@@ -89,10 +89,10 @@ export default component$(() => {
                 <PostCode code={code5} language="typescript"></PostCode>
                 2초후에 'Hello tomato3'으로 변경이 되었습니다. setAttribute는
                 attribute를 변경하는 함수인데 어째서 property가 변경 되었을까요?
-                <post-blockquote>
+                <PostBlockquote>
                     lit-element에서 선언된 모든 property는 observed attribute가
                     만들어 지게 됩니다.
-                </post-blockquote>
+                </PostBlockquote>
                 property에 대한 attribute는 lowercased 문자열로 생성이 됩니다.
                 예로 myProp이라는 property는 "myprop"이라는 attribute를 가지게
                 됩니다.
@@ -245,7 +245,7 @@ export const code2 = `class Tomato extends LitElement {
 export const code3 = `
 import { LitElement, html, customElement, property } from "lit-element";
 import PostLink from '../../components/post/post-link/index';
-import PostBlockquote from '../../components/post/post-blockquote/index';
+import PostBlockquote from '../../components/post/PostBlockquote/index';
 
 @customElement("lit-tomato")
 class Tomato extends LitElement {

@@ -1,31 +1,37 @@
-import { LitElement, html } from "lit";
-import { customElement } from "lit/decorators/custom-element.js";
-import { withPost } from "@lib/decorators";
-import "@components/post";
+import { component$ } from "@builder.io/qwik";
+import {
+    PostBlockquote,
+    PostBody,
+    PostCode,
+    PostDate,
+    PostHead,
+    PostHeadImage,
+    PostImage,
+    PostLink,
+    PostTag,
+    PostTitle,
+} from "@components/post";
 
-@customElement("what-is-cjs-esm")
-@withPost
-export class WhatIsCjsEsm extends LitElement {
-    protected render() {
-        return html`<PostHeadImage src=""></PostHeadImage>
+export default component$(() => {
+    return (
+        <>
+            <PostHeadImage src=""></PostHeadImage>
             <PostHead>
                 <h1>자바스크립트에서 CJS,ESM 은 대체 뭘까?</h1>
-                <PostTag>cjs esm javascript</PostTag>
+                <PostTag tags="cjs esm javascript"></PostTag>
                 <PostDate>2022-04-11</PostDate>
             </PostHead>
             <PostBody>
                 다음 글에서 번역해서 부분 가져왔습니다.
-                <PostLink
-                    href="https://dev.to/iggredible/what-the-heck-are-cjs-amd-umd-and-esm-ikm"
-                    >What the heck are CJS, AMD, UMD, and ESM in
-                    Javascript?</PostLink
-                ><br />
+                <PostLink href="https://dev.to/iggredible/what-the-heck-are-cjs-amd-umd-and-esm-ikm">
+                    What the heck are CJS, AMD, UMD, and ESM in Javascript?
+                </PostLink>
+                <br />
                 처음에는, 자바스크립트는 모듈을 import/export 할 방법이
                 없었습니다. 이것은 문제입니다. 당신의 앱을 한파일에 쓰는 것을
                 상상해 보세요 - 이것은 악몽입니다! 그래서, 뛰어난 사람들이
                 자바스크립트에 모듈화를 추가하기 위해 시도했습니다.
-
-                <PostTitle subtitle>CJS</PostTitle>
+                <PostTitle subtitle="CJS"></PostTitle>
                 CJS는 Common JS의 줄임말입니다.
                 <ul>
                     <li>
@@ -52,7 +58,7 @@ export class WhatIsCjsEsm extends LitElement {
                         하고 번들 되어야 한다.
                     </li>
                 </ul>
-                <PostTitle subtitle>ESM</PostTitle>
+                <PostTitle subtitle="ESM"></PostTitle>
                 ESM은 ES Modules를 의미한다. 표준 모듈 시스템을 구현하자는 것이
                 자바스크립트의 제안이다. 나는 여러분 중 많은 사람들이 이것을
                 봤을 것이라고 확신한다.
@@ -70,31 +76,21 @@ export class WhatIsCjsEsm extends LitElement {
                     </li>
                     <li>
                         HTML로 호출할 수 있는 작업:
-
-                        <PostCode
-                            code="{code1}"
-                            language="typescript"
-                        ></PostCode>
+                        <PostCode code={code1} language="typescript"></PostCode>
                     </li>
                 </ul>
-
                 좀 더 자세한 내용은 다음글을 읽으시는 것을 추천드립니다.
-                <PostLink
-                    href="https://devblog.croquis.com/ko/2022-04-09-1-esm-problem/"
-                    >ESM 삽질기
+                <PostLink href="https://devblog.croquis.com/ko/2022-04-09-1-esm-problem/">
+                    ESM 삽질기
                 </PostLink>
-            </PostBody>`;
-    }
-}
-
-declare global {
-    interface HTMLElementTagNameMap {
-        "what-is-cjs-esm": WhatIsCjsEsm;
-    }
-}
+            </PostBody>
+        </>
+    );
+});
 
 export const code1 = `<script type="module">
 import {func1} from 'my-lib';
+import { component$ } from '@builder.io/qwik';
 
 func1();
 </script>`;

@@ -41,10 +41,10 @@ export default component$(() => {
                 function’s variables and parameters. Even after the outer
                 function’s execution is finished, the inner functions have
                 access to the variables in the outer function.
-                <post-blockquote>
+                <PostBlockquote>
                     클로저는 외부함수가 실행이 완료된 후에도 외부 함수의 변수와
                     파라미터에 접근할수 있는 내부함수이다.
-                </post-blockquote>
+                </PostBlockquote>
                 자세한 설명은 위의 출처를 참고하시길 바랍니다.
             </PostBody>
         </>
