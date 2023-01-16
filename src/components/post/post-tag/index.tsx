@@ -9,9 +9,9 @@ const PostTag = component$(({ tags }: PostTagProps) => {
     useStylesScoped$(styles);
     const _tags = tags?.split(" ");
     return (
-        <ul>
+        <ul class="post-tag-wrapper">
             {_tags?.map((tag) => (
-                <li>#${tag}</li>
+                <li class="post-tag">#${tag}</li>
             ))}
         </ul>
     );

@@ -55,8 +55,6 @@ const PostCode = component$(
 
         return (
             <div class="post-code">
-                <link rel="stylesheet" href="/prism.css" />
-
                 {filename && <p class="filename">{filename}</p>}
                 <button
                     type="button"
