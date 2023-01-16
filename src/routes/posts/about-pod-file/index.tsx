@@ -173,7 +173,7 @@ end"
     );
 });
 
-const podfileCode = `# Uncomment the next line to define a global platform for your project
+export const podfileCode = `# Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
 target 'example' do
@@ -208,7 +208,7 @@ target 'example-tvOS' do
 end
 `;
 
-const podfileCode2 = `require_relative '../../../node_modules/react-native/scripts/react_native_pods'
+export const podfileCode2 = `require_relative '../../../node_modules/react-native/scripts/react_native_pods'
 require_relative '../../../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 pod 'RNFastImage', :path => '../../../node_modules/react-native-fast-image'
@@ -247,7 +247,7 @@ post_install do |installer|
 end
 `;
 
-const projectCode = `project 'example',
+export const projectCode = `project 'example',
     'simulator' => :debug,
     'dev' => :release,
     'preview' => :release`;
