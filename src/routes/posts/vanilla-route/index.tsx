@@ -15,6 +15,17 @@ import {
 export default component$(() => {
     return (
         <>
+            <head>
+                <title>Vanilla Javascript SPA만들기</title>
+                <meta
+                    property="keyword"
+                    content="Vanilla Javascript SPA 라우팅"
+                />
+                <meta
+                    property="og:title"
+                    content="Vanilla Javascript SPA만들기"
+                />
+            </head>
             <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1635330118/lit-blog/route_fjzln0.jpg"></PostHeadImage>
             <PostHead>
                 <h1>Vanilla Javascript SPA만들기</h1>

@@ -12,6 +12,14 @@ import {
 export default component$(() => {
     return (
         <>
+            <head>
+                <title>async await</title>
+                <meta
+                    property="keyword"
+                    content="javascript async await promiser"
+                />
+                <meta property="og:title" content="async await" />
+            </head>
             <PostHeadImage src=""></PostHeadImage>
             <PostHead>
                 <h1>async await</h1>

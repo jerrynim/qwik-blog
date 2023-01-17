@@ -7,7 +7,7 @@
         "build.server": "vite build -c adaptors/vercel-edge/vite.config.ts",
         "deploy": "vercel deploy",
         "dev": "vite --mode ssr",
-        "start": "vite preview --open"
+        "start": "vite --open --mode ssr"
     },
     "dependencies": {
         "@builder.io/qwik": "^0.16.1",

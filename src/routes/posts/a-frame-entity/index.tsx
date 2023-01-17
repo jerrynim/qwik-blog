@@ -11,13 +11,14 @@ import {
     PostTitle,
 } from "@post";
 
-export const head: DocumentHead = {
-    title: "A-Frame Entity 한글 번역22",
-    meta: [],
-};
 export default component$(() => {
     return (
         <>
+            <head>
+                <title>A-Frame Entity 한글 번역</title>
+                <meta property="keyword" content="A-Frame 한글 번역" />
+                <meta property="og:title" content="A-Frame Entity 한글 번역" />
+            </head>
             <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1634978785/a-frame_gtk4je.jpg"></PostHeadImage>
             <PostHead>
                 <h1>A-Frame Entity 한글 번역</h1>

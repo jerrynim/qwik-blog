@@ -12,6 +12,11 @@ import {
 export default component$(() => {
     return (
         <>
+            <head>
+                <title>About PodFile</title>
+                <meta property="keyword" content="react-native podFile" />
+                <meta property="og:title" content="About PodFile" />
+            </head>
             <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1631084015/lit-blog/balloon_nosppg.jpg"></PostHeadImage>
             <PostHead>
                 <h1>About PodFile</h1>

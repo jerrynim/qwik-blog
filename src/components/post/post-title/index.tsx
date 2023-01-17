@@ -1,4 +1,4 @@
-import { component$, useStylesScoped$, $ } from "@builder.io/qwik";
+import { component$, useStyles$, $ } from "@builder.io/qwik";
 import { CopyIcon } from "../../svgs/copy-icon";
 import styles from "./index.css?inline";
 
@@ -8,7 +8,7 @@ interface PostTitleProps {
 }
 
 const PostTitle = component$(({ title, subtitle }: PostTitleProps) => {
-    useStylesScoped$(styles);
+    useStyles$(styles);
 
     const _handleClick = $(() => {
         const textarea = document.createElement("textarea");
@@ -30,7 +30,7 @@ const PostTitle = component$(({ title, subtitle }: PostTitleProps) => {
     return (
         <h2 class={subtitle && "subtitle"} id={title} onClick$={_handleClick}>
             {subtitle || title}
-            <CopyIcon />
+            <CopyIcon class="copy-icon" />
         </h2>
     );
 });

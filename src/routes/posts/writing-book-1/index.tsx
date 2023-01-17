@@ -15,6 +15,11 @@ import {
 export default component$(() => {
     return (
         <>
+            <head>
+                <title>책을 쓰게 된 이야기 - 1부</title>
+                <meta property="keyword" content="개발 책 집필 Next.js" />
+                <meta property="og:title" content="책을 쓰게 된 이야기 - 1부" />
+            </head>
             <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1627115456/lit-blog/Desktop_-_3_yx69ez.jpg"></PostHeadImage>
             <PostHead>
                 <h1>책을 쓰게 된 이야기 - 1부</h1>

@@ -11,6 +11,17 @@ import {
 export default component$(() => {
     return (
         <>
+            <head>
+                <title>간단한 원하는 길이의 배열 만들기</title>
+                <meta
+                    property="keyword"
+                    content="simple make array length array from"
+                />
+                <meta
+                    property="og:title"
+                    content="간단한 원하는 길이의 배열 만들기)"
+                />
+            </head>
             <PostHeadImage />
             <PostHead>
                 <h1>간단한 원하는 길이의 배열 만들기</h1>

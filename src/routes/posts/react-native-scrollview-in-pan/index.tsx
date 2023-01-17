@@ -14,6 +14,17 @@ import {
 export default component$(() => {
     return (
         <>
+            <head>
+                <title>react-native ScrollView in pan responder</title>
+                <meta
+                    property="keyword"
+                    content="react-native ScrollView in pan panresponder"
+                />
+                <meta
+                    property="og:title"
+                    content="react-native ScrollView in pan responder"
+                />
+            </head>
             <PostHeadImage src=""></PostHeadImage>
             <PostHead>
                 <h1>react-native ScrollView in pan responder</h1>

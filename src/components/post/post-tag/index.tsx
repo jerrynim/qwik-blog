@@ -1,4 +1,4 @@
-import { component$, useStylesScoped$ } from "@builder.io/qwik";
+import { component$, useStyles$ } from "@builder.io/qwik";
 import styles from "./index.css?inline";
 
 interface PostTagProps {
@@ -6,7 +6,7 @@ interface PostTagProps {
 }
 
 const PostTag = component$(({ tags }: PostTagProps) => {
-    useStylesScoped$(styles);
+    useStyles$(styles);
     const _tags = tags?.split(" ");
     return (
         <ul class="post-tag-wrapper">

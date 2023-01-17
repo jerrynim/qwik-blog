@@ -1,15 +1,12 @@
-.post-title {
-    display: block;
-    width: fit-content;
-    cursor: pointer;
-}
-
-:host(:hover) svg {
+h2:hover svg {
     visibility: visible;
     opacity: 1;
 }
 
 h2 {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
     position: relative;
     font-size: 30px;
     font-weight: bold;
@@ -18,6 +15,11 @@ h2 {
     word-break: break-all;
     margin-top: 30px;
     margin-bottom: 20px;
+    width: fit-content;
+}
+
+h2:hover {
+    text-decoration: underline;
 }
 
 .subtitle {
@@ -31,7 +33,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-svg {
+.copy-icon {
     margin-left: 6px;
     vertical-align: middle;
     transition: var(--transition);

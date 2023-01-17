@@ -3,6 +3,7 @@ import styles from "./index.css?inline";
 
 export default component$(() => {
     useStylesScoped$(styles);
+
     return (
         <div>
             <h2>이곳은...</h2>

@@ -12,6 +12,14 @@ import {
 export default component$(() => {
     return (
         <>
+            <head>
+                <title>git use a personal access token</title>
+                <meta property="keyword" content="git personal access token" />
+                <meta
+                    property="og:title"
+                    content="git use a personal access token"
+                />
+            </head>
             <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628066597/lit-blog/lit-post-head_tjswjn.jpg"></PostHeadImage>
             <PostHead>
                 <h1>git use a personal access token</h1>

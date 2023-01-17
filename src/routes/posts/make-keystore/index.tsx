@@ -11,6 +11,17 @@ import {
 export default component$(() => {
     return (
         <>
+            <head>
+                <title>.keystore 생성하는 법 (Mac)</title>
+                <meta
+                    property="keyword"
+                    content="generate keystore android Mac"
+                />
+                <meta
+                    property="og:title"
+                    content=".keystore 생성하는 법 (Mac)"
+                />
+            </head>
             <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1640702976/lit-blog/key_fzonmy.jpg"></PostHeadImage>
             <PostHead>
                 <h1>.keystore 생성하는 법 (Mac)</h1>

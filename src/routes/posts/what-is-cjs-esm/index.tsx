@@ -15,6 +15,14 @@ import {
 export default component$(() => {
     return (
         <>
+            <head>
+                <title>자바스크립트에서 CJS,ESM 은 대체 뭘까?</title>
+                <meta property="keyword" content="cjs esm javascript" />
+                <meta
+                    property="og:title"
+                    content="자바스크립트에서 CJS,ESM 은 대체 뭘까?"
+                />
+            </head>
             <PostHeadImage src=""></PostHeadImage>
             <PostHead>
                 <h1>자바스크립트에서 CJS,ESM 은 대체 뭘까?</h1>

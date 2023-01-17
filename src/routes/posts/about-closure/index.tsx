@@ -6,11 +6,23 @@ import {
     PostLink,
     PostBody,
     PostHeadImage,
+    PostBlockquote,
 } from "@components/post";
 
 export default component$(() => {
     return (
         <>
+            <head>
+                <title>자바스크립트 클로저 closure</title>
+                <meta
+                    property="keyword"
+                    content="자바스크립트 클로저 closure"
+                />
+                <meta
+                    property="og:title"
+                    content="자바스크립트 클로저 closure"
+                />
+            </head>
             <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1639296340/lit-blog/closure_fjqvyd.jpg"></PostHeadImage>
             <PostHead>
                 <h1>클로저</h1>

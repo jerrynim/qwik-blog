@@ -10,11 +10,6 @@ export default component$(() => {
         <QwikCityProvider>
             <head>
                 <meta charSet="utf-8" />
-                <title>제리님 블로그</title>
-                <meta
-                    name="description"
-                    content="좋은 포스트와 해결법을 저장하는 곳"
-                />
                 <meta name="viewport" content="width=device-width" />
                 <meta property="og:title" content="제리님 블로그" />
                 <meta property="og:type" content="website" />
