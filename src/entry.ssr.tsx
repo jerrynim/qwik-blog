@@ -6,16 +6,9 @@ export default function (opts: RenderToStreamOptions) {
     return renderToStream(<Root />, {
         manifest,
         ...opts,
-        // Use container attributes to set attributes on the html tag.
         containerAttributes: {
             lang: "ko",
-        },
-        prefetchStrategy: {
-            implementation: {
-                linkInsert: null,
-                workerFetchInsert: null,
-                prefetchEvent: "always",
-            },
+            ...opts.containerAttributes,
         },
     });
 }
