@@ -19,15 +19,14 @@ export const RouterHead = component$(() => {
                 content="width=device-width, initial-scale=1"
             />
             <meta name="viewport" content="width=device-width" />
-            <meta property="og:type" content="website" />
+            <meta property="og:type" content="article" />
             <meta property="og:title" content={title} />
-            <meta property="og:site_name" content="제리님 블로그" />
             <meta property="og:locale" content="ko_KR" />
             <meta property="og:image:type" content="image/jpeg" />
             <meta property="og:image:width" content="298" />
             <meta property="og:image:height" content="298" />
             <meta property="og:image:alt" content="제리님 블로그" />
-            <meta property="og:url" content="https://jerrynim.dev/" />
+            <meta property="og:url" content={href} />
             <meta
                 property="og:image"
                 content="https://jerrynim.dev/static/Profile.png"
@@ -35,6 +34,13 @@ export const RouterHead = component$(() => {
             <meta
                 property="og:image:secure_url"
                 href="https://jerrynim.dev/static/Profile.png"
+            />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={title} />
+            <meta name="twitter:description" content={description} />
+            <meta
+                name="twitter:image"
+                content="https://jerrynim.dev/static/Profile.png"
             />
             <link
                 rel="apple-touch-icon"
