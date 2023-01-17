@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+import { DocumentHead } from "@builder.io/qwik-city";
 import {
     PostBody,
     PostCode,
@@ -8,15 +9,18 @@ import {
     PostLink,
     PostTag,
 } from "@components/post";
-
+export const head: DocumentHead = {
+    title: "About PodFile",
+    meta: [
+        {
+            property: "keyword",
+            content: "react-native podFile",
+        },
+    ],
+};
 export default component$(() => {
     return (
         <>
-            <head>
-                <title>About PodFile</title>
-                <meta property="keyword" content="react-native podFile" />
-                <meta property="og:title" content="About PodFile" />
-            </head>
             <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1631084015/lit-blog/balloon_nosppg.jpg"></PostHeadImage>
             <PostHead>
                 <h1>About PodFile</h1>

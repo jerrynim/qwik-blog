@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+import { DocumentHead } from "@builder.io/qwik-city";
 
 import {
     PostBody,
@@ -11,20 +12,19 @@ import {
     PostTitle,
 } from "@components/post";
 
+export const head: DocumentHead = {
+    title: "react-native ScrollView in pan responder",
+    meta: [
+        {
+            property: "keyword",
+            content: "react-native ScrollView in pan panresponder",
+        },
+    ],
+};
+
 export default component$(() => {
     return (
         <>
-            <head>
-                <title>react-native ScrollView in pan responder</title>
-                <meta
-                    property="keyword"
-                    content="react-native ScrollView in pan panresponder"
-                />
-                <meta
-                    property="og:title"
-                    content="react-native ScrollView in pan responder"
-                />
-            </head>
             <PostHeadImage src=""></PostHeadImage>
             <PostHead>
                 <h1>react-native ScrollView in pan responder</h1>

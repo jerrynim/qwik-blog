@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+import { DocumentHead } from "@builder.io/qwik-city";
 import {
     PostBlockquote,
     PostBody,
@@ -10,17 +11,19 @@ import {
     PostTag,
     PostTitle,
 } from "@components/post";
+
+export const head: DocumentHead = {
+    title: "시맨틱 태그",
+    meta: [
+        {
+            property: "keyword",
+            content: "시맨틱 태그 semantic tag no only use div",
+        },
+    ],
+};
 export default component$(() => {
     return (
         <>
-            <head>
-                <title>시맨틱 태그</title>
-                <meta
-                    property="keyword"
-                    content="시맨틱 태그 semantic tag no only use div"
-                />
-                <meta property="og:title" content="시맨틱 태그" />
-            </head>
             <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1633620056/lit-blog/semantic_wlbgsb.jpg"></PostHeadImage>
             <PostHead>
                 <h1>시맨틱 태그</h1>

@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+import { DocumentHead } from "@builder.io/qwik-city";
 import {
     PostBody,
     PostCode,
@@ -11,17 +12,18 @@ import {
     PostTitle,
 } from "@components/post";
 
+export const head: DocumentHead = {
+    title: "Lit 튜토리얼 (4/6)",
+    meta: [
+        {
+            property: "keyword",
+            content: "lit lit-html lit-elemnt tutorial lifecycle",
+        },
+    ],
+};
 export default component$(() => {
     return (
         <>
-            <head>
-                <title>Lit 튜토리얼 (4/6)</title>
-                <meta
-                    property="keyword"
-                    content="lit lit-html lit-elemnt tutorial lifecycle"
-                />
-                <meta property="og:title" content="Lit 튜토리얼 (4/6)" />
-            </head>
             <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628066597/lit-blog/lit-post-head_tjswjn.jpg"></PostHeadImage>
             <PostHead>
                 <h1>Lit 튜토리얼 (4/6)</h1>

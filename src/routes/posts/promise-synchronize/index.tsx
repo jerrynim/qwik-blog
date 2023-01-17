@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+import { DocumentHead } from "@builder.io/qwik-city";
 import {
     PostBody,
     PostCode,
@@ -10,17 +11,19 @@ import {
     PostTitle,
 } from "@components/post";
 
+export const head: DocumentHead = {
+    title: "Promise 순차실행하기",
+    meta: [
+        {
+            property: "keyword",
+            content: "javascript promise synchronize 순차실행",
+        },
+    ],
+};
+
 export default component$(() => {
     return (
         <>
-            <head>
-                <title>Promise 순차실행하기</title>
-                <meta
-                    property="keyword"
-                    content="javascript promise synchronize 순차실행"
-                />
-                <meta property="og:title" content="Promise 순차실행하기" />
-            </head>
             <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1649685641/lit-blog/inarow_ycwyg4.jpg"></PostHeadImage>
             <PostHead>
                 <h1>Promise 순차실행하기</h1>

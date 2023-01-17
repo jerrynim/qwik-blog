@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+import { DocumentHead } from "@builder.io/qwik-city";
 import {
     PostBody,
     PostCode,
@@ -8,18 +9,18 @@ import {
     PostImage,
     PostTag,
 } from "@components/post";
-
+export const head: DocumentHead = {
+    title: "async await",
+    meta: [
+        {
+            property: "keyword",
+            content: "javascript async await promiser",
+        },
+    ],
+};
 export default component$(() => {
     return (
         <>
-            <head>
-                <title>async await</title>
-                <meta
-                    property="keyword"
-                    content="javascript async await promiser"
-                />
-                <meta property="og:title" content="async await" />
-            </head>
             <PostHeadImage src=""></PostHeadImage>
             <PostHead>
                 <h1>async await</h1>

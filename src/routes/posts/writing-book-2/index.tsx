@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+import { DocumentHead } from "@builder.io/qwik-city";
 import {
     PostBlockquote,
     PostBody,
@@ -12,14 +13,19 @@ import {
     PostTitle,
 } from "@components/post";
 
+export const head: DocumentHead = {
+    title: "책을 쓰게 된 이야기 - 2부",
+    meta: [
+        {
+            property: "keyword",
+            content: "개발 책 집필 Next.js",
+        },
+    ],
+};
+
 export default component$(() => {
     return (
         <>
-            <head>
-                <title>책을 쓰게 된 이야기 - 2부</title>
-                <meta property="keyword" content="개발 책 집필 Next.js" />
-                <meta property="og:title" content="책을 쓰게 된 이야기 - 2부" />
-            </head>
             <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1627115456/lit-blog/Desktop_-_3_yx69ez.jpg"></PostHeadImage>
             <PostHead>
                 <h1>책을 쓰게 된 이야기 - 2부</h1>

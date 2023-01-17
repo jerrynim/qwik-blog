@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+import { DocumentHead } from "@builder.io/qwik-city";
 import {
     PostHead,
     PostTag,
@@ -9,20 +10,18 @@ import {
     PostBlockquote,
 } from "@components/post";
 
+export const head: DocumentHead = {
+    title: "자바스크립트 클로저 closure",
+    meta: [
+        {
+            property: "keyword",
+            content: "자바스크립트 클로저 closure",
+        },
+    ],
+};
 export default component$(() => {
     return (
         <>
-            <head>
-                <title>자바스크립트 클로저 closure</title>
-                <meta
-                    property="keyword"
-                    content="자바스크립트 클로저 closure"
-                />
-                <meta
-                    property="og:title"
-                    content="자바스크립트 클로저 closure"
-                />
-            </head>
             <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1639296340/lit-blog/closure_fjqvyd.jpg"></PostHeadImage>
             <PostHead>
                 <h1>클로저</h1>

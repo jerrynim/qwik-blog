@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+import { DocumentHead } from "@builder.io/qwik-city";
 import {
     PostBlockquote,
     PostBody,
@@ -12,17 +13,19 @@ import {
     PostTitle,
 } from "@components/post";
 
+export const head: DocumentHead = {
+    title: "vanilla Javascript 란?",
+    meta: [
+        {
+            property: "keyword",
+            content: "vanilla javascript 바닐라 자바스크립트",
+        },
+    ],
+};
+
 export default component$(() => {
     return (
         <>
-            <head>
-                <title>vanilla Javascript 란?</title>
-                <meta
-                    property="keyword"
-                    content="vanilla javascript 바닐라 자바스크립트"
-                />
-                <meta property="og:title" content="vanilla Javascript 란?" />
-            </head>
             <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1633615729/lit-blog/vanila_azzeyy.jpg"></PostHeadImage>
             <PostHead>
                 <h1>vanilla Javascript 란?</h1>

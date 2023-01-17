@@ -17,21 +17,18 @@ import {
     PostTitle,
 } from "@components/post";
 
-export const head = {
+export const head: DocumentHead = {
     title: "Lit 튜토리얼 (1/6)",
+    meta: [
+        {
+            property: "keyword",
+            content: "lit lit-html lit-elemnt tutorial start",
+        },
+    ],
 };
-
 export default component$(() => {
     return (
         <>
-            {/* <head>
-                <title></title>
-                <meta
-                    property="keyword"
-                    content="lit lit-html lit-elemnt tutorial start"
-                />
-                <meta property="og:title" content="Lit 튜토리얼 (1/6)" />
-            </head> */}
             <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1628066597/lit-blog/lit-post-head_tjswjn.jpg"></PostHeadImage>
             <PostHead>
                 <h1>Lit 튜토리얼 (1/6)</h1>

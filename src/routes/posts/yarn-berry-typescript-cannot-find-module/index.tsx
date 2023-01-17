@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+import { DocumentHead } from "@builder.io/qwik-city";
 import {
     PostBlockquote,
     PostBody,
@@ -11,20 +12,19 @@ import {
     PostTag,
     PostTitle,
 } from "@components/post";
+export const head: DocumentHead = {
+    title: "yarn berry cannot find module 해결",
+    meta: [
+        {
+            property: "keyword",
+            content: "yarn berry cannot find module vscode",
+        },
+    ],
+};
+
 export default component$(() => {
     return (
         <>
-            <head>
-                <title>yarn berry cannot find module 해결</title>
-                <meta
-                    property="keyword"
-                    content="yarn berry cannot find module vscode"
-                />
-                <meta
-                    property="og:title"
-                    content="yarn berry cannot find module 해결"
-                />
-            </head>
             <PostHeadImage src=""></PostHeadImage>
             <PostHead>
                 <h1>yarn berry cannot find module 해결</h1>

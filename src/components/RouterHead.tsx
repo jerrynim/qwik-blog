@@ -11,6 +11,7 @@ export const RouterHead = component$(() => {
     return (
         <>
             <title>{title}</title>
+
             <meta name="description" content={description} />
             <link rel="canonical" href={href} />
             <meta
@@ -19,9 +20,9 @@ export const RouterHead = component$(() => {
             />
             <meta name="viewport" content="width=device-width" />
             <meta property="og:type" content="website" />
+            <meta property="og:title" content={title} />
             <meta property="og:site_name" content="제리님 블로그" />
             <meta property="og:locale" content="ko_KR" />
-            <meta property="keywords" content="제리님 기술 블로그" />
             <meta property="og:image:type" content="image/jpeg" />
             <meta property="og:image:width" content="298" />
             <meta property="og:image:height" content="298" />

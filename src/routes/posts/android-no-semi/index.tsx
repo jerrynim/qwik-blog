@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+import { DocumentHead } from "@builder.io/qwik-city";
 import {
     PostBody,
     PostCode,
@@ -8,23 +9,18 @@ import {
     PostImage,
     PostTag,
 } from "@components/post";
-
+export const head: DocumentHead = {
+    title: "Expected URL scheme 'http' or 'https' but no colon was found",
+    meta: [
+        {
+            property: "keyword",
+            content: "android websocket no colon error",
+        },
+    ],
+};
 export default component$(() => {
     return (
         <>
-            <head>
-                <title>
-                    Expected URL scheme 'http' or 'https' but no colon was found
-                </title>
-                <meta
-                    property="keyword"
-                    content="android websocket no colon error"
-                />
-                <meta
-                    property="og:title"
-                    content="Expected URL scheme 'http' or 'https' but no colon was found"
-                />
-            </head>
             <PostHeadImage src="https://res.cloudinary.com/dij9kacx9/image/upload/v1640683677/lit-blog/semi_qqxojj.jpg"></PostHeadImage>
             <PostHead>
                 <h1>
