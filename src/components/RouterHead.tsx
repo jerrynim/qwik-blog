@@ -6,7 +6,8 @@ export const RouterHead = component$(() => {
     const head = useDocumentHead();
     const title = head.title ? `${head.title} - jerrynim` : "제리님 블로그";
     const description =
-        head.meta.find((m) => m.name === "description")?.content || "";
+        head.meta.find((m) => m.name === "description")?.content ||
+        "제리님 블로그";
 
     return (
         <>

@@ -13,8 +13,6 @@ export default defineConfig(() => {
         const getUrls = (_path: string) => {
             const files = fs.readdirSync(_path);
             files.forEach((filename) => {
-                console.log(filename);
-
                 if (filename === "index.tsx") {
                     //? index.ts파일 경로
                     urls.push(_path.replace(`${__dirname}/src/routes`, ""));
