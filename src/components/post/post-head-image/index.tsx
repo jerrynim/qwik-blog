@@ -60,10 +60,9 @@ const images = [
 ];
 
 export const getRandomHeadImage = () => {
-    return images[Math.round(Math.random() * images.length)].replace(
-        "/upload/",
-        "/upload/f_auto,q_auto/",
-    );
+    return images[Math.round(Math.random() * images.length)]
+        .replace("/upload/", "/upload/q_auto/")
+        .replace(".jpg", ".webp");
 };
 
 interface PostHeadImageProps {
@@ -75,7 +74,9 @@ const PostHeadImage = component$(({ src }: PostHeadImageProps) => {
     return (
         <div class="PostHeadImage-wrapper">
             <div
-                style={`background-image: url(${src || getRandomHeadImage()});`}
+                style={`background-image: url(${
+                    src ? src.replace(".jpg", ".webp") : getRandomHeadImage()
+                });`}
             ></div>
         </div>
     );

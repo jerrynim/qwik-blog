@@ -7,7 +7,12 @@ const PostBuyMeCoffee = component$(() => {
         <div class="post-buy-me-coffee">
             <a href="https://www.buymeacoffee.com/jerrynim" target="_blank">
                 buy me a coffee
-                <img src="/static/buy-me-a-coffee.svg" alt="" />
+                <img
+                    width="150"
+                    height="42"
+                    src="/static/buy-me-a-coffee.svg"
+                    alt=""
+                />
             </a>
         </div>
     );

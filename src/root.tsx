@@ -1,13 +1,44 @@
-import { component$, useStyles$, useStylesScoped$ } from "@builder.io/qwik";
+import {
+    component$,
+    useClientEffect$,
+    useStyles$,
+    useStylesScoped$,
+} from "@builder.io/qwik";
 import { QwikCityProvider, RouterOutlet } from "@builder.io/qwik-city";
 import styles from "./styles/resetCss.css?inline";
 import paletteStyles from "./styles/palette.css?inline";
 import { RouterHead } from "./components/RouterHead";
+import { isRobot } from "./utils";
+
+declare global {
+    interface Window {
+        dataLayer: any;
+    }
+}
 
 export default component$(() => {
     useStyles$(styles);
     useStyles$(paletteStyles);
 
+    useClientEffect$(() => {
+        console.log(import.meta.env.PROD);
+        if (import.meta.env.PROD && !isRobot(navigator.userAgent)) {
+            const script = document.createElement("script");
+            const GA_ID = "G-CLE76PBB93";
+            script.async = true;
+            script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+            document.head.appendChild(script);
+
+            window.dataLayer = window.dataLayer || [];
+            const gtag: any = function () {
+                // eslint-disable-next-line prefer-rest-params
+                window.dataLayer.push(arguments);
+            };
+
+            gtag("js", new Date());
+            gtag("config", GA_ID);
+        }
+    });
     return (
         <QwikCityProvider>
             <head>
