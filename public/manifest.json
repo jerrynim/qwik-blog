@@ -4,7 +4,7 @@
     "background_color": "#ffffff",
     "display": "minimal-ui",
     "scope": "/",
-    "start_url": "/",
+    "start_url": ".",
     "short_name": "제리님 블로그",
     "icons": [
         {
@@ -38,22 +38,10 @@
             "density": "1.0"
         },
         {
-            "src": "/favicon/android-icon-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png",
-            "density": "1.0"
-        },
-        {
             "src": "/favicon/favicon-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "density": "1.0"
-        },
-        {
-            "src": "/favicon/android-icon-192x192.png",
-            "sizes": "196x196",
-            "type": "image/png",
-            "purpose": "any maskable"
         }
     ]
 }

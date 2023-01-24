@@ -1,16 +1,16 @@
+import { component$, useClientEffect$, useStyles$ } from "@builder.io/qwik";
 import {
-    component$,
-    useClientEffect$,
-    useStyles$,
-    useStylesScoped$,
-} from "@builder.io/qwik";
-import { QwikCityProvider, RouterOutlet } from "@builder.io/qwik-city";
+    QwikCityProvider,
+    RouterOutlet,
+    ServiceWorkerRegister,
+} from "@builder.io/qwik-city";
 import styles from "./styles/resetCss.css?inline";
 import paletteStyles from "./styles/palette.css?inline";
 import { RouterHead } from "./components/RouterHead";
 import { isRobot } from "./utils";
 
 declare global {
+    // eslint-disable-next-line no-unused-vars
     interface Window {
         dataLayer: any;
     }
@@ -21,7 +21,6 @@ export default component$(() => {
     useStyles$(paletteStyles);
 
     useClientEffect$(() => {
-        console.log(import.meta.env.PROD);
         if (import.meta.env.PROD && !isRobot(navigator.userAgent)) {
             const script = document.createElement("script");
             const GA_ID = "G-CLE76PBB93";
@@ -47,6 +46,7 @@ export default component$(() => {
             </head>
             <body>
                 <RouterOutlet />
+                <ServiceWorkerRegister />
             </body>
         </QwikCityProvider>
     );

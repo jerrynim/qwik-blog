@@ -8,7 +8,7 @@ import { parseDate } from "./src/utils/index";
 
 export default defineConfig(() => {
     if (process.env.NODE_ENV === "production") {
-        const urls = [];
+        const urls: string[] = [];
 
         const getUrls = (_path: string) => {
             const files = fs.readdirSync(_path);
@@ -18,13 +18,10 @@ export default defineConfig(() => {
                     urls.push(_path.replace(`${__dirname}/src/routes`, ""));
                 } else if (
                     filename.endsWith(".css") ||
+                    filename === "service-worker.ts" ||
                     filename === "layout.tsx"
                 ) {
-                    // urls.push(
-                    //     `${_path}/${filename}`
-                    //         .replace(`${__dirname}/pages`, "")
-                    //         .replace(".ts", ""),
-                    // );
+                    //
                 } else {
                     //? 폴더는 내부탐색
                     getUrls(`${_path}/${filename}`);
@@ -40,7 +37,6 @@ export default defineConfig(() => {
             })
             .join("");
 
-        const date = parseDate(new Date());
         const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <sitemap>

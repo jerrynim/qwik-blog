@@ -7,7 +7,6 @@ import {
     PostDate,
     PostHead,
     PostHeadImage,
-    PostLink,
     PostTag,
     PostTitle,
 } from "@components/post";

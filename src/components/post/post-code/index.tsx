@@ -13,19 +13,12 @@ interface PostCodeProps {
     code: string;
     language?: string;
     filename?: string;
-    whiteSpace?: string;
 }
 
 const PostCode = component$(
-    ({
-        code,
-        language = "typescript",
-        filename,
-        whiteSpace,
-    }: PostCodeProps) => {
+    ({ code, language = "typescript", filename }: PostCodeProps) => {
         useStylesScoped$(styles);
         useStyles$(prismSyles);
-        const ref = useSignal<Element>();
         const buttonRef = useSignal<HTMLButtonElement>();
         const buttonText = useSignal("copied!!");
         const _code = code

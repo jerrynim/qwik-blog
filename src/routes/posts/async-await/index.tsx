@@ -2,11 +2,9 @@ import { component$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import {
     PostBody,
-    PostCode,
     PostDate,
     PostHead,
     PostHeadImage,
-    PostImage,
     PostTag,
 } from "@components/post";
 export const head: DocumentHead = {

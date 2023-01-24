@@ -1,9 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import {
-    useDocumentHead,
-    DocumentHeadValue,
-    DocumentHead,
-} from "@builder.io/qwik-city";
+import { DocumentHead } from "@builder.io/qwik-city";
 
 import {
     PostBody,

@@ -1,14 +1,11 @@
 import { component$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import {
-    PostBlockquote,
     PostBody,
     PostCode,
     PostDate,
     PostHead,
     PostHeadImage,
-    PostImage,
-    PostLink,
     PostTag,
     PostTitle,
 } from "@components/post";

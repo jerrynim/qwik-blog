@@ -7,7 +7,6 @@ import {
     PostDate,
     PostHead,
     PostHeadImage,
-    PostImage,
     PostLink,
     PostTag,
     PostTitle,
