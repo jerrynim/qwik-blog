@@ -8,10 +8,12 @@ interface PostImageProps {
 }
 const PostImage = component$(({ width, src, alt, path }: PostImageProps) => {
     useStylesScoped$(styles);
+
+    const cloudinarySrc = src.replace("/upload/", `/upload/f_auto,w_680/`);
     return (
         <div class="post-image">
-            <a href={src} target="_blank" rel="noreferrer">
-                <img src={src} alt={alt} />
+            <a href={cloudinarySrc} target="_blank" rel="noreferrer">
+                <img src={cloudinarySrc} alt={alt} />
             </a>
             <span>{alt}</span>
         </div>

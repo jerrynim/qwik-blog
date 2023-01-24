@@ -2,7 +2,7 @@
     "name": "qwik-blog",
     "packageManager": "yarn@3.3.1",
     "scripts": {
-        "build": "qwik build",
+        "build": "qwik build && cp public/sitemap.xml .vercel/output/static/sitemap.xml",
         "build.client": "vite build",
         "build.server": "vite build -c adaptors/vercel-edge/vite.config.ts",
         "deploy": "vercel deploy",

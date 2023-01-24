@@ -11,7 +11,7 @@ const PostTag = component$(({ tags }: PostTagProps) => {
     return (
         <ul class="post-tag-wrapper">
             {_tags?.map((tag) => (
-                <li class="post-tag">#${tag}</li>
+                <li class="post-tag">#{tag}</li>
             ))}
         </ul>
     );
