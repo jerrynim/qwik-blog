@@ -3,8 +3,6 @@ import { qwikVite } from "@builder.io/qwik/optimizer";
 import { qwikCity } from "@builder.io/qwik-city/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import fs from "fs";
-import path from "fs";
-import { parseDate } from "./src/utils/index";
 
 export default defineConfig(() => {
     if (process.env.NODE_ENV === "production") {
@@ -19,6 +17,7 @@ export default defineConfig(() => {
                 } else if (
                     filename.endsWith(".css") ||
                     filename === "service-worker.ts" ||
+                    filename === "menu.md" ||
                     filename === "layout.tsx"
                 ) {
                     //

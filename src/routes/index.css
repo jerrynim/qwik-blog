@@ -1,0 +1,10 @@
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.route-path {
+    width: fit-content;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
