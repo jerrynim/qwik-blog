@@ -8,6 +8,7 @@ import {
     PostHeadImage,
     PostImage,
     PostLink,
+    PostSeries,
     PostTag,
     PostTitle,
 } from "@components/post";
@@ -29,6 +30,7 @@ export default component$(() => {
                 <h1>Lit 튜토리얼 (4/6)</h1>
                 <PostTag tags="lit lit-html lit-elemnt tutorial lifecycle"></PostTag>
                 <PostDate>2021-07-25</PostDate>
+                <PostSeries title={"Lit tutorial"} />
             </PostHead>
             <PostBody>
                 이번 포스팅에는 LitElement에서 바인딩(bind) 하는 것을 알아보도록

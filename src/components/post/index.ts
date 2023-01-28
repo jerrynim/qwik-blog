@@ -10,6 +10,7 @@ import PostTag from "./post-tag";
 import PostTitle from "./post-title";
 import PostBlockquote from "./post-blockquote";
 import PostBuyMeCoffee from "./post-buy-me-coffee";
+import PostSeries from "./post-series";
 
 export {
     PostBody,
@@ -24,4 +25,5 @@ export {
     PostTitle,
     PostBlockquote,
     PostBuyMeCoffee,
+    PostSeries,
 };

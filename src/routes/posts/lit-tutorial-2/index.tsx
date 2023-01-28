@@ -11,6 +11,7 @@ import {
     PostLink,
     PostTag,
     PostTitle,
+    PostSeries,
 } from "@components/post";
 
 export const head: DocumentHead = {
@@ -31,6 +32,7 @@ export default component$(() => {
                 <h1>Lit 튜토리얼 - property (2/6)</h1>
                 <PostTag tags="lit lit-html lit-elemnt tutorial property"></PostTag>
                 <PostDate>2021-07-25</PostDate>
+                <PostSeries title={"Lit tutorial"} />
             </PostHead>
             <PostBody>
                 이전 포스팅에서 lit-project를 설치하여 lit-element를 사용하여
@@ -257,6 +259,7 @@ export const code3 = `
 import { LitElement, html, customElement, property } from "lit-element";
 import PostLink from '../../components/post/post-link/index';
 import PostBlockquote from '../../components/post/PostBlockquote/index';
+import PostSeries from '../../../components/post/post-series/index';
 
 @customElement("lit-tomato")
 class Tomato extends LitElement {

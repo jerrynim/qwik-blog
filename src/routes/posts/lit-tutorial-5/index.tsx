@@ -8,6 +8,7 @@ import {
     PostHead,
     PostHeadImage,
     PostImage,
+    PostSeries,
     PostTag,
     PostTitle,
 } from "@components/post";
@@ -30,6 +31,7 @@ export default component$(() => {
                 <h1>Lit 튜토리얼 (5/6)</h1>
                 <PostTag tags="lit lit-html lit-elemnt tutorial redux"></PostTag>
                 <PostDate>2021-07-25</PostDate>
+                <PostSeries title={"Lit tutorial"} />
             </PostHead>
             <PostBody>
                 lit-프로젝트에 전역 형상 관리를 위하여 redux(리덕스)를

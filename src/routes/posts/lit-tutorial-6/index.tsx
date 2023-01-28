@@ -9,6 +9,7 @@ import {
     PostHeadImage,
     PostImage,
     PostLink,
+    PostSeries,
     PostTag,
     PostTitle,
 } from "@components/post";
@@ -31,6 +32,7 @@ export default component$(() => {
                 <h1>Lit 튜토리얼 (6/6)</h1>
                 <PostTag tags="lit lit-html lit-elemnt tutorial route"></PostTag>
                 <PostDate>2021-07-25</PostDate>
+                <PostSeries title={"Lit tutorial"} />
             </PostHead>
             <PostBody>
                 웹 컴포넌트에서 라우팅을 하는 법을 알아보도록 하겠습니다. 기존의

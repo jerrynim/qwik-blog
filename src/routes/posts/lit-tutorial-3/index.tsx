@@ -9,6 +9,7 @@ import {
     PostHeadImage,
     PostImage,
     PostLink,
+    PostSeries,
     PostTag,
     PostTitle,
 } from "@components/post";
@@ -31,6 +32,7 @@ export default component$(() => {
                 <h1>Lit 튜토리얼 (3/6)</h1>
                 <PostTag tags="lit lit-html lit-elemnt tutorial lifecycle"></PostTag>
                 <PostDate>2021-07-25</PostDate>
+                <PostSeries title={"Lit tutorial"} />
             </PostHead>
             <PostBody>
                 <PostLink href="https://lit-element.polymer-project.org/guide/lifecycle">

@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import { DocumentHead } from "@builder.io/qwik-city";
+import { DocumentHead, useContent } from "@builder.io/qwik-city";
 
 import {
     PostBody,
@@ -12,6 +12,7 @@ import {
     PostTag,
     PostTitle,
 } from "@components/post";
+import PostSeries from "../../../components/post/post-series";
 
 export const head: DocumentHead = {
     title: "Lit 튜토리얼 (1/6)",
@@ -30,7 +31,9 @@ export default component$(() => {
                 <h1>Lit 튜토리얼 (1/6)</h1>
                 <PostTag tags="lit lit-html lit-elemnt tutorial start"></PostTag>
                 <PostDate>2021-07-25</PostDate>
+                <PostSeries title={"Lit tutorial"} />
             </PostHead>
+
             <PostBody>
                 안녕하세요. 작년에 lit-html을 소개하는
                 <PostLink href="https://velog.io/@jerrynim_/Lit-html-1-%EC%86%8C%EA%B0%9C">
