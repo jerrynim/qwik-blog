@@ -8,15 +8,13 @@ export const RouterHead = component$(() => {
     const description =
         head.meta.find((m) => m.name === "description")?.content ||
         "제리님 블로그";
+    const _href = `https://jerrynim.dev${pathname.slice(0, -1)}`;
     return (
         <>
             <title>{title}</title>
 
             <meta name="description" content={description} />
-            <link
-                rel="canonical"
-                href={`https://jerrynim.dev${pathname.slice(0, -1)}`}
-            />
+            <link rel="canonical" href={_href} />
             <meta
                 name="viewport"
                 content="width=device-width, initial-scale=1"
@@ -29,7 +27,7 @@ export const RouterHead = component$(() => {
             <meta property="og:image:width" content="298" />
             <meta property="og:image:height" content="298" />
             <meta property="og:image:alt" content="제리님 블로그" />
-            <meta property="og:url" content={href} />
+            <meta property="og:url" content={_href} />
             <meta
                 property="og:image"
                 content="https://jerrynim.dev/static/Profile.png"
