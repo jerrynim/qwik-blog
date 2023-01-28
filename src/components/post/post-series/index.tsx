@@ -10,7 +10,6 @@ const PostSeries = component$(({ title }: PostSeriesProps) => {
     useStyles$(styles);
     const content = useContent();
     const location = useLocation();
-    console.log(location);
     const menu = content.menu?.items?.find((item) => item.text === title);
     if (!menu) {
         return null;

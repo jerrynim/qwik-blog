@@ -2,19 +2,21 @@ import { component$ } from "@builder.io/qwik";
 import { useDocumentHead, useLocation } from "@builder.io/qwik-city";
 
 export const RouterHead = component$(() => {
-    const { href } = useLocation();
+    const { href, pathname } = useLocation();
     const head = useDocumentHead();
     const title = head.title ? `${head.title} - jerrynim` : "제리님 블로그";
     const description =
         head.meta.find((m) => m.name === "description")?.content ||
         "제리님 블로그";
-
     return (
         <>
             <title>{title}</title>
 
             <meta name="description" content={description} />
-            <link rel="canonical" href={href} />
+            <link
+                rel="canonical"
+                href={`https://jerrynim.dev${pathname.slice(0, -1)}`}
+            />
             <meta
                 name="viewport"
                 content="width=device-width, initial-scale=1"

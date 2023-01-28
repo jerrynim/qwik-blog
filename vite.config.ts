@@ -18,7 +18,8 @@ export default defineConfig(() => {
                     filename.endsWith(".css") ||
                     filename === "service-worker.ts" ||
                     filename === "menu.md" ||
-                    filename === "layout.tsx"
+                    filename === "layout.tsx" ||
+                    filename === "e2e-sample"
                 ) {
                     //
                 } else {
