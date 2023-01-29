@@ -13,11 +13,12 @@ import {
     PostBlockquote,
 } from "@components/post";
 export const head: DocumentHead = {
-    title: "yarn workspace nohoist",
+    title: "yarn workspace nohoist monorepo",
     meta: [
         {
             property: "keyword",
-            content: "yarn workspace nohoist hoistingLimits",
+            content:
+                "yarn workspace nohoist hoistingLimits monorepo node_modules",
         },
     ],
 };
@@ -27,7 +28,7 @@ export default component$(() => {
             <PostHeadImage></PostHeadImage>
             <PostHead>
                 <h1>yarn workspace nohoist</h1>
-                <PostTag tags="yarn workspace nohoist hoistingLimits"></PostTag>
+                <PostTag tags="yarn workspace nohoist hoistingLimits monorepo node_modules"></PostTag>
                 <PostDate>2023-01-28</PostDate>
             </PostHead>
 
