@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import { DocumentHead, useContent } from "@builder.io/qwik-city";
+import { DocumentHead } from "@builder.io/qwik-city";
 
 import {
     PostBody,
@@ -11,8 +11,8 @@ import {
     PostLink,
     PostTag,
     PostTitle,
+    PostSeries,
 } from "@components/post";
-import PostSeries from "../../../components/post/post-series";
 
 export const head: DocumentHead = {
     title: "Lit 튜토리얼 (1/6)",
