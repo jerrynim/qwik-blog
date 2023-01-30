@@ -11,7 +11,7 @@ export const head: DocumentHead = {
     title: "async await",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content: "javascript async await promiser",
         },
     ],

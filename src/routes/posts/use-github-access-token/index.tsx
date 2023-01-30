@@ -14,7 +14,7 @@ export const head: DocumentHead = {
     title: "git use a personal access token",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content: "git personal access token",
         },
     ],

@@ -14,7 +14,7 @@ export const head: DocumentHead = {
     title: "vanilla Javascript 란?",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content: "vanilla javascript 바닐라 자바스크립트",
         },
     ],

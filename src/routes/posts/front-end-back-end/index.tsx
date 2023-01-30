@@ -14,7 +14,7 @@ export const head: DocumentHead = {
     title: "프론트엔드 백엔드",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content: "프론트엔드 백엔드",
         },
     ],

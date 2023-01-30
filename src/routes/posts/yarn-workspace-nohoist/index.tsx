@@ -16,7 +16,7 @@ export const head: DocumentHead = {
     title: "yarn workspace nohoist monorepo",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content:
                 "yarn workspace nohoist hoistingLimits monorepo node_modules",
         },

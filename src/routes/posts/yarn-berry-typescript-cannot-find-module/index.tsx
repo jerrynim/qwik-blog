@@ -13,7 +13,7 @@ export const head: DocumentHead = {
     title: "yarn berry cannot find module 해결",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content: "yarn berry cannot find module vscode",
         },
     ],

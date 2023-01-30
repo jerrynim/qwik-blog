@@ -15,7 +15,7 @@ export const head: DocumentHead = {
     title: "자바스크립트에서 CJS,ESM 은 대체 뭘까?",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content: "cjs esm javascript",
         },
     ],

@@ -13,7 +13,7 @@ export const head: DocumentHead = {
     title: "간단한 원하는 길이의 배열 만들기",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content: "simple make array length array from",
         },
     ],

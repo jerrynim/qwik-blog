@@ -16,7 +16,7 @@ export const head: DocumentHead = {
     title: "Vanilla Javascript SPA만들기",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content: "Vanilla Javascript SPA 라우팅",
         },
     ],

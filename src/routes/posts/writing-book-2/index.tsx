@@ -13,7 +13,7 @@ export const head: DocumentHead = {
     title: "책을 쓰게 된 이야기 - 2부",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content: "개발 책 집필 Next.js",
         },
     ],

@@ -13,7 +13,7 @@ export const head: DocumentHead = {
     title: ".keystore 생성하는 법 (Mac)",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content: "generate keystore android Mac",
         },
     ],

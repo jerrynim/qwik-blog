@@ -14,7 +14,7 @@ export const head: DocumentHead = {
     title: "자바스크립트 클로저 closure",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content: "자바스크립트 클로저 closure",
         },
     ],

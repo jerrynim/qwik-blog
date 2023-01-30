@@ -16,7 +16,7 @@ export const head: DocumentHead = {
     title: "시맨틱 태그",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content: "시맨틱 태그 semantic tag no only use div",
         },
     ],

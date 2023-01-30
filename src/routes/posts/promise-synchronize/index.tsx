@@ -15,7 +15,7 @@ export const head: DocumentHead = {
     title: "Promise 순차실행하기",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content: "javascript promise synchronize 순차실행",
         },
     ],

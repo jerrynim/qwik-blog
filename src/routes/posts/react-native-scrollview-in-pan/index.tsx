@@ -15,7 +15,7 @@ export const head: DocumentHead = {
     title: "react-native ScrollView in pan responder",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content: "react-native ScrollView in pan panresponder",
         },
     ],

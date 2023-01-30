@@ -18,7 +18,7 @@ export const head: DocumentHead = {
     title: "Lit 튜토리얼 (3/6)",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content: "lit lit-html lit-elemnt tutorial lifecycle",
         },
     ],

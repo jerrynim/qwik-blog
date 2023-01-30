@@ -13,7 +13,7 @@ export const head: DocumentHead = {
     title: "About PodFile",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content: "react-native podFile",
         },
     ],

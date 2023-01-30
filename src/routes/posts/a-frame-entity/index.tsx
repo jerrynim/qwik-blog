@@ -15,7 +15,7 @@ export const head: DocumentHead = {
     title: "A-Frame Entity 한글 번역",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content: "A-Frame 한글 번역",
         },
     ],

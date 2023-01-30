@@ -13,7 +13,7 @@ export const head: DocumentHead = {
     title: "Expected URL scheme 'http' or 'https' but no colon was found",
     meta: [
         {
-            property: "keyword",
+            property: "keywords",
             content: "android websocket no colon error",
         },
     ],
