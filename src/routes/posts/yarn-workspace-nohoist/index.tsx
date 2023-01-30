@@ -103,7 +103,9 @@ export default component$(() => {
                     code={code5}
                     filename="packages/projectB/package.json"
                 ></PostCode>
-                <PostTitle subtitle="nmSelfReferences"></PostTitle>
+                yarn3에서는 package.json에 workspaces를 설정하지 않고도
+                호이스팅을 막을 수 있습니다.
+                <PostCode code={code6}></PostCode>
             </PostBody>
         </>
     );
@@ -153,3 +155,8 @@ export const code5 = `
     ]
   }  
 `;
+
+export const code6 = `
+yarn set version berry
+cd packages/projectB
+yarn`;
