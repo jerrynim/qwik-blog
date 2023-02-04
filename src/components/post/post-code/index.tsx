@@ -47,7 +47,11 @@ const PostCode = component$(
         });
 
         return (
-            <div class="post-code">
+            <div
+                class="post-code"
+                onMouseEnter$={_handleMouseEnter}
+                onMouseLeave$={_handleMouseLeave}
+            >
                 {filename && <p class="filename">{filename}</p>}
                 <button
                     type="button"
@@ -55,8 +59,6 @@ const PostCode = component$(
                     style={`top: ${filename ? "46px" : "16px"};`}
                     onClick$={_copyCode}
                     ref={buttonRef}
-                    onMouseEnter$={_handleMouseEnter}
-                    onMouseLeave$={_handleMouseLeave}
                 >
                     copy
                 </button>
