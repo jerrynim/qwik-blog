@@ -1,6 +1,8 @@
 const staticPaths = new Set([]);
 function isStaticPath(method, url) {
-  if (method.toUppercase() !== 'GET') return false;
+  if (method.toUpperCase() !== 'GET') {
+    return false;
+  }
   const p = url.pathname;
   if (p.startsWith("/build/")) {
     return true;
@@ -8,11 +10,17 @@ function isStaticPath(method, url) {
   if (p.startsWith("/assets/")) {
     return true;
   }
-  if (url.searchParams.get('qwikcity.static') === "false") {
-    return false;
-  }
   if (staticPaths.has(p)) {
     return true;
+  }
+  if (p.endsWith('/q-data.json')) {
+    const pWithoutQdata = p.replace(/\/q-data.json$/, '');
+    if (staticPaths.has(pWithoutQdata + '/')) {
+      return true;
+    }
+    if (staticPaths.has(pWithoutQdata)) {
+      return true;
+    }
   }
   return false;
 }
