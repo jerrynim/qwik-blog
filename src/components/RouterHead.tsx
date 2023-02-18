@@ -14,7 +14,6 @@ export const RouterHead = component$(() => {
             <title>{title}</title>
 
             <meta name="description" content={description} />
-            <link rel="canonical" href={_href} />
             <meta
                 name="viewport"
                 content="width=device-width, initial-scale=1"
