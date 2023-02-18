@@ -2,17 +2,16 @@ import { component$ } from "@builder.io/qwik";
 import { useDocumentHead, useLocation } from "@builder.io/qwik-city";
 
 export const RouterHead = component$(() => {
-    const { href, pathname } = useLocation();
+    const { url } = useLocation();
     const head = useDocumentHead();
     const title = head.title ? `${head.title} - jerrynim` : "제리님 블로그";
     const description =
         head.meta.find((m) => m.name === "description")?.content ||
         "제리님 블로그";
-    const _href = `https://jerrynim.dev${pathname.slice(0, -1)}`;
+    const _href = `https://jerrynim.dev${url.pathname.slice(0, -1)}`;
     return (
         <>
             <title>{title}</title>
-
             <meta name="description" content={description} />
             <meta
                 name="viewport"
@@ -31,10 +30,7 @@ export const RouterHead = component$(() => {
                 property="og:image"
                 content="https://jerrynim.dev/static/Profile.png"
             />
-            <meta
-                property="og:image:secure_url"
-                href="https://jerrynim.dev/static/Profile.png"
-            />
+
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />

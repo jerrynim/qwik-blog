@@ -4,6 +4,9 @@
     <loc>https://jerrynim.dev</loc>
   </url>
   <url>
+    <loc>https://jerrynim.dev/portfolio/stack</loc>
+  </url>
+  <url>
     <loc>https://jerrynim.dev/posts/a-frame-entity</loc>
   </url>
   <url>
@@ -17,6 +20,9 @@
   </url>
   <url>
     <loc>https://jerrynim.dev/posts/async-await</loc>
+  </url>
+  <url>
+    <loc>https://jerrynim.dev/posts/deep-dive-closure</loc>
   </url>
   <url>
     <loc>https://jerrynim.dev/posts/front-end-back-end</loc>
@@ -74,6 +80,9 @@
   </url>
   <url>
     <loc>https://jerrynim.dev/posts/yarn-berry-typescript-cannot-find-module</loc>
+  </url>
+  <url>
+    <loc>https://jerrynim.dev/posts/yarn-workspace-nohoist</loc>
   </url>
 
     </urlset>
