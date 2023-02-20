@@ -50,7 +50,7 @@ export default component$(() => {
             </head>
             <body>
                 <RouterOutlet />
-                <ServiceWorkerRegister />
+                {import.meta.env.PROD && !isRobot && <ServiceWorkerRegister />}
             </body>
         </QwikCityProvider>
     );
