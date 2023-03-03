@@ -63,7 +63,7 @@ const PostCode = component$(
                     copy
                 </button>
                 <code
-                    class="language-${this.language}"
+                    class={`language-${language}`}
                     dangerouslySetInnerHTML={Prism.highlight(
                         _code,
                         Prism.languages[language] as any,
