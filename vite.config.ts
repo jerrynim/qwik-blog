@@ -33,7 +33,7 @@ export default defineConfig(() => {
         const urlTags = urls
             .map((url) => {
                 if (url !== "/404") {
-                    return `  <url>\n    <loc>https://jerrynim.dev${url}</loc>\n  </url>\n`;
+                    return `  <url>\n    <loc>https://jerrynim.dev${url}/</loc>\n  </url>\n`;
                 }
             })
             .join("");
