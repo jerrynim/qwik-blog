@@ -19,7 +19,7 @@ export const head: DocumentHead = {
             content: "javascript promise synchronize 순차실행",
         },
         {
-            property: "keywords",
+            property: "description",
             content: "javascript promise synchronize 순차실행",
         },
     ],
