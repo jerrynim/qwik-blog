@@ -12,6 +12,7 @@
 
 node_modules
 dist
+server
 
 # Vercel
 .vercel
