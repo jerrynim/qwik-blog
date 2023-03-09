@@ -32,10 +32,7 @@ export default component$(() => {
                 <PostDate>2023-02-18</PostDate>
             </PostHead>
 
-            <PostBody>
-                타입스크립트에서 React.FowardRef를 사용하는 법
-                <PostCode></PostCode>
-            </PostBody>
+            <PostBody>타입스크립트에서 React.FowardRef를 사용하는 법</PostBody>
         </>
     );
 });
