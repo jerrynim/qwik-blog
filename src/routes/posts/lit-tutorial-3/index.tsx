@@ -21,6 +21,10 @@ export const head: DocumentHead = {
             property: "keywords",
             content: "lit lit-html lit-elemnt tutorial lifecycle",
         },
+        {
+            property: "description",
+            content: "lit lit-html lit-elemnt tutorial lifecycle",
+        },
     ],
 };
 

@@ -18,6 +18,13 @@ export const head: DocumentHead = {
             property: "keywords",
             content: "cjs esm javascript",
         },
+        {
+            property: "description",
+            content: `자바스크립트는 모듈을 import/export 할 방법이
+            없었습니다. 이것은 문제입니다. 당신의 앱을 한파일에 쓰는 것을
+            상상해 보세요 - 이것은 악몽입니다! 그래서, 뛰어난 사람들이
+            자바스크립트에 모듈화를 추가하기 위해 시도했습니다.`,
+        },
     ],
 };
 

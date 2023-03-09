@@ -17,6 +17,13 @@ export const head: DocumentHead = {
             property: "keywords",
             content: "git personal access token",
         },
+        {
+            property: "description",
+            content: `remote: Support for password authentication was removed on August 13, 2021.
+            Please use a personal access token instead.
+            다음과 같은 에러가 떴을 때에 깃허브의 personal access token을
+            사용하도록 설정해주어야 합니다`,
+        },
     ],
 };
 

@@ -20,6 +20,10 @@ export const head: DocumentHead = {
             property: "keywords",
             content: "lit lit-html lit-elemnt tutorial redux",
         },
+        {
+            property: "description",
+            content: "lit lit-html lit-elemnt tutorial redux",
+        },
     ],
 };
 

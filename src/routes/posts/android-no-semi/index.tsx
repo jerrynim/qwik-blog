@@ -16,6 +16,10 @@ export const head: DocumentHead = {
             property: "keywords",
             content: "android websocket no colon error",
         },
+        {
+            property: "description",
+            content: "android websocket no colon error 해결하기",
+        },
     ],
 };
 export default component$(() => {

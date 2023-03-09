@@ -20,6 +20,13 @@ export const head: DocumentHead = {
             property: "keyword",
             content: "docker no exit",
         },
+        {
+            property: "description",
+            content: ` 컨테이너를 detached 모드에서 실행하려면, -d=true
+            혹은 -d 옵션을 사용하십쇼. Detached 모드는 means
+            당신의 터미널의 백그라운드에서 실행됩니다. 인풋을 받거나
+            디스플레이 출력을 하지 않습니다.`,
+        },
     ],
 };
 export default component$(() => {
@@ -35,7 +42,7 @@ export default component$(() => {
             <PostBody>
                 <PostCode code={code1}></PostCode>
                 <PostTitle subtitle="Detached (-d)"></PostTitle>
-                컨테이너를 detached 모드에서 실핼하려면, <code>-d=true</code>
+                컨테이너를 detached 모드에서 실행하려면, <code>-d=true</code>
                 혹은 <code>-d</code> 옵션을 사용하십쇼. Detached 모드는 means
                 당신의 터미널의 백그라운드에서 실행됩니다. 인풋을 받거나
                 디스플레이 출력을 하지 않습니다.

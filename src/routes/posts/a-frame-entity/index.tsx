@@ -18,6 +18,10 @@ export const head: DocumentHead = {
             property: "keywords",
             content: "A-Frame 한글 번역",
         },
+        {
+            property: "description",
+            content: "A-Frame 한글 번역",
+        },
     ],
 };
 

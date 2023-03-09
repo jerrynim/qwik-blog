@@ -21,6 +21,10 @@ export const head: DocumentHead = {
             property: "keywords",
             content: "lit lit-html lit-elemnt tutorial start",
         },
+        {
+            property: "description",
+            content: "lit lit-html lit-elemnt tutorial start",
+        },
     ],
 };
 export default component$(() => {

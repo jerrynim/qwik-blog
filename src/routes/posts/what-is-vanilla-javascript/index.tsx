@@ -17,6 +17,11 @@ export const head: DocumentHead = {
             property: "keywords",
             content: "vanilla javascript 바닐라 자바스크립트",
         },
+        {
+            property: "description",
+            content: `바닐라 자바스크립트는 Jquery와 같은 프레임워크를 사용하지않는
+            순수 자바스크립트를 의미합니다.`,
+        },
     ],
 };
 

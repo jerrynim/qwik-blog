@@ -20,6 +20,11 @@ export const head: DocumentHead = {
             property: "keyword",
             content: "puppeteer-access-popup",
         },
+        {
+            property: "description",
+            content:
+                "To get popup info about page like google account select popup you can use code below",
+        },
     ],
 };
 export default component$(() => {

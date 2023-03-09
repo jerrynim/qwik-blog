@@ -16,6 +16,10 @@ export const head: DocumentHead = {
             property: "keywords",
             content: "simple make array length array from",
         },
+        {
+            property: "description",
+            content: "simple make array length array from",
+        },
     ],
 };
 export default component$(() => {

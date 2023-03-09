@@ -19,6 +19,13 @@ export const head: DocumentHead = {
             property: "keywords",
             content: "Vanilla Javascript SPA 라우팅",
         },
+        {
+            property: "keywords",
+            content: `바닐라 자바스크립트에서 라우팅을 만드는 작업을 함께 보도록
+            하겠습니다. 이 블로그에서도 사용하고 있는 방식으로 브라우저의
+            history API, popstate 이벤트, 커스텀 이벤트를 사용하여 제작하게
+            됩니다.`,
+        },
     ],
 };
 export default component$(() => {

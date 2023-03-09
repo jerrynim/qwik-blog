@@ -6,7 +6,7 @@ export const RouterHead = component$(() => {
     const head = useDocumentHead();
     const title = head.title ? `${head.title} - jerrynim` : "제리님 블로그";
     const description =
-        head.meta.find((m) => m.name === "description")?.content ||
+        head.meta.find((m) => m.property === "description")?.content ||
         "제리님 블로그에 오신 것을 환영합니다";
     const _href = `https://jerrynim.dev${url.pathname.slice(0, -1)}/`;
     return (

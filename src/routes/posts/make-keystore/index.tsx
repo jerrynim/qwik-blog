@@ -16,6 +16,10 @@ export const head: DocumentHead = {
             property: "keywords",
             content: "generate keystore android Mac",
         },
+        {
+            property: "description",
+            content: "Making .keystore for android debug",
+        },
     ],
 };
 

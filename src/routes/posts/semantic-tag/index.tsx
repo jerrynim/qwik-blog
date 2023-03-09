@@ -19,6 +19,11 @@ export const head: DocumentHead = {
             property: "keywords",
             content: "시맨틱 태그 semantic tag no only use div",
         },
+        {
+            property: "description",
+            content: `html, css 를 사용하여 화면을 구성하다 보면 다양한 html 태그들을
+            사용하여 화면을 구성할 수 있습니다. 하지만`,
+        },
     ],
 };
 export default component$(() => {

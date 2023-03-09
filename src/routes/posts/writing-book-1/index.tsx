@@ -16,6 +16,13 @@ export const head: DocumentHead = {
             property: "keywords",
             content: "개발 책 집필 Next.js",
         },
+        {
+            property: "description",
+            content: `안녕하세요. '클론코딩으로 시작하는 Next.js'의 저자 제리님입니다.
+            집필을 마무리하고 어느 정도의 시간이 지나 책을 집필하게 된
+            이야기를 풀어보고자 합니다. 이야기는 시간의 순서대로 써나가
+            보도록 하겠습니다.`,
+        },
     ],
 };
 

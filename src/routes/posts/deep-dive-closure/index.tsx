@@ -21,6 +21,10 @@ export const head: DocumentHead = {
             property: "keyword",
             content: "lit lit-html lit-elemnt tutorial start",
         },
+        {
+            property: "description",
+            content: "(번역)A deep dive into JavaScript closures",
+        },
     ],
 };
 export default component$(() => {

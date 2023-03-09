@@ -18,6 +18,10 @@ export const head: DocumentHead = {
             property: "keywords",
             content: "react-native ScrollView in pan panresponder",
         },
+        {
+            property: "description",
+            content: "react-native ScrollView in pan panresponder",
+        },
     ],
 };
 

@@ -16,6 +16,10 @@ export const head: DocumentHead = {
             property: "keywords",
             content: "react-native podFile",
         },
+        {
+            property: "description",
+            content: "react-native podFile 각 속성 정의 보기",
+        },
     ],
 };
 export default component$(() => {

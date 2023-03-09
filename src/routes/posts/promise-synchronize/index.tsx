@@ -18,6 +18,10 @@ export const head: DocumentHead = {
             property: "keywords",
             content: "javascript promise synchronize 순차실행",
         },
+        {
+            property: "keywords",
+            content: "javascript promise synchronize 순차실행",
+        },
     ],
 };
 

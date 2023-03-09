@@ -20,6 +20,13 @@ export const head: DocumentHead = {
             content:
                 "yarn workspace nohoist hoistingLimits monorepo node_modules",
         },
+        {
+            property: "description",
+            content: ` packages/projectB의 호이스팅을 막기 위해서는 projectB가 하나의
+                워크스페이스가 되어야하고,
+                nmHoistingLimits: workspaces 값을 사용하여
+                호이스팅을 막을 수 있습니다.`,
+        },
     ],
 };
 export default component$(() => {

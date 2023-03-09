@@ -16,6 +16,11 @@ export const head: DocumentHead = {
             property: "keywords",
             content: "yarn berry cannot find module vscode",
         },
+        {
+            property: "description",
+            content: `vscode에서 yarn berry 사용시 설치한 모듈들을 찾을 수 없다는
+            에러가 뜰때 다음과 같이 실행하면 해결할 수 있다.`,
+        },
     ],
 };
 
