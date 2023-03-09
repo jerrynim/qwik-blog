@@ -7,7 +7,11 @@ const PageHeader = component$(() => {
 
     return (
         <div class="post-header">
-            <a href={"https://github.com/jerrynim"} target={"_blank"}>
+            <a
+                href={"https://github.com/jerrynim"}
+                target={"_blank"}
+                rel="noreferrer"
+            >
                 <JerrynimLogo />
                 jerrynim-Logo
             </a>
