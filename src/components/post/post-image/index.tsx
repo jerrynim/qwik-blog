@@ -9,8 +9,8 @@ const PostImage = component$(({ width, src, alt }: PostImageProps) => {
     useStylesScoped$(styles);
 
     const cloudinarySrc = src
-        .replace("/upload/", `/upload/w_${width || 680}/`)
-        .replace(".jpg", ".webp");
+        ?.replace("/upload/", `/upload/w_${width || 680}/`)
+        ?.replace(".jpg", ".webp");
     return (
         <div class="post-image">
             <a href={cloudinarySrc} target="_blank" rel="noreferrer">
