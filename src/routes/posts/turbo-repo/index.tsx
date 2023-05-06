@@ -11,7 +11,6 @@ import {
     PostLink,
     PostTag,
     PostTitle,
-    PostBlockquote,
 } from "@components/post";
 export const head: DocumentHead = {
     title: "Turborepo 훑어보기",

@@ -11,7 +11,6 @@ import {
     PostLink,
     PostTag,
     PostTitle,
-    PostSeries,
 } from "@components/post";
 
 export const head: DocumentHead = {
@@ -20,6 +19,11 @@ export const head: DocumentHead = {
         {
             property: "keyword",
             content: "gRPC",
+        },
+        {
+            property: "description",
+            content:
+                "gRPC는 구글이 개발한 오픈 소스 RPC(Remote Procedure Call)시스템이다.",
         },
     ],
 };

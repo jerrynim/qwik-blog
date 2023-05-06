@@ -11,7 +11,6 @@ import {
     PostLink,
     PostTag,
     PostTitle,
-    PostSeries,
     PostBlockquote,
 } from "@components/post";
 export const head: DocumentHead = {
@@ -20,6 +19,11 @@ export const head: DocumentHead = {
         {
             property: "keyword",
             content: "qwik javascript framework react",
+        },
+        {
+            property: "description",
+            content:
+                "qwik은 웹 애플리케이션 구축에 대한 근본적인 새로운 접근방식을 나타내는 세분화된 레이지 로딩 프레임워크 입니다.",
         },
     ],
 };
