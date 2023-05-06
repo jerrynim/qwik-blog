@@ -1,8 +1,4 @@
-import {
-    component$,
-    useBrowserVisibleTask$,
-    useStyles$,
-} from "@builder.io/qwik";
+import { component$, useVisibleTask$, useStyles$ } from "@builder.io/qwik";
 import {
     QwikCityProvider,
     RouterOutlet,
@@ -24,7 +20,7 @@ export default component$(() => {
     useStyles$(styles);
     useStyles$(paletteStyles);
 
-    useBrowserVisibleTask$(() => {
+    useVisibleTask$(() => {
         if (import.meta.env.PROD && !isRobot(navigator.userAgent)) {
             const script = document.createElement("script");
             const GA_ID = "G-CLE76PBB93";

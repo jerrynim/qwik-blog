@@ -19,7 +19,7 @@ const PostSeries = component$(({ title }: PostSeriesProps) => {
             <div class="post-series-title">{title}</div>
             <ol class="post-series-item-wrapper">
                 {menu?.items?.map((item, index) => {
-                    const isCurrentPage = location.pathname.includes(
+                    const isCurrentPage = location.url.pathname.includes(
                         item.href!,
                     );
                     return (
