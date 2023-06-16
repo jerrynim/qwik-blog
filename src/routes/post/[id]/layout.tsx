@@ -12,5 +12,5 @@ export default component$(() => {
 });
 
 export const onGet: RequestHandler = async ({ redirect, request }) => {
-    redirect(301, request.url.replace("/post", "/blog"));
+    throw redirect(301, request.url.replace("/post", "/blog"));
 };
