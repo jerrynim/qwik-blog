@@ -13,7 +13,6 @@ export default extendConfig(baseConfig, () => {
         plugins: [
             staticAdapter({
                 origin: "https://jerrynim.dev",
-                exclude: ["/portfolio/*", "/posts/*"],
             }),
         ],
     };
