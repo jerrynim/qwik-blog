@@ -10,8 +10,6 @@ import {
     PostImage,
     PostLink,
     PostTag,
-    PostTitle,
-    PostSeries,
 } from "@components/post";
 
 export const head: DocumentHead = {
@@ -31,7 +29,7 @@ export const head: DocumentHead = {
 export default component$(() => {
     return (
         <>
-            <PostHeadImage></PostHeadImage>
+            <PostHeadImage />
             <PostHead>
                 <h1>{head.title}</h1>
                 <PostTag tags="azure pipelines artifacts publish download"></PostTag>
