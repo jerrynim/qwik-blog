@@ -15,7 +15,7 @@ import {
     PostBlockquote,
 } from "@components/post";
 export const head: DocumentHead = {
-    title: "Lit 튜토리얼 (1/6)",
+    title: "(번역)A deep dive into JavaScript closure",
     meta: [
         {
             property: "keyword",
