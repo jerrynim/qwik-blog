@@ -25,6 +25,7 @@ ol {
     position: relative;
     margin: 12px 0;
     padding-left: 20px;
+    list-style: decimal;
 }
 
 code {
@@ -37,7 +38,7 @@ code {
     margin-bottom: 12px;
 }
 
-li::before {
+ul li::before {
     content: "";
     height: 8px;
     margin: 9px 0 0;

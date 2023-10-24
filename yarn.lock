@@ -4255,6 +4255,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prettier@npm:2.8.8":
+  version: 2.8.8
+  resolution: "prettier@npm:2.8.8"
+  bin:
+    prettier: bin-prettier.js
+  checksum: b49e409431bf129dd89238d64299ba80717b57ff5a6d1c1a8b1a28b590d998a34e083fa13573bc732bb8d2305becb4c9a4407f8486c81fa7d55100eb08263cf8
+  languageName: node
+  linkType: hard
+
 "pretty-bytes@npm:5.6.0":
   version: 5.6.0
   resolution: "pretty-bytes@npm:5.6.0"
@@ -4348,6 +4357,7 @@ __metadata:
     "@yarnpkg/sdks": ^3.0.0-rc.34
     eslint: ^8.32.0
     eslint-plugin-qwik: ^0.16.2
+    prettier: 2.8.8
     typescript: ^4.9.4
     undici: ^5.19.1
     vercel: ^28.4.17
