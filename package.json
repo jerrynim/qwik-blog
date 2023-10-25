@@ -1,6 +1,6 @@
 {
     "name": "qwik-blog",
-    "packageManager": "yarn@3.3.1",
+    "packageManager": "yarn@4.0.0",
     "scripts": {
         "build": "qwik build",
         "build.client": "vite build",
