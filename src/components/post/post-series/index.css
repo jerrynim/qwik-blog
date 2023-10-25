@@ -21,6 +21,8 @@
     padding-left: 20px;
     flex-direction: column;
     gap: 8px;
+    max-height: 380px;
+    overflow-y: scroll;
 }
 .selected-post-series-item {
     font-size: 15px;

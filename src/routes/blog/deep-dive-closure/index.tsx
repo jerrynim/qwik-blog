@@ -184,16 +184,6 @@ export default component$(() => {
                         있습니다.
                     </li>
                 </ul>
-                <PostTitle
-                    subtitle="Further reading
-"
-                ></PostTitle>
-                <PostLink
-                    href="You don’t know JS: Scope and Closures by Oreilly
-"
-                >
-                    You don’t know JS: Scope and Closures by Oreilly
-                </PostLink>
             </PostBody>
         </>
     );
