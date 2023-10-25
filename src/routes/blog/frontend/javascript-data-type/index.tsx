@@ -19,7 +19,8 @@ export const head: DocumentHead = {
         },
         {
             property: "description",
-            content: ``,
+            content: ` 원시 타입인 string, number, boolean, null, undefined, symbol 이
+            있고, 참조 타입인 Object 가 있습니다.`,
         },
     ],
 };
