@@ -13,8 +13,8 @@
         "start": "vite --open --mode ssr"
     },
     "dependencies": {
-        "@builder.io/qwik": "^1.1.5",
-        "@builder.io/qwik-city": "^1.1.5"
+        "@builder.io/qwik": "^1.2.14",
+        "@builder.io/qwik-city": "^1.2.14"
     },
     "devDependencies": {
         "@types/node": "^18.11.18",
