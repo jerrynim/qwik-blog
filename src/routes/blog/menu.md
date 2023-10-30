@@ -30,3 +30,5 @@
 -   [배열과 연결리스트 중에 어떤것이 빠른가요?](/blog/frontend/0.1+0.2!==0.3)
 -   [번들러를 사용하는 이유](/blog/frontend/0.1+0.2!==0.3)
 -   [css zero runtime 이란?](/blog/frontend/0.1+0.2!==0.3)
+-   [type 과 interface의 차이](/blog/frontend/0.1+0.2!==0.3)
+-   [base64, blob, Unit8Array,Binary Data 란?](/blog/frontend/0.1+0.2!==0.3)

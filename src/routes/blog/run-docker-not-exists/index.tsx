@@ -7,11 +7,8 @@ import {
     PostDate,
     PostHead,
     PostHeadImage,
-    PostImage,
-    PostLink,
     PostTag,
     PostTitle,
-    PostSeries,
 } from "@components/post";
 export const head: DocumentHead = {
     title: "종료되지 않는 도커 실행하기",

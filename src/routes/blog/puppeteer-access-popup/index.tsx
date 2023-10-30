@@ -7,11 +7,7 @@ import {
     PostDate,
     PostHead,
     PostHeadImage,
-    PostImage,
-    PostLink,
     PostTag,
-    PostTitle,
-    PostSeries,
 } from "@components/post";
 export const head: DocumentHead = {
     title: "puppeteer-access-popup",

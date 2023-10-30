@@ -8,7 +8,6 @@ import {
     PostHeadImage,
     PostLink,
     PostTag,
-    PostTitle,
 } from "@components/post";
 
 export const head: DocumentHead = {

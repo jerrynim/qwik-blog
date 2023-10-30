@@ -7,11 +7,9 @@ import {
     PostDate,
     PostHead,
     PostHeadImage,
-    PostImage,
     PostLink,
     PostTag,
     PostTitle,
-    PostSeries,
     PostBlockquote,
 } from "@components/post";
 export const head: DocumentHead = {
