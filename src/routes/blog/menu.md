@@ -19,6 +19,7 @@
 -   [자바스크립트 자료형의 종류](/blog/frontend/javascript-data-type)
 -   [0.1+0.2 가 0.3 이 아닌 이유와 구하는 법](/blog/frontend/0.1+0.2!==0.3)
 -   [배열과 객체를 구분하는 법](/blog/frontend/differentiate-between-objects-and-arrays)
+-   [객체를 수정하지 못하도록 하는 방법](/blog/frontend/prevent-object-change)
 
 ##
 
