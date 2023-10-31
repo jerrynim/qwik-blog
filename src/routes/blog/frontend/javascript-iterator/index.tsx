@@ -19,7 +19,9 @@ export const head: DocumentHead = {
         },
         {
             property: "description",
-            content: ``,
+            content: `이터레이터는 객체를 순회가능한 이터러블 객체로 만들며,
+            Symbol.Iterator 라는 프로퍼티는 next() 메서드를 사용하여 value
+            와 done 을 리턴하여 객체의 이터러블 프로토콜을 구현합니다.`,
         },
     ],
 };

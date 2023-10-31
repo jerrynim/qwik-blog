@@ -1,4 +1,4 @@
-import { component$, useStylesScoped$ } from "@builder.io/qwik";
+import { component$, Numberish, useStylesScoped$ } from "@builder.io/qwik";
 import styles from "./index.css?inline";
 interface PostImageProps {
     src: string;
@@ -14,7 +14,11 @@ const PostImage = component$(({ width, src, alt }: PostImageProps) => {
     return (
         <div class="post-image">
             <a href={cloudinarySrc} target="_blank" rel="noreferrer">
-                <img src={cloudinarySrc} alt={alt} />
+                <img
+                    src={cloudinarySrc}
+                    alt={alt}
+                    width={`${width || 680}` as Numberish}
+                />
             </a>
             <span>{alt}</span>
         </div>
