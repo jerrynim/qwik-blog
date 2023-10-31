@@ -23,7 +23,9 @@
     gap: 8px;
     max-height: 380px;
     overflow-y: scroll;
+    scrollbar-width: 0;
 }
+
 .selected-post-series-item {
     font-size: 15px;
     font-weight: bold;

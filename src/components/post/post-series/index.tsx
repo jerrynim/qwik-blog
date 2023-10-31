@@ -24,6 +24,7 @@ const PostSeries = component$(({ title }: PostSeriesProps) => {
                     );
                     return (
                         <Link
+                            scroll={false}
                             class={
                                 isCurrentPage
                                     ? "selected-post-series-item"
