@@ -57,7 +57,10 @@
 
 ##
 
+-   [Painting과 마지막 렌더링 차이](/blog/frontend/function-parameters-num)
+-   [reuqsetAnimationFrame](/blog/frontend/function-parameters-num)
 -   [함수의 매개변수의 갯수를 아는 방법](/blog/frontend/function-parameters-num)
+-   [돔을 직접 조작하는 것과 상태를 변경하는 것 중 어떤것이 유리한가요?](/blog/frontend/function-parameters-num)
 -   [CLS와 TLS](/blog/frontend/function-parameters-num)
 -   [번들러를 사용하는 이유](/blog/frontend/why-use-bunlder)
 -   [css zero runtime 이란?](/blog/frontend/0.1+0.2!==0.3)
