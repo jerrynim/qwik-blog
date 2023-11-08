@@ -6,11 +6,12 @@
         "build.client": "vite build",
         "build.preview": "vite build --ssr src/entry.preview.tsx",
         "build.server": "vite build -c adapters/static/vite.config.ts",
-        "deploy": "vercel deploy",
         "dev": "vite --mode ssr",
         "lint": "eslint ./src/**/**.tsx",
         "preview": "qwik build preview && vite preview --open",
-        "start": "vite --open --mode ssr"
+        "start": "vite --open --mode ssr",
+        "request-indexing": "node ./scripts/request-google-indexing.js",
+        "deploy": "yarn build && yarn request-indexing"
     },
     "dependencies": {
         "@builder.io/qwik": "^1.2.14",
