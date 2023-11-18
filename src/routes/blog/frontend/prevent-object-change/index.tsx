@@ -19,7 +19,7 @@ export const head: DocumentHead = {
         },
         {
             property: "description",
-            content: ` </PostBlockquote>
+            content: `
             객체는 프로퍼티 어트리뷰트 라는 값을 가지고 있습니다. 그 중
             writable 값을 false로 하여 프로퍼티의 값이 변경되는 것을 수정할
             수 있습니다.
