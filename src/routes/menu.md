@@ -7,6 +7,7 @@
 -   [Turborepo 훑어보기](/blog/turbo-repo)
 -   [yarn workspace nohoist monorepo](/blog/yarn-workspace-nohoist)
 -   [Vanilla Javascript SPA만들기](/blog/vanilla-route)
+-   [구글 OAuth 인증 access_token 발급하기](/blog/make-google-oauth-accesstoken)
 -   [(번역)A deep dive into JavaScript closure](/blog/deep-dive-closure)
 -   [Promise 순차실행하기](/blog/promise-synchronize)
 -   [타입스크립트 react interface 타입 추출하기](/blog/typescript-get-react-interface)

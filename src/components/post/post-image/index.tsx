@@ -20,7 +20,7 @@ const PostImage = component$(({ width, src, alt }: PostImageProps) => {
                     width={`${width || 680}` as Numberish}
                 />
             </a>
-            <span>{alt}</span>
+            <span>[{alt}]</span>
         </div>
     );
 });
