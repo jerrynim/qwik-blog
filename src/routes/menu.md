@@ -58,6 +58,7 @@
 -   [렌더링 시에 Painting와 Compositing의 차이](/blog/frontend/painting-compositing-diff)
 -   [requestAnimationFrame 이란](/blog/frontend/what-is-requestAnimationFrame)
 -   [React에서 돔을 직접 조작하는 것과 상태를 변경하는 것의 메모리적 차이](/blog/frontend/react-dom-vs-state)
+-   [react-query를 사용하는 이유](blog/frontend/why-use-react-query)
 
 ##
 
@@ -76,3 +77,5 @@
 -   [로컬 스토리지들의 차이점](blog/frontend/pub-sub-state)
 -   [React의 Concurrent Mode란?](blog/frontend/pub-sub-state)
 -   [브라우저 캐시에 대해](blog/frontend/pub-sub-state)
+-   [페이지 이동시 스크롤 위치를 기억하는 법](blog/frontend/pub-sub-state)
+-   [상태관리의 종류](blog/frontend/pub-sub-state)
