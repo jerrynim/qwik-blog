@@ -60,6 +60,8 @@
 -   [React에서 돔을 직접 조작하는 것과 상태를 변경하는 것의 메모리적 차이](/blog/frontend/react-dom-vs-state)
 -   [react-query를 사용하는 이유](/blog/frontend/why-use-react-query)
 -   [css-in-js와 css-zero-runtime](/blog/frontend/css-zero-runtime)
+-   [얕은복사와 깊은복사](/blog/frontend/shallow-copy-deep-copy)
+-   [Cors](blog/frontend/about-cors)
 
 ##
 
@@ -70,7 +72,6 @@
 -   [dependency, devDependency, peerDependency의 차이](blog/frontend/type-of-dependency)
 -   [React constructor에서 super(props)를 하는 이유](blog/frontend/why-use-super-in-react)
 -   [Pub/Sub 상태관리](blog/frontend/pub-sub-state)
--   [Zero-runtime Css란?](blog/frontend/pub-sub-state)
 -   [ErrorBoundary는 어떻게 작동할가요?](blog/frontend/pub-sub-state)
 -   [React.Suspense는 어떻게 구현되어 있나요?](blog/frontend/pub-sub-state)
 -   [React.ScrictMode란?](blog/frontend/pub-sub-state)
@@ -79,3 +80,13 @@
 -   [브라우저 캐시에 대해](blog/frontend/pub-sub-state)
 -   [페이지 이동시 스크롤 위치를 기억하는 법](blog/frontend/pub-sub-state)
 -   [상태관리의 종류](blog/frontend/pub-sub-state)
+-   [Http 와 Https의 차이](blog/frontend/pub-sub-state)
+-   [use strinct란](blog/frontend/pub-sub-state)
+-   [일반 함수와 화살표 함수의 차이](blog/frontend/pub-sub-state)
+-   [React의 Hooks에 대해](blog/frontend/pub-sub-state)
+-   [React의 key를 넣어야하는 이유](blog/frontend/pub-sub-state)
+-   [setState는 동기일까요 비동기일까요](blog/frontend/pub-sub-state)
+-   [Hydration이란 뭔가요?](blog/frontend/pub-sub-state)
+-   [React useTransition이란?]()
+-   [Xss와 CSRF란?]()
+-   [withCredentials이란?](/요청에 쿠키를 포함하고 싶을 때)
