@@ -19,7 +19,8 @@ export const head: DocumentHead = {
         },
         {
             property: "description",
-            content: ``,
+            content: `react-docgen-typescript를 사용하여 파일을 parse 하면 다음과 같은 객체의 배열을 얻을 수
+            있다.`,
         },
     ],
 };

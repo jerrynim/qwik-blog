@@ -22,7 +22,9 @@ export const head: DocumentHead = {
         },
         {
             property: "description",
-            content: ``,
+            content: ` Google API를 사용하기 위해서는 access_token을 발급받아
+            사용해야하는 경우가 많습니다.
+            이를 발급받급 받는 과정을 살펴보도록 하겠습니다.`,
         },
     ],
 };

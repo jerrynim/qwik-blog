@@ -20,7 +20,16 @@ export const head: DocumentHead = {
         },
         {
             property: "description",
-            content: ``,
+            content: ` react-query는 비동기 상태 관리 라이브러리로써, 기존의
+            데이터패칭을 위해 사용하는 loading,error,refetch 하는 코드를
+            간결하게 작성할 수 있도록 도와줍니다.
+            또한 response를 캐싱하여 불필요한 데이터 패칭을 하지않도록
+            해주며, refetchOnMount 등의 옵션을 통하여 최신 데이터의 동기화를
+            지원하고 있습니다.
+            또한, Race Condition 과 같은 문제를 queryKey로 관리하여
+            해결해주며, 종속성 변경으로 인한 data와 error를 초기화하지
+            않아도 됩니다. 그리고 데이터 패칭의 취소와 중단또한 간편하게
+            구현할 수 있습니다.`,
         },
     ],
 };

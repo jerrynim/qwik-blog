@@ -20,7 +20,10 @@ export const head: DocumentHead = {
         },
         {
             property: "description",
-            content: ``,
+            content: `Rust에서 이 identifier 앞에 r#을 붙이는 이유는 예약어(reserved
+                keyword)와 충돌을 피하기 위함입니다.
+                예약어들은 Rust 컴파일러에 의해 특별한 의미를 가지므로
+                identifier로 사용할 수 없습니다.`,
         },
     ],
 };
