@@ -61,9 +61,11 @@
 -   [react-query를 사용하는 이유](/blog/frontend/why-use-react-query)
 -   [css-in-js와 css-zero-runtime](/blog/frontend/css-zero-runtime)
 -   [얕은복사와 깊은복사](/blog/frontend/shallow-copy-deep-copy)
--   [Cors](blog/frontend/about-cors)
+-   [Cors](/blog/frontend/about-cors)
 
 ##
+
+-   [Http 와 Https의 차이](blog/frontend/diff-http-https)
 
 -   [CLS와 TLS](/blog/frontend/function-parameters-num)
 -   [번들러를 사용하는 이유](/blog/frontend/why-use-bunlder)
@@ -78,9 +80,6 @@
 -   [로컬 스토리지들의 차이점](blog/frontend/pub-sub-state)
 -   [React의 Concurrent Mode란?](blog/frontend/pub-sub-state)
 -   [브라우저 캐시에 대해](blog/frontend/pub-sub-state)
--   [페이지 이동시 스크롤 위치를 기억하는 법](blog/frontend/pub-sub-state)
--   [상태관리의 종류](blog/frontend/pub-sub-state)
--   [Http 와 Https의 차이](blog/frontend/pub-sub-state)
 -   [use strinct란](blog/frontend/pub-sub-state)
 -   [일반 함수와 화살표 함수의 차이](blog/frontend/pub-sub-state)
 -   [React의 Hooks에 대해](blog/frontend/pub-sub-state)
@@ -89,4 +88,8 @@
 -   [Hydration이란 뭔가요?](blog/frontend/pub-sub-state)
 -   [React useTransition이란?]()
 -   [Xss와 CSRF란?]()
--   [withCredentials이란?](/요청에 쿠키를 포함하고 싶을 때)
+-   [가비지 컬렉터란?]()
+-   [this]()
+-   [리플로우와 리페인징]()
+-   [클로저란?]
+-   [Lexical Scope란?]()

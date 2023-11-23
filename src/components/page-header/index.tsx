@@ -6,7 +6,7 @@ const PageHeader = component$(() => {
     useStylesScoped$(styles);
 
     return (
-        <div class="post-header">
+        <div class="post-header" aria-hidden="true">
             <a
                 href={"https://github.com/jerrynim"}
                 target={"_blank"}

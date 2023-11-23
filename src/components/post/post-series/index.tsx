@@ -15,7 +15,7 @@ const PostSeries = component$(({ title }: PostSeriesProps) => {
         return null;
     }
     return (
-        <div class="post-series">
+        <div class="post-series" aria-hidden="true">
             <div class="post-series-title">{title}</div>
             <ol class="post-series-item-wrapper">
                 {menu?.items?.map((item, index) => {
