@@ -1,51 +1,75 @@
-# qwik-pure-template
+# qwik으로 만드는 블로그
 
-## Vercel Edge
+The most common way to write a blog is using Markdown. However, while writing the tutorial, I thought it would be good to include working code in the middle of the article. I could use an external service such as JsFiddle, but I didn't want to go through the hassle of configuring JsFiddle.
 
-This starter site is configured to deploy to [Vercel Edge Functions](https://vercel.com/docs/concepts/functions/edge-functions), which means it will be rendered at an edge location near to your users.
+So I created a template to write a blog in the editor.
 
-## Installation
+## Components
 
-The adaptor will add a new `vite.config.ts` within the `adaptors/` directory, and a new entry file will be created, such as:
+-   blogquote
+-   body
+-   buy-me-coffee
+-   code
+-   date
+-   divider
+-   head
+-   head-image
+-   image
+-   link
+-   series
+-   tag
+-   title
 
-```
-└── adaptors/
-    └── vercel-edge/
-        └── vite.config.ts
-└── src/
-    └── entry.vercel-edge.tsx
-```
-
-Additionally, within the `package.json`, the `build.server` script will be updated with the Vercel Edge build.
-
-## Production build
-
-To build the application for production, use the `build` command, this command will automatically run `yarn build.server` and `yarn build.client`:
-
-```shell
-yarn build
-```
-
-[Read the full guide here](https://github.com/BuilderIO/qwik/blob/main/starters/adaptors/vercel-edge/README.md)
-
-## Dev deploy
-
-To deploy the application for development:
-
-```shell
-yarn deploy
-```
-
-Notice that you might need a [Vercel account](https://docs.Vercel.com/get-started/) in order to complete this step!
-
-## Production deploy
-
-The project is ready to be deployed to Vercel. However, you will need to create a git repository and push the code to it.
-
-You can [deploy your site to Vercel](https://vercel.com/docs/concepts/deployments/overview) either via a Git provider integration or through the Vercel CLI.
-
-## Static Site Generator (Node.js)
+## Snippet
 
 ```
-yarn build.server
+{
+	"qwikblog-template": {
+		"prefix": "qwikblog-template",
+		"body": [
+			"import { component$ } from '@builder.io/qwik';",
+"import { DocumentHead } from '@builder.io/qwik-city';",
+"import {",
+"    PostBody,",
+"    PostDate,",
+"    PostHead,",
+"    PostHeadImage,",
+"    PostTag,",
+"    PostTitle,",
+"} from '@components/post';",
+"",
+"export const head: DocumentHead = {",
+"    title: '',",
+"    meta: [",
+"        {",
+"            property: 'keywords',",
+"            content: '',",
+"        },",
+"        {",
+"            property: 'description',",
+"            content: ``,",
+"        },",
+"    ],",
+"};",
+"",
+"export default component$(() => {",
+"    return (",
+"        <>",
+"            <PostHeadImage />",
+"            <PostHead>",
+"                <h1>{head.title}</h1>",
+"                <PostTag tags={head.meta![0].content!}></PostTag>",
+"                <PostDate>$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE</PostDate>",
+"            </PostHead>",
+"            <PostBody>",
+"                <PostTitle subtitle=''></PostTitle>",
+"            </PostBody>",
+"        </>",
+"    );",
+"});",
+
+		],
+		"description": "qwikblog-template"
+	}
+}
 ```
