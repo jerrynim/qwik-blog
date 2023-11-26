@@ -60,7 +60,7 @@ const images = [
 ];
 
 export const getRandomHeadImage = () => {
-    return images[Math.round(Math.random() * images.length)]
+    return images[Math.floor(Math.random() * images.length)]
         .replace("/upload/", "/upload/q_auto/")
         .replace(".jpg", ".webp");
 };
