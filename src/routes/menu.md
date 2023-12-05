@@ -62,6 +62,7 @@
 -   [css-in-js와 css-zero-runtime](/blog/frontend/css-zero-runtime)
 -   [얕은복사와 깊은복사](/blog/frontend/shallow-copy-deep-copy)
 -   [Cors](/blog/frontend/about-cors)
+-   [가비지 컬렉션](/blog/frontend/garabage-collection)
 
 ##
 
@@ -88,7 +89,6 @@
 -   [Hydration이란 뭔가요?](blog/frontend/pub-sub-state)
 -   [React useTransition이란?]()
 -   [Xss와 CSRF란?]()
--   [가비지 컬렉터란?]()
 -   [this]()
 -   [리플로우와 리페인징]()
 -   [클로저란?]

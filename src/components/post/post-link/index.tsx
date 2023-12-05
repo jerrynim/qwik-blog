@@ -7,7 +7,6 @@ interface PostLinkProps {
 
 const PostLink = component$(({ href }: PostLinkProps) => {
     useStylesScoped$(styles);
-
     return (
         <a href={href} target="_blank" rel="noreferrer" class="post-link">
             <p class="hidden-text">{href}</p>
