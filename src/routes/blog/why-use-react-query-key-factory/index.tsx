@@ -109,8 +109,8 @@ export default component$(() => {
                 </ul>
                 예시 1:
                 <br />
-                ATS의 경우 Todos에 종속된 Items가 있습니다. 이를 확인해볼 수
-                있는 것은 api의 path입니다.
+                여기 Todos에 종속된 Items가 있습니다. 이를 확인해볼 수 있는 것은
+                api의 path입니다.
                 <PostCode code={code5} />
                 따라서 위의 예시처럼 작성한다면 다음과 같이 작성할 수 있습니다.
                 <PostCode code={code6} />
