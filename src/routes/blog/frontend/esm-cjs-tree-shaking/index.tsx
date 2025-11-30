@@ -143,7 +143,7 @@ export default component$(() => {
                 번들러 트리 셰이킹은 ESM의 정적 구조와 이름별 사용 분석에 크게 의존합니다.
                 패키지를 ESM으로 배포하고 <code>package.json</code>에 정확한
                 <code>sideEffects</code>를 지정하세요.
-                <PostCode code={treeShaking} language="json" />
+                <PostCode code={treeShaking} language="javascript" />
 
                 참고:
                 <PostLink href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">

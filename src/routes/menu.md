@@ -68,12 +68,12 @@
 -   [가비지 컬렉션](/blog/frontend/garabage-collection)
 -   [브라우저 이벤트 루프에서 macrotask와 microtask는 어떤 순서로 실행되나요?P romise.then, queueMicrotask, MutationObserver, setTimeout, requestAnimationFrame은 각각 언제 실행되며 렌더링 타이밍에 어떤 영향을 주나요? ](/blog/frontend/task-queue-order)
 -   [클로저와 메모리: 클로저가 유용한 이유와 메모리 누수를 유발하는 전형적 사례는 무엇인가요? stale closure 문제를 어떻게 진단·해결하나요?](/blog/frontend/closure-memory)
- -   [ESM vs CJS: 정적 분석·라이브 바인딩·Hoisting·TLA·Dynamic import와 트리 셰이킹](/blog/frontend/esm-cjs-tree-shaking)
- -   [this 바인딩 규칙: 기본/암시적/명시적/new와 화살표 함수의 lexical this](/blog/frontend/this-binding)
- -   [이터러블/제너레이터: 프로토콜·async 제너레이터·스트리밍](/blog/frontend/iterable-generator-streaming)
- -   [불변성과 복사: 얕은/깊은 복사, structuredClone 한계, 순환·성능, 최적화](/blog/frontend/immutability-copy-structuredclone)
- -   [프로퍼티 디스크립터: writable/configurable/enumerable, 접근자 vs 데이터, defineProperty와 순회·직렬화](/blog/frontend/property-descriptor-enumeration-serialization)
- -   [React Hooks 내부 구조와 Concurrent Rendering: Linked List에서 Tearing 문제까지](/blog/frontend/react-hooks-internal-tearing)
+-   [ESM vs CJS: 정적 분석·라이브 바인딩·Hoisting·TLA·Dynamic import와 트리 셰이킹](/blog/frontend/esm-cjs-tree-shaking)
+-   [this 바인딩 규칙: 기본/암시적/명시적/new와 화살표 함수의 lexical this](/blog/frontend/this-binding)
+-   [이터러블/제너레이터: 프로토콜·async 제너레이터·스트리밍](/blog/frontend/iterable-generator-streaming)
+-   [불변성과 복사: 얕은/깊은 복사, structuredClone 한계, 순환·성능, 최적화](/blog/frontend/immutability-copy-structuredclone)
+-   [프로퍼티 디스크립터: writable/configurable/enumerable, 접근자 vs 데이터, defineProperty와 순회·직렬화](/blog/frontend/property-descriptor-enumeration-serialization)
+-   [React Hooks 내부 구조와 Concurrent Rendering: Linked List에서 Tearing 문제까지](/blog/frontend/react-hooks-internal-tearing)
 
 ##
 

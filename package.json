@@ -14,8 +14,8 @@
         "deploy": "yarn build && yarn request-indexing"
     },
     "dependencies": {
-        "@builder.io/qwik": "^1.2.18",
-        "@builder.io/qwik-city": "^1.2.18"
+        "@builder.io/qwik": "^1.17.2",
+        "@builder.io/qwik-city": "^1.17.2"
     },
     "devDependencies": {
         "@types/node": "^18.11.18",
