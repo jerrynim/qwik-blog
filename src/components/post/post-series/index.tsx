@@ -30,7 +30,7 @@ const PostSeries = component$(({ title }: PostSeriesProps) => {
                                     ? "selected-post-series-item"
                                     : "post-series-item"
                             }
-                            href={isCurrentPage ? undefined : item.href}
+                            href={isCurrentPage ? undefined : process.env.NODE_ENV === "production" ? "/qwik-blog"+item.href : item.href}
                             key={index}
                         >
                             {item.text}
