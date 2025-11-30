@@ -28,7 +28,7 @@ export const RouterHead = component$(() => {
             <meta property="og:url" content={_href} />
             <meta
                 property="og:image"
-                content="https://jerrynim.dev/static/Profile.png"
+                content="https://jerrynim.dev/qwik-blog/static/Profile.png"
             />
 
             <meta name="twitter:card" content="summary_large_image" />
@@ -36,7 +36,7 @@ export const RouterHead = component$(() => {
             <meta name="twitter:description" content={description} />
             <meta
                 name="twitter:image"
-                content="https://jerrynim.dev/static/Profile.png"
+                content="https://jerrynim.dev/qwik-blog/static/Profile.png"
             />
             <link
                 rel="apple-touch-icon"

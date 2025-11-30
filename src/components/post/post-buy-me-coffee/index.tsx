@@ -14,7 +14,7 @@ const PostBuyMeCoffee = component$(() => {
                 <img
                     width="150"
                     height="42"
-                    src="/static/buy-me-a-coffee.svg"
+                    src="/qwik-blog/static/buy-me-a-coffee.svg"
                     alt="buy-me-a-coffee"
                 />
             </a>
