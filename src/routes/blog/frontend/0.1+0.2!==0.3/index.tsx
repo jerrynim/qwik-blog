@@ -16,7 +16,7 @@ export const head: DocumentHead = {
         {
             property: "keywords",
             content:
-                "javascript 0.1 0.2 0.3 floating point 프론트엔드 면접 질문",
+                "javascript 0.1 0.2 0.3 floating point 웹 개발",
         },
         {
             property: "description",
@@ -35,9 +35,9 @@ export default component$(() => {
             <PostHeadImage />
             <PostHead>
                 <h1>자바스크립트 0.1 + 0.2 !== 0.3 인 이유와 해결법</h1>
-                <PostTag tags="javascript 0.1 0.2 0.3 floating point 프론트엔드 면접 질문"></PostTag>
+                <PostTag tags="javascript 0.1 0.2 0.3 floating point 웹 개발"></PostTag>
                 <PostDate>2023-10-25</PostDate>
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발"} />
             </PostHead>
             <PostBody>
                 <PostBlockquote>

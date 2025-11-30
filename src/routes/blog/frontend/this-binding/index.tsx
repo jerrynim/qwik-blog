@@ -83,7 +83,7 @@ export default component$(() => {
                 <h1>this 바인딩 규칙과 화살표 함수의 lexical this</h1>
                 <PostTag tags={head.meta![0].content!}></PostTag>
                 <PostDate>2025-10-18</PostDate>
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발"} />
             </PostHead>
             <PostBody>
                 <PostBlockquote>

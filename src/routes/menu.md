@@ -1,5 +1,12 @@
 # 1
 
+## React Quiz
+-   [React에서 돔을 직접 조작하는 것과 상태를 변경하는 것의 메모리적 차이](/blog/frontend/react-dom-vs-state)
+
+
+## Next.js Quiz
+-   [서버 컴포넌트에서 throw Error를 하게된다면?](/blog/nextjs/server-component-throw-error)
+
 ## 블로그
 
 -   [가장 빠른 프레임워크 qwik](/blog/qwik-intro)
@@ -43,7 +50,7 @@
 -   [Lit 튜토리얼 - redux](/blog/lit-tutorial-5)
 -   [Lit 튜토리얼 - 라우팅](/blog/lit-tutorial-6)
 
-## 프론트엔드 면접 질문
+## 웹 개발
 
 -   [var, let, const 차이점](/blog/frontend/var-let-const)
 -   [arguments 란?](/blog/frontend/arguments)
@@ -60,7 +67,6 @@
 -   [배열과 연결리스트 중에 어떤것이 빠른가요?](/blog/frontend/array-vs-linked-list)
 -   [렌더링 시에 Painting와 Compositing의 차이](/blog/frontend/painting-compositing-diff)
 -   [requestAnimationFrame 이란](/blog/frontend/what-is-requestAnimationFrame)
--   [React에서 돔을 직접 조작하는 것과 상태를 변경하는 것의 메모리적 차이](/blog/frontend/react-dom-vs-state)
 -   [react-query를 사용하는 이유](/blog/frontend/why-use-react-query)
 -   [css-in-js와 css-zero-runtime](/blog/frontend/css-zero-runtime)
 -   [얕은복사와 깊은복사](/blog/frontend/shallow-copy-deep-copy)
@@ -73,7 +79,6 @@
 -   [이터러블/제너레이터: 프로토콜·async 제너레이터·스트리밍](/blog/frontend/iterable-generator-streaming)
 -   [불변성과 복사: 얕은/깊은 복사, structuredClone 한계, 순환·성능, 최적화](/blog/frontend/immutability-copy-structuredclone)
 -   [프로퍼티 디스크립터: writable/configurable/enumerable, 접근자 vs 데이터, defineProperty와 순회·직렬화](/blog/frontend/property-descriptor-enumeration-serialization)
--   [React Hooks 내부 구조와 Concurrent Rendering: Linked List에서 Tearing 문제까지](/blog/frontend/react-hooks-internal-tearing)
 
 ##
 
@@ -84,21 +89,15 @@
 -   [type 과 interface의 차이](/blog/frontend/0.1+0.2!==0.3)
 -   [base64, blob, Unit8Array,Binary Data 란?](/blog/frontend/0.1+0.2!==0.3)
 -   [dependency, devDependency, peerDependency의 차이](blog/frontend/type-of-dependency)
--   [React constructor에서 super(props)를 하는 이유](blog/frontend/why-use-super-in-react)
+
 -   [Pub/Sub 상태관리](blog/frontend/pub-sub-state)
 -   [ErrorBoundary는 어떻게 작동할가요?](blog/frontend/pub-sub-state)
--   [React.Suspense는 어떻게 구현되어 있나요?](blog/frontend/pub-sub-state)
--   [React.ScrictMode란?](blog/frontend/pub-sub-state)
 -   [로컬 스토리지들의 차이점](blog/frontend/pub-sub-state)
--   [React의 Concurrent Mode란?](blog/frontend/pub-sub-state)
 -   [브라우저 캐시에 대해](blog/frontend/pub-sub-state)
 -   [use strinct란](blog/frontend/pub-sub-state)
 -   [일반 함수와 화살표 함수의 차이](blog/frontend/pub-sub-state)
--   [React의 Hooks에 대해](blog/frontend/pub-sub-state)
--   [React의 key를 넣어야하는 이유](blog/frontend/pub-sub-state)
 -   [setState는 동기일까요 비동기일까요](blog/frontend/pub-sub-state)
 -   [Hydration이란 뭔가요?](blog/frontend/pub-sub-state)
--   [React useTransition이란?]()
 -   [Xss와 CSRF란?]()
 -   [this]()
 -   [리플로우와 리페인징]()

@@ -1,4 +1,4 @@
-import { component$, useStyles$, $ } from "@builder.io/qwik";
+import { $, component$, Slot, useStyles$ } from "@builder.io/qwik";
 import { CopyIcon } from "../../svgs/copy-icon";
 import styles from "./index.css?inline";
 
@@ -27,9 +27,11 @@ const PostTitle = component$(({ title, subtitle }: PostTitleProps) => {
         window.dispatchEvent(toastUpEvent);
     });
 
+    console.log(subtitle,"subtitle",title,"title");
     return (
         <h2 class={subtitle && "subtitle"} id={title} onClick$={_handleClick}>
-            {subtitle || title}
+            {subtitle || title ||  <Slot/>}
+           
             <CopyIcon class="copy-icon" />
         </h2>
     );

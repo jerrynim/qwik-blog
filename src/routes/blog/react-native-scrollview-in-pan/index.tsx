@@ -72,10 +72,12 @@ export default component$(() => {
                     </li>
                     <li>
                         <PostTitle>use inner View in ScrollView</PostTitle>
-                        View which has property 'onResponderTerminationRequest=
+                        <div>
+                        {`View which has property 'onResponderTerminationRequest=
                         {() => false}
                         onStartShouldSetResponder={() => true}' makes scrollable
-                        write code:
+                        write code:`}
+                        </div>
                         <PostCode code={code3} language="typescript"></PostCode>
                     </li>
                 </ul>

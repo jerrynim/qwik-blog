@@ -19,7 +19,7 @@ export const head: DocumentHead = {
         {
             property: "keywords",
             content:
-                "이터러블, 이터레이터, 제너레이터, async 제너레이터, 스트리밍, for...of, for await...of, 프론트엔드 면접 질문",
+                "이터러블, 이터레이터, 제너레이터, async 제너레이터, 스트리밍, for...of, for await...of, 웹 개발",
         },
         {
             property: "description",
@@ -113,7 +113,7 @@ export default component$(() => {
                 <h1>이터러블/제너레이터: 프로토콜, 제너레이터 vs async 제너레이터, 스트리밍</h1>
                 <PostTag tags={head.meta![0].content!}></PostTag>
                 <PostDate>2025-10-18</PostDate>
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발"} />
             </PostHead>
             <PostBody>
                 <PostBlockquote>

@@ -15,7 +15,7 @@ export const head: DocumentHead = {
     meta: [
         {
             property: "keywords",
-            content: "Object toString 프론트엔드 면접 질문",
+            content: "Object toString 웹 개발",
         },
         {
             property: "description",
@@ -34,9 +34,9 @@ export default component$(() => {
             <PostHeadImage />
             <PostHead>
                 <h1>Object.toString 의 기능</h1>
-                <PostTag tags="Object toString 프론트엔드 면접 질문"></PostTag>
+                <PostTag tags="Object toString 웹 개발"></PostTag>
                 <PostDate>2023-10-25</PostDate>
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발"} />
             </PostHead>
             <PostBody>
                 <PostBlockquote>

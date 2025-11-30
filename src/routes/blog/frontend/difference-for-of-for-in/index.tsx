@@ -15,7 +15,7 @@ export const head: DocumentHead = {
     meta: [
         {
             property: "keywords",
-            content: "for-of for-in 프론트엔드 면접 질문",
+            content: "for-of for-in 웹 개발",
         },
         {
             property: "description",
@@ -31,9 +31,9 @@ export default component$(() => {
             <PostHeadImage />
             <PostHead>
                 <h1>for of 와 for in 의 차이점</h1>
-                <PostTag tags="for-of for-in 프론트엔드 면접 질문"></PostTag>
+                <PostTag tags="for-of for-in 웹 개발"></PostTag>
                 <PostDate>2023-10-30</PostDate>
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발"} />
             </PostHead>
             <PostBody>
                 <PostBlockquote>

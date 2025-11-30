@@ -19,7 +19,7 @@ export const head: DocumentHead = {
         {
             property: "keywords",
             content:
-                "ESM, CJS, 정적 분석, 라이브 바인딩, hoisting, top-level await, dynamic import, 트리 셰이킹, 번들러, 프론트엔드 면접 질문",
+                "ESM, CJS, 정적 분석, 라이브 바인딩, hoisting, top-level await, dynamic import, 트리 셰이킹, 번들러, 웹 개발",
         },
         {
             property: "description",
@@ -110,7 +110,7 @@ export default component$(() => {
                 <h1>ESM vs CJS: 정적 분석·라이브 바인딩·Hoisting·TLA·Dynamic import</h1>
                 <PostTag tags={head.meta![0].content!}></PostTag>
                 <PostDate>2025-10-18</PostDate>
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발"} />
             </PostHead>
 
             <PostBody>

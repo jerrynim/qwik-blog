@@ -6,8 +6,7 @@ import {
     PostDate,
     PostHead,
     PostHeadImage,
-    PostTag,
-    PostTitle,
+    PostTag
 } from "@components/post";
 
 export const head: DocumentHead = {
@@ -15,7 +14,7 @@ export const head: DocumentHead = {
     meta: [
         {
             property: "keywords",
-            content: "garabage collection 프론트엔드 면접 질문",
+            content: "garabage collection 웹 개발",
         },
         {
             property: "description",

@@ -16,7 +16,7 @@ export const head: DocumentHead = {
     meta: [
         {
             property: "keywords",
-            content: "css-in-js css-zero-runtime 프론트엔드 면접 질문",
+            content: "css-in-js css-zero-runtime 웹 개발",
         },
         {
             property: "description",
@@ -40,7 +40,7 @@ export default component$(() => {
                 <h1>{head.title}</h1>
                 <PostTag tags={head.meta![0].content!}></PostTag>
                 <PostDate>2023-11-22</PostDate>
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발"} />
             </PostHead>
             <PostBody>
                 <PostBlockquote>

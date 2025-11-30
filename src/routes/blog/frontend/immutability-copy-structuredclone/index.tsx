@@ -19,7 +19,7 @@ export const head: DocumentHead = {
         {
             property: "keywords",
             content:
-                "불변성, 얕은 복사, 깊은 복사, structuredClone, 순환 참조, 성능, 메모이제이션, 변경 감지, 프론트엔드 면접 질문",
+                "불변성, 얕은 복사, 깊은 복사, structuredClone, 순환 참조, 성능, 메모이제이션, 변경 감지, 웹 개발",
         },
         {
             property: "description",
@@ -130,7 +130,7 @@ export default component$(() => {
                 <h1>불변성과 복사: 얕은/깊은 복사, structuredClone, 순환·성능, 최적화</h1>
                 <PostTag tags={head.meta![0].content!}></PostTag>
                 <PostDate>2025-10-18</PostDate>
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발"} />
             </PostHead>
             <PostBody>
                 <PostBlockquote>

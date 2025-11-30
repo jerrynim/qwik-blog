@@ -15,7 +15,7 @@ export const head: DocumentHead = {
     meta: [
         {
             property: "keywords",
-            content: "Paint와 Composite 프론트엔드 면접 질문",
+            content: "Paint와 Composite 웹 개발",
         },
         {
             property: "description",
@@ -33,9 +33,9 @@ export default component$(() => {
             <PostHeadImage />
             <PostHead>
                 <h1>객체의 변형을 방지하는 방법</h1>
-                <PostTag tags="Paint Composite 프론트엔드 면접 질문"></PostTag>
+                <PostTag tags="Paint Composite 웹 개발"></PostTag>
                 <PostDate>2023-11-18</PostDate>
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발"} />
             </PostHead>
             <PostBody>
                 <PostBlockquote>

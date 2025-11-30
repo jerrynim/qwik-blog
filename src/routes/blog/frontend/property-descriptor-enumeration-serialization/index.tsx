@@ -19,7 +19,7 @@ export const head: DocumentHead = {
         {
             property: "keywords",
             content:
-                "property descriptor, writable, configurable, enumerable, accessor, data property, Object.defineProperty, for...in, Object.keys, Reflect.ownKeys, JSON.stringify, 프론트엔드 면접 질문",
+                "property descriptor, writable, configurable, enumerable, accessor, data property, Object.defineProperty, for...in, Object.keys, Reflect.ownKeys, JSON.stringify, 웹 개발",
         },
         {
             property: "description",
@@ -119,7 +119,7 @@ export default component$(() => {
                 </h1>
                 <PostTag tags={head.meta![0].content!}></PostTag>
                 <PostDate>2025-10-18</PostDate>
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발"} />
             </PostHead>
             <PostBody>
                 <PostBlockquote>

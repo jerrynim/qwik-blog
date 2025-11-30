@@ -15,7 +15,7 @@ export const head: DocumentHead = {
     meta: [
         {
             property: "keywords",
-            content: "function parameter 개수 프론트엔드 면접 질문",
+            content: "function parameter 개수 웹 개발",
         },
         {
             property: "description",
@@ -32,9 +32,9 @@ export default component$(() => {
             <PostHeadImage />
             <PostHead>
                 <h1>함수 parameter의 개수를 아는 방법</h1>
-                <PostTag tags="함수 parameter의 개수 프론트엔드 면접 질문"></PostTag>
+                <PostTag tags="함수 parameter의 개수 웹 개발"></PostTag>
                 <PostDate>2023-10-25</PostDate>
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발"} />
             </PostHead>
             <PostBody>
                 <PostBlockquote>

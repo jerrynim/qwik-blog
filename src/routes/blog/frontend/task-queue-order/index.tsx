@@ -18,7 +18,7 @@ export const head: DocumentHead = {
         {
             property: "keywords",
             content:
-                "이벤트 루프, 태스크 큐, macrotask, microtask, Promise.then, queueMicrotask, MutationObserver, setTimeout, requestAnimationFrame, 렌더링, 프론트엔드 면접 질문",
+                "이벤트 루프, 태스크 큐, macrotask, microtask, Promise.then, queueMicrotask, MutationObserver, setTimeout, requestAnimationFrame, 렌더링, 웹 개발",
         },
         {
             property: "description",
@@ -38,7 +38,7 @@ export default component$(() => {
                 <h1>이벤트 루프: macrotask vs microtask 실행 순서와 렌더 타이밍</h1>
                 <PostTag tags={head.meta![0].content!}></PostTag>
                 <PostDate>2025-10-18</PostDate>
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발"} />
             </PostHead>
             <PostBody>
                 <PostBlockquote>

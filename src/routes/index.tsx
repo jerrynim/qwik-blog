@@ -10,9 +10,11 @@ export default component$(() => {
             <PageHeader />
             <div class="w-680 m-auto">
                 <h1>제리님 블로그</h1>
+                <PostSeries title={"React Quiz"} />
+                <PostSeries title={"Next.js Quiz"} />
                 <PostSeries title={"블로그"} />
                 <PostSeries title={"Lit tutorial"} />
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발 Quiz"} />
             </div>
         </>
     );

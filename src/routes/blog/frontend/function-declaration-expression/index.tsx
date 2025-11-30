@@ -15,7 +15,7 @@ export const head: DocumentHead = {
     meta: [
         {
             property: "keywords",
-            content: "함수 선언문 함수 표현식 프론트엔드 면접 질문",
+            content: "함수 선언문 함수 표현식 웹 개발",
         },
         {
             property: "description",
@@ -33,9 +33,9 @@ export default component$(() => {
             <PostHeadImage />
             <PostHead>
                 <h1>함수 선언문 함수 표현식</h1>
-                <PostTag tags="함수 선언문 함수 표현식 프론트엔드 면접 질문"></PostTag>
+                <PostTag tags="함수 선언문 함수 표현식 웹 개발"></PostTag>
                 <PostDate>2023-10-31</PostDate>
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발"} />
             </PostHead>
             <PostBody>
                 <PostBlockquote>

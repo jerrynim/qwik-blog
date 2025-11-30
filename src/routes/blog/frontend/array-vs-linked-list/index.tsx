@@ -15,7 +15,7 @@ export const head: DocumentHead = {
     meta: [
         {
             property: "keywords",
-            content: "array linked-list 프론트엔드 면접 질문",
+            content: "array linked-list 웹 개발",
         },
         {
             property: "description",
@@ -35,9 +35,9 @@ export default component$(() => {
             <PostHeadImage />
             <PostHead>
                 <h1>배열과 연결리스트 중에 어떤것이 빠른가요?</h1>
-                <PostTag tags="배열 연결리스트 프론트엔드 면접 질문"></PostTag>
+                <PostTag tags="배열 연결리스트 웹 개발"></PostTag>
                 <PostDate>2023-10-30</PostDate>
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발"} />
             </PostHead>
             <PostBody>
                 <PostBlockquote>

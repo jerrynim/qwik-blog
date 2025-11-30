@@ -1,15 +1,15 @@
 import { component$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import {
-  PostBlockquote,
-  PostBody,
-  PostCode,
-  PostDate,
-  PostHead,
-  PostHeadImage,
-  PostLink,
-  PostSeries,
-  PostTag,
+    PostBlockquote,
+    PostBody,
+    PostCode,
+    PostDate,
+    PostHead,
+    PostHeadImage,
+    PostLink,
+    PostSeries,
+    PostTag,
 } from "@components/post";
 
 export const head: DocumentHead = {
@@ -19,7 +19,7 @@ export const head: DocumentHead = {
         {
             property: "keywords",
             content:
-                "프로토타입 체인, ES 클래스, 프로토타입 메서드, 인스턴스 필드, private 필드, super, 프론트엔드 면접 질문",
+                "프로토타입 체인, ES 클래스, 프로토타입 메서드, 인스턴스 필드, private 필드, super, 웹 개발",
         },
         {
             property: "description",
@@ -106,7 +106,7 @@ export default component$(() => {
                 <h1>프로토타입·클래스: 체인, 필드/메서드, #private, super</h1>
                 <PostTag tags={head.meta![0].content!}></PostTag>
                 <PostDate>2025-10-18</PostDate>
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발"} />
             </PostHead>
             <PostBody>
                 <PostBlockquote>

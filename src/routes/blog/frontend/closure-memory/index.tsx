@@ -18,7 +18,7 @@ export const head: DocumentHead = {
         {
             property: "keywords",
             content:
-                "클로저, 메모리 누수, stale closure, 프론트엔드 면접 질문, 자바스크립트, 렉시컬 환경, 이벤트 리스너, 타이머, React",
+                "클로저, 메모리 누수, stale closure, 웹 개발, 자바스크립트, 렉시컬 환경, 이벤트 리스너, 타이머, React",
         },
         {
             property: "description",
@@ -71,7 +71,7 @@ export default component$(() => {
                 <h1>클로저와 메모리: 유용성, 누수 사례, stale closure 진단/해결</h1>
                 <PostTag tags={head.meta![0].content!}></PostTag>
                 <PostDate>2025-10-18</PostDate>
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발"} />
             </PostHead>
             <PostBody>
                 <PostBlockquote>

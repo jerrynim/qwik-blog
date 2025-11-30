@@ -15,7 +15,7 @@ export const head: DocumentHead = {
     meta: [
         {
             property: "keywords",
-            content: "javascript object freeze 프론트엔드 면접 질문",
+            content: "javascript object freeze 웹 개발",
         },
         {
             property: "description",
@@ -38,9 +38,9 @@ export default component$(() => {
             <PostHeadImage />
             <PostHead>
                 <h1>객체의 변형을 방지하는 방법</h1>
-                <PostTag tags="자바스크립트 객체 변형 방지 프론트엔드 면접 질문"></PostTag>
+                <PostTag tags="자바스크립트 객체 변형 방지 웹 개발"></PostTag>
                 <PostDate>2023-10-30</PostDate>
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발"} />
             </PostHead>
             <PostBody>
                 <PostBlockquote>

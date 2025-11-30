@@ -15,7 +15,7 @@ export const head: DocumentHead = {
     meta: [
         {
             property: "keywords",
-            content: "arguments 프론트엔드 면접 질문",
+            content: "arguments 웹 개발",
         },
         {
             property: "description",
@@ -33,9 +33,9 @@ export default component$(() => {
             <PostHeadImage />
             <PostHead>
                 <h1>arguments 란?</h1>
-                <PostTag tags="arguments 프론트엔드 면접 질문"></PostTag>
+                <PostTag tags="arguments 웹 개발"></PostTag>
                 <PostDate>2023-10-25</PostDate>
-                <PostSeries title={"프론트엔드 면접 질문"} />
+                <PostSeries title={"웹 개발"} />
             </PostHead>
             <PostBody>
                 <PostBlockquote>arguments란 무엇인가요?</PostBlockquote>
