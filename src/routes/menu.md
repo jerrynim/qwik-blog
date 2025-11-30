@@ -72,6 +72,8 @@
  -   [this 바인딩 규칙: 기본/암시적/명시적/new와 화살표 함수의 lexical this](/blog/frontend/this-binding)
  -   [이터러블/제너레이터: 프로토콜·async 제너레이터·스트리밍](/blog/frontend/iterable-generator-streaming)
  -   [불변성과 복사: 얕은/깊은 복사, structuredClone 한계, 순환·성능, 최적화](/blog/frontend/immutability-copy-structuredclone)
+ -   [프로퍼티 디스크립터: writable/configurable/enumerable, 접근자 vs 데이터, defineProperty와 순회·직렬화](/blog/frontend/property-descriptor-enumeration-serialization)
+ -   [React Hooks 내부 구조와 Concurrent Rendering: Linked List에서 Tearing 문제까지](/blog/frontend/react-hooks-internal-tearing)
 
 ##
 
