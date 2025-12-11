@@ -4,4 +4,4 @@ Allow: /
 User-agent: * 
 Disallow: /portfolio/
 
-Sitemap: https://jerrynim.dev/sitemap.xml
+Sitemap: https://jerrynim.github.io/qwik-blog/sitemap.xml

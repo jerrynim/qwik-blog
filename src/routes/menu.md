@@ -8,6 +8,7 @@
 
 - [서버 컴포넌트에서 throw Error를 하게된다면?](/blog/nextjs/server-component-throw-error)
 - [proxy 사용시 edge runtime을 사용하는 이유와 제약](/blog/nextjs/edge-runtime)
+- [Next.js에서 UpdateTag가 화면을 갱신하는 방법(revalidateTag와의 차이)](/blog/nextjs/how-update-tag-works)
 
 ## 블로그
 

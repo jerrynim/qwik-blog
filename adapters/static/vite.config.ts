@@ -1,19 +1,16 @@
-import { staticAdapter } from "@builder.io/qwik-city/adapters/static/vite";
-import { extendConfig } from "@builder.io/qwik-city/vite";
-import baseConfig from "../../vite.config";
+import { qwikCity } from "@builder.io/qwik-city/vite";
+import { qwikVite } from "@builder.io/qwik/optimizer";
+import { defineConfig } from "vite";
+import tsconfigPaths from "vite-tsconfig-paths";
 
-export default extendConfig(baseConfig, () => {
-    return {
-        build: {
-            ssr: true,
-            rollupOptions: {
-                input: ["@qwik-city-plan"],
-            },
-        },
-        plugins: [
-            staticAdapter({
-                origin: "https://jerrynim.dev",
-            }),
-        ],
-    };
+export default defineConfig(() => {
+  return {
+    plugins: [qwikCity(), qwikVite(), tsconfigPaths()],
+    build: {
+      ssr: true,
+      rollupOptions: {
+        input: ["@qwik-city-plan"],
+      },
+    },
+  };
 });
