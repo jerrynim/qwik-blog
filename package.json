@@ -1,6 +1,5 @@
 {
   "name": "qwik-blog",
-  "packageManager": "yarn@4.0.2",
   "scripts": {
     "build": "qwik build",
     "build.client": "vite build",
@@ -11,7 +10,7 @@
     "preview": "qwik build preview && vite preview --open",
     "start": "vite --open --mode ssr",
     "request-indexing": "node ./scripts/request-google-indexing.js",
-    "deploy": "yarn build && yarn request-indexing"
+    "deploy": "pnpm build && pnpm request-indexing"
   },
   "dependencies": {
     "@builder.io/qwik": "^1.17.2",
