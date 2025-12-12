@@ -8,10 +8,7 @@ export const RouterHead = component$(() => {
   const description =
     head.meta.find((m) => m.property === "description")?.content ||
     "제리님 블로그에 오신 것을 환영합니다";
-  const _href = `https://jerrynim.github.io/qwik-blog${url.pathname.slice(
-    0,
-    -1
-  )}/`;
+  const _href = `https://jerrynim.github.io${url.pathname.slice(0, -1)}/`;
   return (
     <>
       <title>{title}</title>
@@ -28,7 +25,7 @@ export const RouterHead = component$(() => {
       <meta property="og:url" content={_href} />
       <meta
         property="og:image"
-        content="https://jerrynim.github.io/qwik-blog/static/Profile.png"
+        content="https://jerrynim.github.io/static/Profile.png"
       />
 
       <meta name="twitter:card" content="summary_large_image" />
@@ -36,7 +33,7 @@ export const RouterHead = component$(() => {
       <meta name="twitter:description" content={description} />
       <meta
         name="twitter:image"
-        content="https://jerrynim.github.io/qwik-blog/static/Profile.png"
+        content="https://jerrynim.github.io/static/Profile.png"
       />
       <link
         rel="apple-touch-icon"
