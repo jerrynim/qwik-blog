@@ -1,14 +1,43 @@
-import { $, component$, Slot, useStyles$ } from "@builder.io/qwik";
+import {
+    $,
+    component$,
+    Slot,
+    useContext,
+    useSignal,
+    useStyles$,
+    useVisibleTask$,
+} from "@builder.io/qwik";
 import { CopyIcon } from "../../svgs/copy-icon";
+import { TocContext } from "../post-toc/context";
 import styles from "./index.css?inline";
 
 interface PostTitleProps {
     title?: string;
     subtitle?: string;
+    tag?: "h2" | "h3" | "h4" | "h5" | "h6";
 }
 
-const PostTitle = component$(({ title, subtitle }: PostTitleProps) => {
+const PostTitle = component$(({ title, subtitle, tag }: PostTitleProps) => {
     useStyles$(styles);
+    const elementRef = useSignal<Element>();
+    const tocContext = useContext(TocContext, { optional: true });
+
+    // Determine the level for TOC (compute outside of useVisibleTask$ for serialization)
+    // Priority: explicit tag > subtitle > title
+    const level =
+        tag === "h3"
+            ? 3
+            : tag === "h4"
+            ? 4
+            : tag === "h5"
+            ? 5
+            : tag === "h6"
+            ? 6
+            : subtitle
+            ? 2
+            : title
+            ? 1
+            : 1;
 
     const _handleClick = $(() => {
         const textarea = document.createElement("textarea");
@@ -27,13 +56,41 @@ const PostTitle = component$(({ title, subtitle }: PostTitleProps) => {
         window.dispatchEvent(toastUpEvent);
     });
 
-    console.log(subtitle,"subtitle",title,"title");
+    // Register with TOC context when component mounts
+    useVisibleTask$(({ cleanup }) => {
+        const displayTitle = subtitle || title;
+        if (
+            tocContext &&
+            "registerItem" in tocContext &&
+            displayTitle &&
+            elementRef.value
+        ) {
+            const itemId = title || subtitle || "";
+            tocContext.registerItem({
+                id: itemId,
+                title: displayTitle,
+                level: level,
+                element: elementRef,
+            });
+
+            cleanup(() => {
+                tocContext.unregisterItem(itemId);
+            });
+        }
+    });
+
+    const Tag = title ? "h1" : subtitle ? "h2" : tag || "h2";
     return (
-        <h2 class={subtitle && "subtitle"} id={title} onClick$={_handleClick}>
-            {subtitle || title ||  <Slot/>}
-           
+        <Tag
+            ref={elementRef}
+            class={!tag && subtitle && "subtitle"}
+            id={title}
+            onClick$={_handleClick}
+        >
+            {subtitle || title || <Slot />}
+
             <CopyIcon class="copy-icon" />
-        </h2>
+        </Tag>
     );
 });
 

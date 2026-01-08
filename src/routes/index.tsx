@@ -8,7 +8,7 @@ export default component$(() => {
     return (
         <>
             <PageHeader />
-            <div class="w-680 m-auto">
+            <div class="w-680 m-auto mb-80">
                 <h1>제리님 블로그</h1>
                 <PostSeries title={"React Quiz"} />
                 <PostSeries title={"Next.js Quiz"} />

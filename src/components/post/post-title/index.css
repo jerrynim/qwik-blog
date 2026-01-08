@@ -18,7 +18,26 @@ h2 {
     width: fit-content;
 }
 
+h3 {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--black);
+    transition: var(--transition);
+    word-break: break-all;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+
 h2:hover {
+    text-decoration: underline;
+}
+
+h3:hover {
     text-decoration: underline;
 }
 

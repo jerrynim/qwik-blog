@@ -18,6 +18,9 @@ h1 {
     margin-top: 80px;
 }
 
+.mb-80{
+    margin-bottom: 80px;
+}
 .route-path {
     width: fit-content;
     font-size: 16px;
