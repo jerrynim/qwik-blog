@@ -57,29 +57,34 @@ const PostTitle = component$(({ title, subtitle, tag }: PostTitleProps) => {
     });
 
     // Register with TOC context when component mounts
-    useVisibleTask$(({ cleanup }) => {
-        const displayTitle = subtitle || title;
-        if (
-            tocContext &&
-            "registerItem" in tocContext &&
-            displayTitle &&
-            elementRef.value
-        ) {
-            const itemId = title || subtitle || "";
-            tocContext.registerItem({
-                id: itemId,
-                title: displayTitle,
-                level: level,
-                element: elementRef,
-            });
+    // Use document-ready strategy to ensure all titles are registered on initial load
+    useVisibleTask$(
+        ({ cleanup }) => {
+            const displayTitle = subtitle || title;
+            if (
+                tocContext &&
+                "registerItem" in tocContext &&
+                displayTitle &&
+                elementRef.value
+            ) {
+                const itemId = title || subtitle || "";
+                tocContext.registerItem({
+                    id: itemId,
+                    title: displayTitle,
+                    level: level,
+                    element: elementRef,
+                });
 
-            cleanup(() => {
-                tocContext.unregisterItem(itemId);
-            });
-        }
-    });
+                cleanup(() => {
+                    tocContext.unregisterItem(itemId);
+                });
+            }
+        },
+        { strategy: "document-ready" },
+    );
 
-    const Tag = title ? "h1" : subtitle ? "h2" : tag || "h2";
+    const Tag = tag ? tag : title ? "h1" : subtitle ? "h2" : "h2";
+
     return (
         <Tag
             ref={elementRef}

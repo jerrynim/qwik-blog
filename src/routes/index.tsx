@@ -10,7 +10,7 @@ export default component$(() => {
             <PageHeader />
             <div class="w-680 m-auto mb-80">
                 <h1>제리님 블로그</h1>
-                <PostSeries title={"React Quiz"} />
+                {/* <PostSeries title={"React Quiz"} /> */}
                 <PostSeries title={"Next.js Quiz"} />
                 <PostSeries title={"블로그"} />
                 <PostSeries title={"Lit tutorial"} />
